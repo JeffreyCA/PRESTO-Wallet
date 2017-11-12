@@ -7,17 +7,17 @@ The PRESTO card is a contactless card used for fare payments used on public tran
 ## Mockups
 These are some mockups I designed in [Sketch](https://www.sketchapp.com/). These are only meant as guidelines, and are **not** meant to be the exact representation of the product.
 
-| ![Landing screen](mockups/landing.png)  | ![Login screen](mockups/login.png) | ![Balance screen](mockups/balance.png) |
-|:---:|:---:|:---:|
-| Landing | Login | Card Balance |
+| ![Landing screen](mockups/landing.png)  | ![Login screen](mockups/login.png) | ![Balance screen](mockups/balance.png) | ![Details screen](mockups/details.png) |
+|:---:|:---:|:---:|:---:|
+| Landing | Login | Card Balance | Details |
 
-| ![Actionsheet screen](mockups/actionsheet.png)  | ![Switch accounts screen](mockups/accounts.png) | ![Details screen](mockups/details.png) |
-|:---:|:---:|:---:|
-| Actionsheet | Switch Accounts | Details |
+| ![Switch accounts screen](mockups/accounts.png) | ![Actionsheet screen](mockups/actionsheet.png) |![Transactions screen](mockups/transactions.png) | ![Trip tracker screen](mockups/map.png) 
+|:---:|:---:|:---:|:---:|
+| Switch Accounts | Details | Transactions | Trip Tracker
 
-| ![Transactions screen](mockups/transactions.png)  | ![Map screen](mockups/map.png) | ![Settings screen](mockups/settings.png) |
-|:---:|:---:|:---:|
-| Transactions | Trip Tracker | Settings |
+| ![Settings screen](mockups/settings.png | width=20) |
+|:---:|
+| Settings |
 
 ## License
 This project is licensed under the Apache License (v2). Please see the [LICENSE](LICENSE) for more details.
