@@ -5,7 +5,7 @@ An iOS application for PRESTO cardholders to see their balance, transactions, an
 The PRESTO card is a contactless card used for fare payments used on public transit systems in Ontario, Canada.
 
 ## Mockups
-These are some mockups I designed for the application. These are meant to be a guideline of how the layout of the app should be. These are **not** meant to be the exact representation of the product.
+These are some mockups I designed in [Sketch](https://www.sketchapp.com/). These are only meant as guidelines, and are **not** meant to be the exact representation of the product.
 
 | ![Landing screen](mockups/landing.png)  | ![Login screen](mockups/login.png) | ![Balance screen](mockups/balance.png) |
 |:---:|:---:|:---:|
