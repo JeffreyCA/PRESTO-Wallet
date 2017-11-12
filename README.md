@@ -11,13 +11,9 @@ These are some mockups I designed in [Sketch](https://www.sketchapp.com/). These
 |:---:|:---:|:---:|:---:|
 | Landing | Login | Card Balance | Details |
 
-| ![Switch accounts screen](mockups/accounts.png) | ![Actionsheet screen](mockups/actionsheet.png) |![Transactions screen](mockups/transactions.png) | ![Trip tracker screen](mockups/map.png) 
-|:---:|:---:|:---:|:---:|
-| Switch Accounts | Details | Transactions | Trip Tracker
-
-| ![Settings screen](mockups/settings.png | width=20) |
-|:---:|
-| Settings |
+| ![Switch accounts screen](mockups/accounts.png) | ![Actionsheet screen](mockups/actionsheet.png) |![Transactions screen](mockups/transactions.png) | ![Trip tracker screen](mockups/map.png) | ![Settings screen](mockups/settings.png) |
+|:---:|:---:|:---:|:---:|:---:|
+| Switch Accounts | Details | Transactions | Trip Tracker | Settings |
 
 ## License
 This project is licensed under the Apache License (v2). Please see the [LICENSE](LICENSE) for more details.
