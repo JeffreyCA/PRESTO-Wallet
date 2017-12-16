@@ -1,0 +1,29 @@
+.DS_Store
+
+## Xcode
+DerivedData/
+build/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+xcuserdata/
+
+## Xcode private settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Swift Package Manager
+.build/
