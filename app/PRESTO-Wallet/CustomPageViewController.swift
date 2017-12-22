@@ -9,6 +9,8 @@
 import UIKit
 
 class CustomPageViewController: UIPageViewController {
+    var parentDelegate: CustomPageViewDelegate?
+    
     fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "landing"),
@@ -26,8 +28,7 @@ class CustomPageViewController: UIPageViewController {
         self.dataSource = self
         self.delegate   = self
         
-        if let firstVC = pages.first
-        {
+        if let firstVC = pages.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
     }
@@ -77,42 +78,38 @@ class CustomPageViewController: UIPageViewController {
             }
         }
     }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        parentDelegate?.pageSwitched(customPageViewController: self)
+    }
 }
 
 extension CustomPageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
-        
-        let previousIndex = viewControllerIndex - 1
-        
-        guard previousIndex >= 0 else {
-            return pages.last
+        if let viewControllerIndex = pages.index(of: viewController) {
+            let previousIndex = viewControllerIndex - 1
+            
+            if previousIndex >= 0 {
+                return pages[previousIndex]
+            }
         }
         
-        guard pages.count > previousIndex else {
-            return nil
-        }
-        
-        return pages[previousIndex]
+        return nil
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = pages.index(of: viewController) else {
-            return nil
+        
+        if let viewControllerIndex = pages.index(of: viewController) {
+            let nextIndex = viewControllerIndex + 1
+            
+            if nextIndex < pages.count {
+                return pages[nextIndex]
+            }
         }
         
-        let nextIndex = viewControllerIndex + 1
-        
-        guard nextIndex < pages.count else {
-            return pages.first
-        }
-        
-        guard pages.count > nextIndex else {
-            return nil
-        }
-        
-        return pages[nextIndex]
+        return nil
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
@@ -122,7 +119,6 @@ extension CustomPageViewController: UIPageViewControllerDataSource {
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         if let identifier = viewControllers?.first {
             if let index = pages.index(of: identifier) {
-                print("found")
                 return index
             }
         }
@@ -157,4 +153,17 @@ extension CustomPageViewController {
         
         setViewControllers([previousViewController], direction: .reverse, animated: animated, completion: nil)
     }
+    
+    func isAtEnd() -> Bool? {
+        if let currentViewController = self.viewControllers?.first {
+            return currentViewController == pages.last
+        }
+        
+        return nil
+    }
 }
+
+protocol CustomPageViewDelegate {
+    func pageSwitched(customPageViewController: CustomPageViewController)
+}
+

@@ -183,7 +183,6 @@
                         <viewLayoutGuide key="safeArea" id="QL8-BQ-wAH"/>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="KGH-30-FkY" id="0xZ-SJ-71M"/>
                         <outlet property="nextButton" destination="WYk-jQ-HA8" id="Mgg-Kw-uUb"/>
                     </connections>
                 </viewController>
@@ -246,6 +245,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QSn-8G-S0d"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0T-32-Ciz" userLabel="First Responder" sceneMemberID="firstResponder"/>
