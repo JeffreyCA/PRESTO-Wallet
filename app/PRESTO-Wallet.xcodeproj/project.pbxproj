@@ -80,6 +80,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0083A6D01FEE04590018A9FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0083A6D41FEE05100018A9FD /* Landing */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0083A6D11FEE04640018A9FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0083A6D21FEE04920018A9FD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				00FC13B91FE36F8B00AA5731 /* Main.storyboard */,
+				00FC13BE1FE36F8B00AA5731 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0083A6D31FEE05020018A9FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0083A6D41FEE05100018A9FD /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				00FC13B51FE36F8B00AA5731 /* FirstViewController.swift */,
+				00FC13B71FE36F8B00AA5731 /* SecondViewController.swift */,
+				002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */,
+				00FC13E31FE3719C00AA5731 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		0083A6D51FEE08270018A9FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		00FC13A71FE36F8B00AA5731 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +153,12 @@
 		00FC13B21FE36F8B00AA5731 /* PRESTO-Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */,
-				00FC13B51FE36F8B00AA5731 /* FirstViewController.swift */,
-				00FC13B71FE36F8B00AA5731 /* SecondViewController.swift */,
-				00FC13B91FE36F8B00AA5731 /* Main.storyboard */,
-				002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */,
-				00FC13E31FE3719C00AA5731 /* LandingViewController.swift */,
+				0083A6D31FEE05020018A9FD /* Application */,
+				0083A6D21FEE04920018A9FD /* Storyboard */,
+				0083A6D11FEE04640018A9FD /* Model */,
+				0083A6D51FEE08270018A9FD /* View */,
+				0083A6D01FEE04590018A9FD /* Controller */,
 				00FC13BC1FE36F8B00AA5731 /* Assets.xcassets */,
-				00FC13BE1FE36F8B00AA5731 /* LaunchScreen.storyboard */,
 				00FC13C11FE36F8B00AA5731 /* Info.plist */,
 			);
 			path = "PRESTO-Wallet";

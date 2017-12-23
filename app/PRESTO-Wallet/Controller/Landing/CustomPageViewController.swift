@@ -8,17 +8,28 @@
 
 import UIKit
 
+protocol CustomPageViewDelegate {
+    func pageSwitched(customPageViewController: CustomPageViewController)
+}
+
+protocol CustomPageViewNavigation {
+    func goToNextPage(animated: Bool)
+    func goToPreviousPage(animated: Bool)
+    func isAtBeginning() -> Bool?
+    func isAtEnd() -> Bool?
+}
+
 class CustomPageViewController: UIPageViewController {
     var parentDelegate: CustomPageViewDelegate?
     
-    fileprivate lazy var pages: [UIViewController] = {
+    internal lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "landing"),
             self.getViewController(withIdentifier: "test")
         ]
     }()
     
-    fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController {
+    private func getViewController(withIdentifier identifier: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
     
@@ -73,8 +84,8 @@ class CustomPageViewController: UIPageViewController {
             
             if subView is UIScrollView {
                 scrollView = subView as! UIScrollView
+                // Set scrollable region to entire screen
                 scrollView.frame = self.view.bounds
-                
             }
         }
     }
@@ -88,6 +99,7 @@ class CustomPageViewController: UIPageViewController {
 extension CustomPageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
+        // Disable wrapped scrolling
         if let viewControllerIndex = pages.index(of: viewController) {
             let previousIndex = viewControllerIndex - 1
             
@@ -101,6 +113,7 @@ extension CustomPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
+        // Disable wrapped scrolling
         if let viewControllerIndex = pages.index(of: viewController) {
             let nextIndex = viewControllerIndex + 1
             
@@ -126,10 +139,10 @@ extension CustomPageViewController: UIPageViewControllerDataSource {
     }
 }
 
+extension CustomPageViewController: UIPageViewControllerDelegate {
+}
 
-extension CustomPageViewController: UIPageViewControllerDelegate { }
-
-extension CustomPageViewController {
+extension CustomPageViewController: CustomPageViewNavigation {
     func goToNextPage(animated: Bool = true) {
         guard let currentViewController = self.viewControllers?.first else {
             return
@@ -154,6 +167,14 @@ extension CustomPageViewController {
         setViewControllers([previousViewController], direction: .reverse, animated: animated, completion: nil)
     }
     
+    func isAtBeginning() -> Bool? {
+        if let currentViewController = self.viewControllers?.first {
+            return currentViewController == pages.first
+        }
+        
+        return nil
+    }
+    
     func isAtEnd() -> Bool? {
         if let currentViewController = self.viewControllers?.first {
             return currentViewController == pages.last
@@ -161,9 +182,5 @@ extension CustomPageViewController {
         
         return nil
     }
-}
-
-protocol CustomPageViewDelegate {
-    func pageSwitched(customPageViewController: CustomPageViewController)
 }
 
