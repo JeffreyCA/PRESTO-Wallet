@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
+		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
 		00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */; };
 		00FC13B61FE36F8B00AA5731 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B51FE36F8B00AA5731 /* FirstViewController.swift */; };
 		00FC13B81FE36F8B00AA5731 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B71FE36F8B00AA5731 /* SecondViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRESTO-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FC13B51FE36F8B00AA5731 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		0083A6D51FEE08270018A9FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				009318811FEEEC0C00FC7D2F /* LoginTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */,
 				00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */,
 				00FC13B61FE36F8B00AA5731 /* FirstViewController.swift in Sources */,
+				009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

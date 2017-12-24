@@ -6,40 +6,49 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Landing View Controller-->
+        <!--First View Controller-->
         <scene sceneID="Y6m-RD-AON">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P2R-vJ-AR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="landing" id="zRL-uI-LBQ" customClass="LandingViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="landing" id="zRL-uI-LBQ" customClass="FirstViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iaH-VF-bJI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to PRESTO-Wallet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCL-l3-Aup">
-                                <rect key="frame" x="15" y="105" width="345" height="95.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <rect key="frame" x="25" y="105" width="325" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-4g-2em">
-                                <rect key="frame" x="67" y="224" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="presto" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-gd-2h5">
+                                <rect key="frame" x="45" y="275.5" width="285" height="131.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pYw-gd-2h5" secondAttribute="height" multiplier="288:133" id="neR-0T-wL8"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="vCL-l3-Aup" firstAttribute="leading" secondItem="gS5-dO-l43" secondAttribute="leading" constant="15" id="My5-BM-Aiw"/>
-                            <constraint firstItem="gS5-dO-l43" firstAttribute="trailing" secondItem="vCL-l3-Aup" secondAttribute="trailing" constant="15" id="SY7-5z-BDq"/>
+                            <constraint firstItem="vCL-l3-Aup" firstAttribute="leading" secondItem="gS5-dO-l43" secondAttribute="leading" constant="25" id="My5-BM-Aiw"/>
+                            <constraint firstItem="gS5-dO-l43" firstAttribute="trailing" secondItem="vCL-l3-Aup" secondAttribute="trailing" constant="25" id="SY7-5z-BDq"/>
+                            <constraint firstItem="pYw-gd-2h5" firstAttribute="leading" secondItem="gS5-dO-l43" secondAttribute="leading" constant="45" id="aca-Mk-1x7"/>
+                            <constraint firstItem="pYw-gd-2h5" firstAttribute="top" secondItem="vCL-l3-Aup" secondAttribute="bottom" constant="75" id="haR-T5-STq"/>
+                            <constraint firstItem="gS5-dO-l43" firstAttribute="trailing" secondItem="pYw-gd-2h5" secondAttribute="trailing" constant="45" id="oAB-bE-NIf"/>
                             <constraint firstItem="vCL-l3-Aup" firstAttribute="top" secondItem="gS5-dO-l43" secondAttribute="top" constant="85" id="zKy-uV-EvB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gS5-dO-l43"/>
                     </view>
+                    <connections>
+                        <outlet property="logo" destination="pYw-gd-2h5" id="KIz-cX-El0"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2R-vJ-AR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50" y="688"/>
+            <point key="canvasLocation" x="48.799999999999997" y="687.7061469265368"/>
         </scene>
         <!--Custom Page View Controller-->
         <scene sceneID="2Za-K7-8NV">
@@ -49,28 +58,111 @@
             </objects>
             <point key="canvasLocation" x="-737" y="679"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="KRR-TB-rJW">
             <objects>
-                <viewController storyboardIdentifier="test" id="F8Z-G0-K3d" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="test" id="F8Z-G0-K3d" customClass="SecondViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sai-Ai-TIg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh5-RC-vnO">
-                                <rect key="frame" x="143" y="276" width="88" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PRESTO Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-vc-l5z">
+                                <rect key="frame" x="25" y="105" width="325" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="43a-h5-7it">
+                                <rect key="frame" x="25" y="275.5" width="325" height="171.5"/>
+                                <subviews>
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-PO-v3r" customClass="LoginTextField" customModule="PRESTO_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="D5T-97-rW2"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-iZ-6Oh" customClass="LoginTextField" customModule="PRESTO_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="320" height="60"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2yo-Ep-s40"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unregistered PRESTO Card?" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-Tt-XhL">
+                                        <rect key="frame" x="0.0" y="150" width="229.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rk7-iZ-6Oh" secondAttribute="trailing" constant="5" id="0xp-UG-2v3"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pxc-PO-v3r" secondAttribute="trailing" constant="5" id="NYL-ml-3on"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="43a-h5-7it" firstAttribute="top" secondItem="mFb-vc-l5z" secondAttribute="bottom" constant="75" id="13E-Va-o3e"/>
+                            <constraint firstItem="mFb-vc-l5z" firstAttribute="centerX" secondItem="ard-V7-bgd" secondAttribute="centerX" id="Gpf-Z1-G8h"/>
+                            <constraint firstItem="43a-h5-7it" firstAttribute="leading" secondItem="ard-V7-bgd" secondAttribute="leading" constant="25" id="cLN-ZW-g4a"/>
+                            <constraint firstItem="mFb-vc-l5z" firstAttribute="top" secondItem="ard-V7-bgd" secondAttribute="top" constant="85" id="pA9-Kd-DiG"/>
+                            <constraint firstItem="mFb-vc-l5z" firstAttribute="leading" secondItem="ard-V7-bgd" secondAttribute="leading" constant="25" id="rgB-2E-U7V"/>
+                            <constraint firstItem="ard-V7-bgd" firstAttribute="trailing" secondItem="43a-h5-7it" secondAttribute="trailing" constant="25" id="tsf-7Q-LTE"/>
+                            <constraint firstItem="ard-V7-bgd" firstAttribute="trailing" secondItem="mFb-vc-l5z" secondAttribute="trailing" constant="25" id="xP5-Ic-i0M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ard-V7-bgd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8C-aY-VHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="688"/>
+            <point key="canvasLocation" x="776.79999999999995" y="687.7061469265368"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="H0d-cQ-MNk">
@@ -117,4 +209,7 @@
             <point key="canvasLocation" x="-1588" y="679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="presto" width="500" height="232"/>
+    </resources>
 </document>
