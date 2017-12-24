@@ -9,10 +9,21 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    @IBOutlet weak var logo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        if let image = logo.image {
+            let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+            let renderer = UIGraphicsImageRenderer(size: image.size)
+            
+            let result = renderer.image { ctx in
+                image.draw(in: rect, blendMode: .multiply, alpha: 1)
+            }
+            
+            logo.image = result
+        }
     }
 
     override func didReceiveMemoryWarning() {
