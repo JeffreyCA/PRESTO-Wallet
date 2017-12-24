@@ -22,14 +22,14 @@ protocol CustomPageViewNavigation {
 class CustomPageViewController: UIPageViewController {
     var parentDelegate: CustomPageViewDelegate?
     
-    internal lazy var pages: [UIViewController] = {
+    fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "landing"),
             self.getViewController(withIdentifier: "test")
         ]
     }()
     
-    private func getViewController(withIdentifier identifier: String) -> UIViewController {
+    fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
     
