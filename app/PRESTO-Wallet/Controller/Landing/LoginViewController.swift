@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
     }
     
     private func login(username: String?, password: String?) {
-        print("Login")
+        Session.login(username: username!, password: password!)
     }
     
     func updateMaskForView(button: UIImageView, text: String) {
@@ -104,7 +104,7 @@ class LoginViewController: UIViewController {
                 self.loginButton.alpha = 1.0
             }
             
-            login(username: "Test", password: "Test")
+            login(username: usernameTextField.text, password: passwordTextField.text)
         }
     }
 }
