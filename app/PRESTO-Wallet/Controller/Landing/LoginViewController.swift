@@ -14,13 +14,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var loginButton: UIImageView!
     
+    private static let LOGIN_BUTTON_TAPPED_ALPHA: CGFloat = 0.7
+    private static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         
-        // usernameTextField.contentVerticalAlignment = UIControlContentVerticalAlignment.center
         updateMaskForView(button: loginButton, text: "Add Account")
         registerTapListener(button: loginButton)
     }
@@ -96,9 +98,9 @@ class LoginViewController: UIViewController {
     
     @objc func imageTapped(gesture: UITapGestureRecognizer) {
         if gesture.state == .began {
-            self.loginButton.alpha = 0.7
+            self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
         } else if gesture.state == .ended {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
                 self.loginButton.alpha = 1.0
             }
             
