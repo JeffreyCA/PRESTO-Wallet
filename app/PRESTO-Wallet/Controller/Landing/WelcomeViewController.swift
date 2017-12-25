@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  WelcomeViewController.swift
 //  PRESTO Wallet
 //
 //  Created by Jeffrey on 2017-12-14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class WelcomeViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     
     override func viewDidLoad() {
@@ -30,7 +30,5 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
