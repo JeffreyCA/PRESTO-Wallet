@@ -9,21 +9,29 @@
 import UIKit
 
 class LandingViewController: UIViewController, CustomPageViewDelegate {
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     private var embeddedViewController: CustomPageViewController!
 
-    func pageSwitched(customPageViewController: CustomPageViewController) {
-        print ("switched")
-        if let isAtEnd = customPageViewController.isAtEnd() {
+    func pageSwitched() {
+        if let isAtEnd = embeddedViewController.isAtEnd() {
             nextButton.isHidden = isAtEnd
+        }
+        
+        if let isAtBeginning = embeddedViewController.isAtBeginning() {
+            backButton.isHidden = isAtBeginning
         }
     }
     
     @IBAction func goToNextPage(_ sender: UIButton) {
         self.embeddedViewController.goToNextPage()
-        self.pageSwitched(customPageViewController: embeddedViewController)
+        self.pageSwitched()
     }
     
+    @IBAction func goToPreviousPage(_ sender: UIButton) {
+        self.embeddedViewController.goToPreviousPage()
+        self.pageSwitched()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

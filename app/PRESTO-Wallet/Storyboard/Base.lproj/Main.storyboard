@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="43a-h5-7it">
-                                <rect key="frame" x="25" y="275.5" width="325" height="239.5"/>
+                                <rect key="frame" x="25" y="275.5" width="325" height="252"/>
                                 <subviews>
                                     <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-PO-v3r" customClass="LoginTextField" customModule="PRESTO_Wallet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -171,14 +171,15 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unregistered PRESTO Card?" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKO-Tt-XhL">
-                                        <rect key="frame" x="0.0" y="150" width="229.5" height="21.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkE-kX-1QV">
+                                        <rect key="frame" x="0.0" y="150" width="230" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="Unregistered PRESTO Card?">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42O-DS-lcy">
-                                        <rect key="frame" x="0.0" y="186.5" width="325" height="53"/>
+                                        <rect key="frame" x="0.0" y="199" width="325" height="53"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -234,19 +235,32 @@
                                     <action selector="goToNextPage:" destination="wmU-WY-9RW" eventType="touchUpInside" id="9Mo-Il-QNX"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-eF-ks1" userLabel="Back Buttion">
+                                <rect key="frame" x="30" y="613" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPreviousPage:" destination="wmU-WY-9RW" eventType="touchUpInside" id="bmK-nf-bSx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="trailing" secondItem="WYk-jQ-HA8" secondAttribute="trailing" constant="30" id="7nF-ms-VTC"/>
+                            <constraint firstItem="QL8-BQ-wAH" firstAttribute="bottom" secondItem="nfc-eF-ks1" secondAttribute="bottom" constant="20" id="FPT-JJ-m3P"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="bottom" secondItem="KGH-30-FkY" secondAttribute="bottom" id="U9D-ro-oth"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="trailing" secondItem="KGH-30-FkY" secondAttribute="trailing" id="UXa-px-By9"/>
                             <constraint firstItem="KGH-30-FkY" firstAttribute="leading" secondItem="QL8-BQ-wAH" secondAttribute="leading" id="e6n-KD-Lal"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="bottom" secondItem="WYk-jQ-HA8" secondAttribute="bottom" constant="20" id="egb-rw-jen"/>
                             <constraint firstItem="KGH-30-FkY" firstAttribute="top" secondItem="QL8-BQ-wAH" secondAttribute="top" id="hBU-Xm-TEq"/>
+                            <constraint firstItem="nfc-eF-ks1" firstAttribute="leading" secondItem="QL8-BQ-wAH" secondAttribute="leading" constant="30" id="s0F-1r-IPB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QL8-BQ-wAH"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="nfc-eF-ks1" id="KIr-ay-wpf"/>
                         <outlet property="nextButton" destination="WYk-jQ-HA8" id="Mgg-Kw-uUb"/>
                     </connections>
                 </viewController>

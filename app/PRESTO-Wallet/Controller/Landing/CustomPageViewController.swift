@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CustomPageViewDelegate {
-    func pageSwitched(customPageViewController: CustomPageViewController)
+    func pageSwitched()
 }
 
 protocol CustomPageViewNavigation {
@@ -92,7 +92,7 @@ class CustomPageViewController: UIPageViewController {
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
-        parentDelegate?.pageSwitched(customPageViewController: self)
+        parentDelegate?.pageSwitched()
     }
 }
 
