@@ -17,13 +17,26 @@ class Session {
 
         Alamofire.request(urlString, method: .post, parameters: ["anonymousOrderACard": "false", "custSecurity": ["Login": username, "Password": password]], encoding: JSONEncoding.default, headers: nil).responseJSON { response in
 
-            if let json = response.result.value {
+            if isValidResponse(response: response) {
                 Alamofire.request(urlString2, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
                     if let html = response.result.value {
-                       print(html)
+                        print(html)
                     }
                 }
+                print("true")
+            } else {
+                print("false")
             }
         }
+    }
+    
+    private static func isValidResponse(response: DataResponse<Any>) -> Bool {
+        if let result = response.result.value as? [String: String] {
+            if result["Result"] == "success" {
+                return true
+            }
+        }
+        
+        return false
     }
 }
