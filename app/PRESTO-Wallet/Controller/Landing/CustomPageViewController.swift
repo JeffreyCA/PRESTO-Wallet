@@ -76,7 +76,7 @@ class CustomPageViewController: UIPageViewController {
                 pageControl.numberOfPages = 2
                 pageControl.center = self.view.center
                 pageControl.isUserInteractionEnabled = false
-                pageControl.layer.position.y = self.view.frame.height - 100;
+                pageControl.layer.position.y = self.view.frame.height - 50;
                 
                 self.view.addSubview(pageControl)
                 self.view.bringSubview(toFront: pageControl)
