@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftSoup
 
 class Session {
     static func login(username: String, password: String) {
@@ -20,7 +21,14 @@ class Session {
             if isValidResponse(response: response) {
                 Alamofire.request(urlString2, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
                     if let html = response.result.value {
-                        print(html)
+                        do {
+                            let doc: Document = try SwiftSoup.parse(html)
+                            print(try! doc.text())
+                        } catch Exception.Error(let type, let message){
+                            print(message)
+                        } catch{
+                            print("error")
+                        }
                     }
                 }
                 print("true")

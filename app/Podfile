@@ -6,6 +6,7 @@ target 'PRESTO-Wallet' do
   use_frameworks!
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'Alamofire', '~> 4.5'
+  pod 'SwiftSoup'
 
   target 'PRESTO-WalletTests' do
     inherit! :search_paths
