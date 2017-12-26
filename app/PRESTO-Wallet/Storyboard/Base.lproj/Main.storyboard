@@ -61,7 +61,7 @@
         <!--Login View Controller-->
         <scene sceneID="KRR-TB-rJW">
             <objects>
-                <viewController storyboardIdentifier="test" id="F8Z-G0-K3d" customClass="LoginViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" id="F8Z-G0-K3d" customClass="LoginViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sai-Ai-TIg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -25,7 +25,7 @@ class CustomPageViewController: UIPageViewController {
     fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "landing"),
-            self.getViewController(withIdentifier: "test")
+            self.getViewController(withIdentifier: "loginView")
         ]
     }()
     
