@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to PRESTO Wallet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCL-l3-Aup">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to PRESTO Wallet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vCL-l3-Aup">
                                 <rect key="frame" x="25" y="95" width="325" height="95.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,17 +66,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PRESTO Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-vc-l5z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PRESTO Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="mFb-vc-l5z">
                                 <rect key="frame" x="25" y="95" width="325" height="95.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="43a-h5-7it">
-                                <rect key="frame" x="25" y="275.5" width="325" height="252"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="43a-h5-7it">
+                                <rect key="frame" x="25" y="235.5" width="325" height="259"/>
                                 <subviews>
                                     <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-PO-v3r" customClass="LoginTextField" customModule="PRESTO_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="D5T-97-rW2"/>
@@ -124,7 +124,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-iZ-6Oh" customClass="LoginTextField" customModule="PRESTO_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="75" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="75" width="325" height="60"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="2yo-Ep-s40"/>
@@ -178,21 +178,25 @@
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42O-DS-lcy">
-                                        <rect key="frame" x="0.0" y="199" width="325" height="53"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="42O-DS-lcy">
+                                        <rect key="frame" x="0.0" y="199" width="325" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="i41-PB-NsN"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Rk7-iZ-6Oh" secondAttribute="trailing" constant="5" id="0xp-UG-2v3"/>
                                     <constraint firstItem="42O-DS-lcy" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="7Ff-lK-AZB"/>
                                     <constraint firstAttribute="trailing" secondItem="42O-DS-lcy" secondAttribute="trailing" id="955-DZ-laV"/>
-                                    <constraint firstAttribute="trailing" secondItem="Pxc-PO-v3r" secondAttribute="trailing" constant="5" id="NYL-ml-3on"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rk7-iZ-6Oh" secondAttribute="trailing" id="A36-cf-pfV"/>
+                                    <constraint firstItem="Pxc-PO-v3r" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="YN8-t8-49e"/>
+                                    <constraint firstItem="Rk7-iZ-6Oh" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="cQH-bK-eBA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pxc-PO-v3r" secondAttribute="trailing" id="vgl-df-iq2"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="43a-h5-7it" firstAttribute="top" secondItem="mFb-vc-l5z" secondAttribute="bottom" constant="45" id="13E-Va-o3e"/>
-                            <constraint firstItem="mFb-vc-l5z" firstAttribute="centerX" secondItem="ard-V7-bgd" secondAttribute="centerX" id="Gpf-Z1-G8h"/>
                             <constraint firstItem="43a-h5-7it" firstAttribute="leading" secondItem="ard-V7-bgd" secondAttribute="leading" constant="25" id="cLN-ZW-g4a"/>
                             <constraint firstItem="mFb-vc-l5z" firstAttribute="top" secondItem="ard-V7-bgd" secondAttribute="top" constant="75" id="pA9-Kd-DiG"/>
                             <constraint firstItem="mFb-vc-l5z" firstAttribute="leading" secondItem="ard-V7-bgd" secondAttribute="leading" constant="25" id="rgB-2E-U7V"/>
@@ -249,6 +253,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="trailing" secondItem="WYk-jQ-HA8" secondAttribute="trailing" constant="30" id="7nF-ms-VTC"/>
+                            <constraint firstItem="WYk-jQ-HA8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nfc-eF-ks1" secondAttribute="trailing" constant="8" symbolic="YES" id="DOS-qz-Xhr"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="bottom" secondItem="nfc-eF-ks1" secondAttribute="bottom" constant="20" id="FPT-JJ-m3P"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="bottom" secondItem="KGH-30-FkY" secondAttribute="bottom" id="U9D-ro-oth"/>
                             <constraint firstItem="QL8-BQ-wAH" firstAttribute="trailing" secondItem="KGH-30-FkY" secondAttribute="trailing" id="UXa-px-By9"/>

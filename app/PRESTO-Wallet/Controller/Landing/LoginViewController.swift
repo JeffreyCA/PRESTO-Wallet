@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var loginButton: UIImageView!
     
+    private static let LOGIN_BUTTON_CORNER_RADIUS: CGFloat = 5.0
+    private static let LOGIN_BUTTON_MASK_ALPHA: CGFloat = 0.7
     private static let LOGIN_BUTTON_TAPPED_ALPHA: CGFloat = 0.7
     private static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
     
@@ -76,7 +78,8 @@ class LoginViewController: UIViewController {
             if let mask = mask {
                 UIGraphicsBeginImageContextWithOptions(button.bounds.size, false, 0)
                 UIGraphicsGetCurrentContext()?.clip(to: button.bounds, mask: mask)
-                UIColor.white.withAlphaComponent(0.8).setFill()
+                UIColor.white.withAlphaComponent(LoginViewController.LOGIN_BUTTON_MASK_ALPHA)
+                    .setFill()
                 UIBezierPath(rect: button.bounds).fill()
             }
         }
@@ -86,7 +89,7 @@ class LoginViewController: UIViewController {
         
         // Use image
         button.image = background
-        button.layer.cornerRadius = 5.0
+        button.layer.cornerRadius = LoginViewController.LOGIN_BUTTON_CORNER_RADIUS
         button.layer.masksToBounds = true
     }
     
