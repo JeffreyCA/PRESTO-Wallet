@@ -13,6 +13,7 @@ import SwiftSoup
 private struct LoginConstants {
     static let USERNAME_MIN_LENGTH = 6
     static let PASSWORD_MIN_LENGTH = 6
+    static let DEFAULT_ERROR = "Error encountered."
 }
 
 protocol LoginService {
@@ -87,7 +88,7 @@ fileprivate extension LoginServiceHandler {
             }
         }
         
-        return LoginErrors.LOGIN_FAILURE(response.result.value as! String)
+        return LoginErrors.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
     }
     
     func convertLoginErrorsToString(array: Array<LoginError>) -> String {

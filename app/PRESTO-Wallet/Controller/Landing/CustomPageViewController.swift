@@ -63,30 +63,22 @@ class CustomPageViewController: UIPageViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        var pageControl : UIPageControl
-        var scrollView : UIScrollView
-        
-        for subView in view.subviews {
-            if subView is UIPageControl {
-                pageControl = subView as! UIPageControl
-                
-                pageControl.pageIndicatorTintColor = UIColor.gray
-                pageControl.currentPageIndicatorTintColor = UIColor.white
-                pageControl.numberOfPages = 2
-                pageControl.center = self.view.center
-                pageControl.isUserInteractionEnabled = false
-                pageControl.layer.position.y = self.view.frame.height - 50;
-                
-                self.view.addSubview(pageControl)
-                self.view.bringSubview(toFront: pageControl)
-            }
+
+        for case let pageControl as UIPageControl in view.subviews {
+            pageControl.pageIndicatorTintColor = UIColor.gray
+            pageControl.currentPageIndicatorTintColor = UIColor.white
+            pageControl.numberOfPages = 2
+            pageControl.center = self.view.center
+            pageControl.isUserInteractionEnabled = false
+            pageControl.layer.position.y = self.view.frame.height - 50
             
-            if subView is UIScrollView {
-                scrollView = subView as! UIScrollView
-                // Set scrollable region to entire screen
-                scrollView.frame = self.view.bounds
-            }
+            self.view.addSubview(pageControl)
+            self.view.bringSubview(toFront: pageControl)
+        }
+        
+        for case let scrollView as UIScrollView in view.subviews {
+            // Set scrollable region to entire screen
+            scrollView.frame = self.view.bounds
         }
     }
     

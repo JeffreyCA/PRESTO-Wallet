@@ -12,7 +12,7 @@ enum LoginError: String, Error {
     case INVALID_CREDENTIALS = "You could not be logged in to your online account. Please check your username and password and try again."
     case CONNECTION_TIMEOUT = "Your connection to PRESTO website has timed out. Please try again later."
     case SERVER_DISRUPTION = "Could not connect to PRESTO website. Please try again later."
-    
+
     func get() -> String {
         return self.rawValue
     }

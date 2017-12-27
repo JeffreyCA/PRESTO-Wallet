@@ -12,13 +12,12 @@ extension String {
     public func isAlphanumeric() -> Bool {
         return !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
     }
-    
+
     public func containsLetter() -> Bool {
         return !isEmpty && range(of: "[a-zA-Z]", options: .regularExpression) != nil
     }
-    
+
     public func containsNumber() -> Bool {
         return !isEmpty && range(of: "[0-9]", options: .regularExpression) != nil
     }
 }
-
