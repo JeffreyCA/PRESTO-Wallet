@@ -10,5 +10,5 @@ script:
     - swiftlint --path app/
 notifications:
   email:
-    on_success: never # default: change
-    on_failure: always # default: always
+    on_success: never
+    on_failure: never
