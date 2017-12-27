@@ -7,48 +7,6 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "88E9EC28B8B46C3631E6B242B50F4442"
-               BuildableName = "Alamofire.framework"
-               BlueprintName = "Alamofire"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF3CEC740BF9B2F640C51AB8658E7A62"
-               BuildableName = "SkyFloatingLabelTextField.framework"
-               BlueprintName = "SkyFloatingLabelTextField"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D83ADAD8E74930467AA7EE4BB09C69DD"
-               BuildableName = "SwiftSoup.framework"
-               BlueprintName = "SwiftSoup"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
