@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     private static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
 
     private var loginService: LoginServiceHandler?
-    private var indicator: UIActivityIndicatorView?
+    private var loadingView: UIAlertController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         updateMaskForView(text: "Add Account")
-        insertLoadingIndicator()
+        setupLoadingView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,11 +106,16 @@ fileprivate extension LoginViewController {
         loginButton.layer.masksToBounds = true
     }
 
-    func insertLoadingIndicator() {
-        indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
-        indicator?.center = CGPoint(x: loginButton.frame.width  / 2, y: loginButton.frame.height / 2)
-        loginButton.addSubview(indicator!)
-        loginButton.bringSubview(toFront: indicator!)
+    func setupLoadingView() {
+        loadingView = UIAlertController(title: nil, message: "Logging in...", preferredStyle: .alert)
+        loadingView?.view.tintColor = UIColor.black
+
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating()
+
+        loadingView?.view.addSubview(loadingIndicator)
     }
 }
 
@@ -124,17 +129,22 @@ fileprivate extension LoginViewController {
 
     func startAnimating() {
         self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
-        loginButton.isUserInteractionEnabled = false
-        indicator?.startAnimating()
+
+        if let loadingView = loadingView {
+            self.present(loadingView, animated: true, completion: nil)
+        }
     }
 
-    func stopAnimating() {
+    func stopAnimating(thenPresent completionAlert: UIAlertController? = nil) {
         UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
             self.loginButton.alpha = 1.0
         }
 
-        loginButton.isUserInteractionEnabled = true
-        indicator?.stopAnimating()
+        self.dismiss(animated: false) {
+            if let completionAlert = completionAlert {
+                self.present(completionAlert, animated: true, completion: nil)
+            }
+        }
     }
 
     @objc func imageTapped(gesture: UITapGestureRecognizer) {
@@ -160,18 +170,16 @@ extension LoginViewController: UITextFieldDelegate {
 
 extension LoginViewController: LoginServiceDelegate {
     func handle(error: String) {
-        stopAnimating()
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        let alertDialog = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        alertDialog.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
-        self.present(alert, animated: true)
+        stopAnimating(thenPresent: alertDialog)
     }
 
     func loginSuccessful() {
-        stopAnimating()
-        let alert = UIAlertController(title: "Success", message: "Logged in.", preferredStyle: .alert)
+        let alertDialog = UIAlertController(title: "Success", message: "Logged in.", preferredStyle: .alert)
+        alertDialog.addAction(UIAlertAction(title: "Proceed", style: .default))
 
-        alert.addAction(UIAlertAction(title: "Proceed", style: .default))
-        self.present(alert, animated: true)
+        stopAnimating(thenPresent: alertDialog)
     }
 }
