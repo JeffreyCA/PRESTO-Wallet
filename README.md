@@ -1,4 +1,4 @@
-# PRESTO Wallet
+# PRESTO Wallet &nbsp;[![Build Status](https://travis-ci.org/JeffreyCA/PRESTO-Wallet.svg?branch=master)](https://travis-ci.org/JeffreyCA/PRESTO-Wallet)
 An iOS application for PRESTO cardholders to see their balance, transactions, and other information about their PRESTO card usage.
 
 ## What is PRESTO?
