@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0002F8C51FF2B9AD000B849F /* PrestoLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* PrestoLoginResponse.swift */; };
+		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
 		008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008552C31FF32AEF00461F92 /* APIConstant.swift */; };
 		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0002F8C41FF2B9AD000B849F /* PrestoLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestoLoginResponse.swift; sourceTree = "<group>"; };
+		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		008552C31FF32AEF00461F92 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 			children = (
 				00DA94631FF1F5BE00EE1F04 /* LoginService.swift */,
 				00DA94651FF1F66C00EE1F04 /* LoginError.swift */,
-				0002F8C41FF2B9AD000B849F /* PrestoLoginResponse.swift */,
+				0002F8C41FF2B9AD000B849F /* LoginResponse.swift */,
 				008552C31FF32AEF00461F92 /* APIConstant.swift */,
 			);
 			path = Model;
@@ -147,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				00FC13B51FE36F8B00AA5731 /* WelcomeViewController.swift */,
-				00FC13B71FE36F8B00AA5731 /* LoginViewController.swift */,
 				002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */,
 				00FC13E31FE3719C00AA5731 /* LandingViewController.swift */,
+				00FC13B71FE36F8B00AA5731 /* LoginViewController.swift */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -560,7 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
-				0002F8C51FF2B9AD000B849F /* PrestoLoginResponse.swift in Sources */,
+				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
 				002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */,
 				00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */,
 				00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */,

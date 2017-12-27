@@ -41,7 +41,7 @@ class LoginServiceHandler: LoginService {
         if result.isEmpty {
             loginWithUsernamePassword(username: username!, password: password!)
         } else {
-            self.delegate?.handle(error: convertLoginErrorsToString(array: result))
+            self.delegate?.handle(error: convertLoginResponseToString(array: result))
         }
     }
 
@@ -81,17 +81,17 @@ class LoginServiceHandler: LoginService {
 }
 
 fileprivate extension LoginServiceHandler {
-    private func getLoginResponse(response: DataResponse<Any>) -> LoginErrors {
+    private func getLoginResponse(response: DataResponse<Any>) -> LoginResponse {
         if let result = response.result.value as? [String: String] {
             if result["Result"] == "success" {
-                return LoginErrors.LOGIN_SUCCESS
+                return LoginResponse.LOGIN_SUCCESS
             }
         }
 
-        return LoginErrors.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
+        return LoginResponse.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
     }
 
-    func convertLoginErrorsToString(array: [LoginError]) -> String {
+    func convertLoginResponseToString(array: [LoginError]) -> String {
         var errorMsg: String = String()
         var appendNewLine: Bool = false
 

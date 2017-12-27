@@ -1,5 +1,5 @@
 //
-//  PrestoLoginResponse.swift
+//  LoginResponse.swift
 //  PRESTO-Wallet
 //
 //  Created by Jeffrey Chen on 2017-12-26.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LoginErrors: Error {
+enum LoginResponse: Error {
     case LOGIN_SUCCESS
     case LOGIN_FAILURE(String)
 
