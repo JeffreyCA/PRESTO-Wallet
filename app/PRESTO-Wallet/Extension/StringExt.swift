@@ -21,3 +21,4 @@ extension String {
         return !isEmpty && range(of: "[0-9]", options: .regularExpression) != nil
     }
 }
+
