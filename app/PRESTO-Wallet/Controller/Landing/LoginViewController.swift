@@ -56,7 +56,7 @@ class LoginViewController: UIViewController {
         // Draw the text
         let attributes = [
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18),
-            NSAttributedStringKey.foregroundColor: UIColor.white,
+            NSAttributedStringKey.foregroundColor: UIColor.white
         ]
 
         let size = text.size(withAttributes: attributes)
@@ -147,4 +147,3 @@ extension LoginViewController: LoginServiceDelegate {
         self.present(alert, animated: true)
     }
 }
-

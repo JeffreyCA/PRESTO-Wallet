@@ -87,41 +87,41 @@ fileprivate extension LoginServiceHandler {
                 return LoginErrors.LOGIN_SUCCESS
             }
         }
-        
+
         return LoginErrors.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
     }
-    
+
     func convertLoginErrorsToString(array: Array<LoginError>) -> String {
         var errorMsg: String = String()
         var appendNewLine: Bool = false
-        
+
         for error in array {
             if appendNewLine {
                 errorMsg.append("\n\n")
             } else {
                 appendNewLine = true
             }
-            
+
             errorMsg.append(error.rawValue)
         }
-        
+
         return errorMsg
     }
-    
+
     func validateForm(userName username: String, password: String) -> Array<LoginError> {
         var errors: Array<LoginError> = Array()
-        
+
         // Check username requirements
         if !(username.count >= LoginConstants.USERNAME_MIN_LENGTH && username.isAlphanumeric()) {
             errors.append(LoginError.USERNAME_REQUIREMENTS)
         }
-        
+
         // Check password requirements
         if !(password.count >= LoginConstants.PASSWORD_MIN_LENGTH && password.isAlphanumeric()
             && password.containsLetter() && password.containsNumber()) {
             errors.append(LoginError.PASSWORD_REQUIREMENTS)
         }
-        
+
         return errors
     }
 }

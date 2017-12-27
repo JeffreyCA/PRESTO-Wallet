@@ -17,22 +17,22 @@ class LandingViewController: UIViewController, CustomPageViewDelegate {
         if let isAtEnd = embeddedViewController.isAtEnd() {
             nextButton.isHidden = isAtEnd
         }
-        
+
         if let isAtBeginning = embeddedViewController.isAtBeginning() {
             backButton.isHidden = isAtBeginning
         }
     }
-    
+
     @IBAction func goToNextPage(_ sender: UIButton) {
         self.embeddedViewController.goToNextPage()
         self.pageSwitched()
     }
-    
+
     @IBAction func goToPreviousPage(_ sender: UIButton) {
         self.embeddedViewController.goToPreviousPage()
         self.pageSwitched()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -44,7 +44,7 @@ class LandingViewController: UIViewController, CustomPageViewDelegate {
             self.embeddedViewController = vc
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

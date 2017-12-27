@@ -11,7 +11,7 @@ import Foundation
 enum LoginErrors: Error {
     case LOGIN_SUCCESS
     case LOGIN_FAILURE(String)
-    
+
     func get() -> String {
         switch self {
         case .LOGIN_SUCCESS:
