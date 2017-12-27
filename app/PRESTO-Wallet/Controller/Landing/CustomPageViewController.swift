@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CustomPageViewDelegate {
+protocol CustomPageViewDelegate: class {
     func pageSwitched()
 }
 
@@ -20,7 +20,7 @@ protocol CustomPageViewNavigation {
 }
 
 class CustomPageViewController: UIPageViewController {
-    var parentDelegate: CustomPageViewDelegate?
+    weak var parentDelegate: CustomPageViewDelegate?
 
     fileprivate lazy var pages: [UIViewController] = {
         return [

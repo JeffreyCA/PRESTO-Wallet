@@ -132,18 +132,14 @@ extension LoginViewController: LoginServiceDelegate {
     func handle(error: String) {
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default) { action in
-                print(action.title)
-            })
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
         self.present(alert, animated: true)
     }
 
     func loginSuccessful() {
         let alert = UIAlertController(title: "Success", message: "Logged in.", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Proceed", style: .default) { action in
-                print(action.title)
-            })
+        alert.addAction(UIAlertAction(title: "Proceed", style: .default))
         self.present(alert, animated: true)
     }
 }

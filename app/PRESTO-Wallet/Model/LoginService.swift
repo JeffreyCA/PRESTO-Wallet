@@ -17,19 +17,19 @@ private struct LoginConstants {
 }
 
 protocol LoginService {
-    var delegate: LoginServiceDelegate { get }
+    var delegate: LoginServiceDelegate? { get }
     // func login(withUsername username: String?, password: String?)
 }
 
 // Delegate for the LoginService
-protocol LoginServiceDelegate {
+protocol LoginServiceDelegate: class {
     func loginSuccessful()
     func handle(error: String)
 }
 
 // The class is responsible for validating form input and consequently attempt to login.
 class LoginServiceHandler: LoginService {
-    let delegate: LoginServiceDelegate
+    weak var delegate: LoginServiceDelegate?
 
     init(delegate: LoginServiceDelegate) {
         self.delegate = delegate
@@ -41,7 +41,7 @@ class LoginServiceHandler: LoginService {
         if result.isEmpty {
             loginWithUsernamePassword(username: username!, password: password!)
         } else {
-            delegate.handle(error: convertLoginErrorsToString(array: result))
+            self.delegate?.handle(error: convertLoginErrorsToString(array: result))
         }
     }
 
@@ -56,11 +56,11 @@ class LoginServiceHandler: LoginService {
             case .LOGIN_SUCCESS:
                 print("Success")
                 // Handle login success
-                self.delegate.loginSuccessful()
+                self.delegate?.loginSuccessful()
             case .LOGIN_FAILURE(let error):
                 print(error)
                 // Handle login error
-                self.delegate.handle(error: error)
+                self.delegate?.handle(error: error)
             }
         }
     }
@@ -91,7 +91,7 @@ fileprivate extension LoginServiceHandler {
         return LoginErrors.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
     }
 
-    func convertLoginErrorsToString(array: Array<LoginError>) -> String {
+    func convertLoginErrorsToString(array: [LoginError]) -> String {
         var errorMsg: String = String()
         var appendNewLine: Bool = false
 
@@ -108,8 +108,8 @@ fileprivate extension LoginServiceHandler {
         return errorMsg
     }
 
-    func validateForm(userName username: String, password: String) -> Array<LoginError> {
-        var errors: Array<LoginError> = Array()
+    func validateForm(userName username: String, password: String) -> [LoginError] {
+        var errors: [LoginError] = Array()
 
         // Check username requirements
         if !(username.count >= LoginConstants.USERNAME_MIN_LENGTH && username.isAlphanumeric()) {
