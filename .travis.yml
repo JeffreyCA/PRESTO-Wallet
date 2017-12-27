@@ -2,3 +2,5 @@ language: swift
 osx_image: xcode9.2
 xcode_workspace: app/PRESTO-Wallet.xcworkspace
 xcode_scheme: PRESTO-Wallet
+script:
+    - xcodebuild clean test -workspace PRESTO-Wallet.xcworkspace -scheme PRESTO-Wallet -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
