@@ -186,10 +186,10 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="42O-DS-lcy" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="7Ff-lK-AZB"/>
-                                    <constraint firstAttribute="trailing" secondItem="42O-DS-lcy" secondAttribute="trailing" id="955-DZ-laV"/>
                                     <constraint firstAttribute="trailing" secondItem="Rk7-iZ-6Oh" secondAttribute="trailing" id="A36-cf-pfV"/>
+                                    <constraint firstAttribute="trailing" secondItem="42O-DS-lcy" secondAttribute="trailing" id="Dnx-L1-TTM"/>
                                     <constraint firstItem="Pxc-PO-v3r" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="YN8-t8-49e"/>
+                                    <constraint firstItem="42O-DS-lcy" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="bPC-EG-frj"/>
                                     <constraint firstItem="Rk7-iZ-6Oh" firstAttribute="leading" secondItem="43a-h5-7it" secondAttribute="leading" id="cQH-bK-eBA"/>
                                     <constraint firstAttribute="trailing" secondItem="Pxc-PO-v3r" secondAttribute="trailing" id="vgl-df-iq2"/>
                                 </constraints>

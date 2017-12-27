@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     private static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
 
     private var loginService: LoginServiceHandler?
+    private var indicator: UIActivityIndicatorView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,13 @@ class LoginViewController: UIViewController {
         passwordTextField.delegate = self
         loginService = LoginServiceHandler(delegate: self)
 
-        updateMaskForView(button: loginButton, text: "Add Account")
         registerTapListener(button: loginButton)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        updateMaskForView(text: "Add Account")
+        insertLoadingIndicator()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,16 +48,18 @@ class LoginViewController: UIViewController {
     }
 
     private func login(username: String?, password: String?) {
-        // Session.login(username: username!, password: password!)
         loginService?.login(withUsername: username, password: password)
     }
+}
 
-    func updateMaskForView(button: UIImageView, text: String) {
-        UIGraphicsBeginImageContextWithOptions(button.bounds.size, true, 0)
+// Update views
+fileprivate extension LoginViewController {
+    func updateMaskForView(text: String) {
+        UIGraphicsBeginImageContextWithOptions(loginButton.bounds.size, true, 0)
         let context = UIGraphicsGetCurrentContext()
 
         context?.scaleBy(x: 1, y: -1)
-        context?.translateBy(x: 0, y: -button.bounds.size.height)
+        context?.translateBy(x: 0, y: -loginButton.bounds.size.height)
 
         // Draw the text
         let attributes = [
@@ -60,7 +68,8 @@ class LoginViewController: UIViewController {
         ]
 
         let size = text.size(withAttributes: attributes)
-        let point = CGPoint(x: (button.bounds.size.width - size.width) / 2.0, y: (button.bounds.size.height - size.height) / 2.0)
+        let point = CGPoint(x: (loginButton.bounds.size.width - size.width) / 2.0, y: (loginButton.bounds.size.height
+            - size.height) / 2.0)
         text.draw(at: point, withAttributes: attributes)
 
         // Capture the image and end context
@@ -80,11 +89,11 @@ class LoginViewController: UIViewController {
 
             // Create background
             if let mask = mask {
-                UIGraphicsBeginImageContextWithOptions(button.bounds.size, false, 0)
-                UIGraphicsGetCurrentContext()?.clip(to: button.bounds, mask: mask)
+                UIGraphicsBeginImageContextWithOptions(loginButton.bounds.size, false, 0)
+                UIGraphicsGetCurrentContext()?.clip(to: loginButton.bounds, mask: mask)
                 UIColor.white.withAlphaComponent(LoginViewController.LOGIN_BUTTON_MASK_ALPHA)
                     .setFill()
-                UIBezierPath(rect: button.bounds).fill()
+                UIBezierPath(rect: loginButton.bounds).fill()
             }
         }
 
@@ -92,25 +101,47 @@ class LoginViewController: UIViewController {
         UIGraphicsEndImageContext()
 
         // Use image
-        button.image = background
-        button.layer.cornerRadius = LoginViewController.LOGIN_BUTTON_CORNER_RADIUS
-        button.layer.masksToBounds = true
+        loginButton.image = background
+        loginButton.layer.cornerRadius = LoginViewController.LOGIN_BUTTON_CORNER_RADIUS
+        loginButton.layer.masksToBounds = true
     }
 
+    func insertLoadingIndicator() {
+        indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        indicator?.center = CGPoint(x: loginButton.frame.width  / 2, y: loginButton.frame.height / 2)
+        loginButton.addSubview(indicator!)
+        loginButton.bringSubview(toFront: indicator!)
+    }
+}
+
+// Handle tap gestures and animation
+fileprivate extension LoginViewController {
     func registerTapListener(button: UIImageView) {
         let tap = UILongPressGestureRecognizer(target: self, action: #selector(imageTapped))
         tap.minimumPressDuration = 0
         button.addGestureRecognizer(tap)
     }
 
+    func startAnimating() {
+        self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
+        loginButton.isUserInteractionEnabled = false
+        indicator?.startAnimating()
+    }
+
+    func stopAnimating() {
+        UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
+            self.loginButton.alpha = 1.0
+        }
+
+        loginButton.isUserInteractionEnabled = true
+        indicator?.stopAnimating()
+    }
+
     @objc func imageTapped(gesture: UITapGestureRecognizer) {
         if gesture.state == .began {
             self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
         } else if gesture.state == .ended {
-            UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
-                self.loginButton.alpha = 1.0
-            }
-
+            startAnimating()
             login(username: usernameTextField.text, password: passwordTextField.text)
         }
     }
@@ -122,7 +153,6 @@ extension LoginViewController: UITextFieldDelegate {
             self.passwordTextField.becomeFirstResponder()
         } else if textField == self.passwordTextField {
             textField.resignFirstResponder()
-            login(username: usernameTextField.text, password: passwordTextField.text)
         }
         return true
     }
@@ -130,6 +160,7 @@ extension LoginViewController: UITextFieldDelegate {
 
 extension LoginViewController: LoginServiceDelegate {
     func handle(error: String) {
+        stopAnimating()
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -137,6 +168,7 @@ extension LoginViewController: LoginServiceDelegate {
     }
 
     func loginSuccessful() {
+        stopAnimating()
         let alert = UIAlertController(title: "Success", message: "Logged in.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Proceed", style: .default))
