@@ -135,16 +135,12 @@ fileprivate extension LoginViewController {
         }
     }
 
-    func stopAnimating(thenPresent completionAlert: UIAlertController? = nil) {
+    func stopAnimating(completion: @escaping () -> Void) {
         UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
             self.loginButton.alpha = 1.0
         }
 
-        self.dismiss(animated: false) {
-            if let completionAlert = completionAlert {
-                self.present(completionAlert, animated: true, completion: nil)
-            }
-        }
+        self.dismiss(animated: false, completion: completion)
     }
 
     @objc func imageTapped(gesture: UITapGestureRecognizer) {
@@ -173,13 +169,14 @@ extension LoginViewController: LoginServiceDelegate {
         let alertDialog = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         alertDialog.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
-        stopAnimating(thenPresent: alertDialog)
+        stopAnimating {
+            self.present(alertDialog, animated: true, completion: nil)
+        }
     }
 
     func loginSuccessful() {
-        let alertDialog = UIAlertController(title: "Success", message: "Logged in.", preferredStyle: .alert)
-        alertDialog.addAction(UIAlertAction(title: "Proceed", style: .default))
-
-        stopAnimating(thenPresent: alertDialog)
+        stopAnimating {
+            self.performSegue(withIdentifier: "goToDashboard", sender: nil)
+        }
     }
 }

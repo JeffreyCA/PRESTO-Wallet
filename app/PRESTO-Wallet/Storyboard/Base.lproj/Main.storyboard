@@ -209,11 +209,20 @@
                         <outlet property="loginButton" destination="42O-DS-lcy" id="pV5-Hb-tv6"/>
                         <outlet property="passwordTextField" destination="Rk7-iZ-6Oh" id="79X-4V-rOl"/>
                         <outlet property="usernameTextField" destination="Pxc-PO-v3r" id="581-0Q-9s4"/>
+                        <segue destination="5Jl-JC-OOW" kind="show" identifier="goToDashboard" id="LDS-6e-ToQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8C-aY-VHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="776.79999999999995" y="687.7061469265368"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="TLk-cB-3cc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" id="5Jl-JC-OOW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WoD-be-8KH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="693"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="H0d-cQ-MNk">
