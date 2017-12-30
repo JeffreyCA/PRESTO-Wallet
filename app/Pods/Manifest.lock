@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.6.0)
+  - AMScrollingNavbar (4.2.1)
   - SkyFloatingLabelTextField (3.4.0)
   - SwiftLint (0.24.0)
   - SwiftSoup (1.5.8)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - AMScrollingNavbar
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftLint
   - SwiftSoup
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AMScrollingNavbar: 84d998ea885809d61bbc886053115ec3f2a64f41
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
   SwiftSoup: 86a1f5ad07b7e3d14ab1a9324a58c75ae2215e79
 
-PODFILE CHECKSUM: 7f0a94e5d6b2ce8db0380997d4106f1dd104955a
+PODFILE CHECKSUM: c9f0108adc940ff8a1ebc198cc41b202198cfaf9
 
 COCOAPODS: 1.3.1
