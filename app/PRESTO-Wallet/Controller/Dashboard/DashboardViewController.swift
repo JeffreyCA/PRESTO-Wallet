@@ -9,8 +9,8 @@
 import UIKit
 
 class DashboardViewController: UITabBarController {
-    let NORMAL_TAB_FONT = UIFont.boldSystemFont(ofSize: 10.5)
-    let SELECTED_TAB_FONT = UIFont.boldSystemFont(ofSize: 11)
+    let NORMAL_TAB_FONT = UIFont.boldSystemFont(ofSize: 11)
+    let SELECTED_TAB_FONT = UIFont.boldSystemFont(ofSize: 11.5)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +30,6 @@ class DashboardViewController: UITabBarController {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         print("Selected tab")
     }
-
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
 }
 
 extension DashboardViewController: UITabBarControllerDelegate {
