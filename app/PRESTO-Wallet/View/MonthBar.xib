@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthBar" customModule="PRESTO_Wallet" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksr-TC-x8o">
+                    <rect key="frame" x="0.0" y="0.0" width="514" height="50"/>
+                    <subviews>
+                        <stackView contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-Iz-yba">
+                            <rect key="frame" x="20" y="10" width="474" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Go-7D3">
+                                    <rect key="frame" x="0.0" y="0.0" width="176.5" height="30"/>
+                                    <state key="normal" title="Previous"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKx-as-wyp">
+                                    <rect key="frame" x="176.5" y="5" width="121.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5O-ap-18L">
+                                    <rect key="frame" x="298" y="0.0" width="176" height="30"/>
+                                    <state key="normal" title="Next"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="nKx-as-wyp" firstAttribute="centerX" secondItem="HFw-Iz-yba" secondAttribute="centerX" id="div-ld-4hV"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HFw-Iz-yba" secondAttribute="bottom" constant="10" id="TlP-sO-MMY"/>
+                        <constraint firstAttribute="trailing" secondItem="HFw-Iz-yba" secondAttribute="trailing" constant="20" id="bqA-hx-XJ7"/>
+                        <constraint firstItem="HFw-Iz-yba" firstAttribute="leading" secondItem="Ksr-TC-x8o" secondAttribute="leading" constant="20" id="eDL-Fa-Vcr"/>
+                        <constraint firstItem="HFw-Iz-yba" firstAttribute="top" secondItem="Ksr-TC-x8o" secondAttribute="top" constant="10" id="fT7-kz-yqh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ksr-TC-x8o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0MN-41-l2f"/>
+                <constraint firstItem="Ksr-TC-x8o" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ci3-Au-tZl"/>
+                <constraint firstItem="Ksr-TC-x8o" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Vhu-jp-jNz"/>
+                <constraint firstItem="Ksr-TC-x8o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pDX-tr-LTq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-54" y="359"/>
+        </view>
+    </objects>
+</document>
