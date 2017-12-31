@@ -2,7 +2,7 @@
 //  LoginResponse.swift
 //  PRESTO-Wallet
 //
-//  Created by Jeffrey Chen on 2017-12-26.
+//  Created by Jeffrey on 2017-12-26.
 //  Copyright © 2017 JeffreyCA. All rights reserved.
 //
 
