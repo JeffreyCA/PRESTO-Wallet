@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
+		0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */; };
+		008300E61FF88377003122C0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E51FF88377003122C0 /* Transaction.swift */; };
+		008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E71FF883B8003122C0 /* TransitAgency.swift */; };
 		008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008552C31FF32AEF00461F92 /* APIConstant.swift */; };
 		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
 		00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A61FF68C7700A14631 /* TransactionsController.swift */; };
@@ -54,6 +57,9 @@
 /* Begin PBXFileReference section */
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
+		008300E51FF88377003122C0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		008300E71FF883B8003122C0 /* TransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitAgency.swift; sourceTree = "<group>"; };
 		008552C31FF32AEF00461F92 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		00BBD2A61FF68C7700A14631 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 				00DA94651FF1F66C00EE1F04 /* LoginError.swift */,
 				0002F8C41FF2B9AD000B849F /* LoginResponse.swift */,
 				008552C31FF32AEF00461F92 /* APIConstant.swift */,
+				008300E51FF88377003122C0 /* Transaction.swift */,
+				008300E71FF883B8003122C0 /* TransitAgency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				00DA946A1FF1F90500EE1F04 /* StringExt.swift */,
+				0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -591,9 +600,11 @@
 			files = (
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
+				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
 				002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */,
 				00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */,
 				00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */,
+				008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */,
 				00FC13B61FE36F8B00AA5731 /* WelcomeViewController.swift in Sources */,
 				009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */,
 				00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */,
@@ -603,6 +614,7 @@
 				00DAFF681FF676D200C45FBB /* MonthBar.swift in Sources */,
 				00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */,
 				00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */,
+				0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */,
 				00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
