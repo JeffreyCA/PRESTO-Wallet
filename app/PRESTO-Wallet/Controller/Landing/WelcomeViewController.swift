@@ -14,15 +14,25 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Apply blend mode to PRESTO logo
         if let image = logo.image {
-            let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
-            let renderer = UIGraphicsImageRenderer(size: image.size)
+            // UIGraphicsImageRenderer only supports iOS 10+, otherwise use UIGraphicsBeginImageContext
+            if #available(iOS 10.0, *) {
+                let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+                let renderer = UIGraphicsImageRenderer(size: image.size)
 
-            let result = renderer.image { _ in
+                let result = renderer.image { _ in
+                    image.draw(in: rect, blendMode: .multiply, alpha: 1)
+                }
+                logo.image = result
+            } else {
+                // Draw rect is different than when using UIGraphicsImageRenderer
+                let rect = CGRect(x: 0, y: 0, width: logo.bounds.width, height: logo.bounds.height)
+                UIGraphicsBeginImageContextWithOptions(logo.bounds.size, false, 0)
                 image.draw(in: rect, blendMode: .multiply, alpha: 1)
+                logo.image = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
             }
-
-            logo.image = result
         }
     }
 
