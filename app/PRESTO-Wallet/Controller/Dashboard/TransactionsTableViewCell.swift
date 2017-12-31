@@ -2,7 +2,7 @@
 //  TransactionsTableViewCell.swift
 //  PRESTO-Wallet
 //
-//  Created by Jeffrey Chen on 2017-12-29.
+//  Created by Jeffrey on 2017-12-29.
 //  Copyright © 2017 JeffreyCA. All rights reserved.
 //
 
@@ -24,5 +24,4 @@ class TransactionsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

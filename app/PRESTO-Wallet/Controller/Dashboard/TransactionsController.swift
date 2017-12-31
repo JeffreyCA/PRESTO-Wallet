@@ -1,8 +1,8 @@
 //
-//  TransactionsTableViewController.swift
+//  TransactionsController.swift
 //  PRESTO-Wallet
 //
-//  Created by Jeffrey Chen on 2017-12-29.
+//  Created by Jeffrey on 2017-12-29.
 //  Copyright © 2017 JeffreyCA. All rights reserved.
 //
 
@@ -12,6 +12,10 @@ import AMScrollingNavbar
 class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var monthView: MonthBar!
+
+    let amounts: [Double] = [-5.00, -7.50, -7.51, 20.00, -3.50]
+    let dates: [String] = ["November 20, 2017", "November 22, 2017", "November 25, 2017", "November 28, 2017", "December 05, 2017"]
+    let locations: [String] = ["Union Station", "Mount Joy GO", "Bloor/Yonge", "PRESTO", "St. Andrew"]
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -47,14 +51,14 @@ class TransactionsController: ScrollingNavigationViewController {
 
 extension TransactionsController: UITableViewDataSource {
      func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
 }
+
 extension TransactionsController: UITableViewDelegate {
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -62,10 +66,14 @@ extension TransactionsController: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let transactionCell = cell as? TransactionsTableViewCell {
-            // Configure the cell...
-            transactionCell.amountLabel.text = "- $5.00"
-            transactionCell.dateLabel.text = "December 25, 2017"
-            transactionCell.locationLabel.text = "St. Andrew Station"
+            if amounts[indexPath.row] < 0 {
+                transactionCell.amountLabel.text = String(format: "-$%.02f", -amounts[indexPath.row])
+            } else {
+                transactionCell.amountLabel.text = String(format: "$%.02f", amounts[indexPath.row])
+            }
+
+            transactionCell.dateLabel.text = dates[indexPath.row]
+            transactionCell.locationLabel.text = locations[indexPath.row]
             transactionCell.icon.image = UIImage(named: "presto")
         }
 
