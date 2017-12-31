@@ -23,17 +23,17 @@
                             <rect key="frame" x="20" y="10" width="474" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Go-7D3">
-                                    <rect key="frame" x="0.0" y="0.0" width="176.5" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="174" height="30"/>
                                     <state key="normal" title="Previous"/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKx-as-wyp">
-                                    <rect key="frame" x="176.5" y="5" width="121.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="174" y="5" width="126" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5O-ap-18L">
-                                    <rect key="frame" x="298" y="0.0" width="176" height="30"/>
+                                    <rect key="frame" x="300" y="0.0" width="174" height="30"/>
                                     <state key="normal" title="Next"/>
                                 </button>
                             </subviews>

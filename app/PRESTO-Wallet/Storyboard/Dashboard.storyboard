@@ -62,41 +62,41 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presto" translatesAutoresizingMaskIntoConstraints="NO" id="LH5-hg-kuJ">
-                                                    <rect key="frame" x="5" y="0.0" width="50" height="74.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LH5-hg-kuJ">
+                                                    <rect key="frame" x="20" y="0.0" width="50" height="74.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="ygz-Kv-jrm"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-yi-bfd">
-                                                    <rect key="frame" x="70" y="17" width="150" height="41"/>
+                                                    <rect key="frame" x="85" y="17" width="160.5" height="42"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
+                                                            <rect key="frame" x="0.0" y="0.0" width="160.5" height="24"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 25, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og4-yx-6PT" userLabel="Date">
-                                                            <rect key="frame" x="0.0" y="20.5" width="150" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="24" width="160.5" height="18"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- $5.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-3n-aah" userLabel="Amount">
-                                                    <rect key="frame" x="313" y="27" width="57" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="286.5" y="26" width="68.5" height="24"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="1LF-3n-aah" secondAttribute="trailing" constant="5" id="74o-fc-l47"/>
+                                                <constraint firstAttribute="trailing" secondItem="1LF-3n-aah" secondAttribute="trailing" constant="20" id="74o-fc-l47"/>
                                                 <constraint firstItem="1LF-3n-aah" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="Dzf-dh-6tJ"/>
                                                 <constraint firstItem="Qso-yi-bfd" firstAttribute="leading" secondItem="LH5-hg-kuJ" secondAttribute="trailing" constant="15" id="FA4-tZ-wHy"/>
-                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="5" id="HOR-tg-EXb"/>
+                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="20" id="HOR-tg-EXb"/>
                                                 <constraint firstAttribute="bottom" secondItem="LH5-hg-kuJ" secondAttribute="bottom" id="mpX-K7-vzZ"/>
                                                 <constraint firstItem="Qso-yi-bfd" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="pom-0B-VcU"/>
                                                 <constraint firstItem="LH5-hg-kuJ" firstAttribute="top" secondItem="4S3-EE-BR3" secondAttribute="top" id="sfZ-7v-aSU"/>
@@ -181,7 +181,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="presto" width="500" height="232"/>
         <image name="tab_home" width="25" height="25"/>
         <image name="tab_selected_home" width="28" height="28"/>
         <image name="tab_selected_settings" width="28" height="28"/>
