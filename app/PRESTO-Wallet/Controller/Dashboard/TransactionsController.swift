@@ -36,12 +36,12 @@ class TransactionsController: ScrollingNavigationViewController {
         let blurEffect = UIBlurEffect(style: .extraLight)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
 
-        // visualEffectView.isUserInteractionEnabled = false
+        visualEffectView.isUserInteractionEnabled = false
         visualEffectView.frame = monthView.bounds
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
         monthView.addSubview(visualEffectView)
- }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,15 +66,10 @@ extension TransactionsController: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let transactionCell = cell as? TransactionsTableViewCell {
-            if amounts[indexPath.row] < 0 {
-                transactionCell.amountLabel.text = String(format: "-$%.02f", -amounts[indexPath.row])
-            } else {
-                transactionCell.amountLabel.text = String(format: "$%.02f", amounts[indexPath.row])
-            }
-
+            transactionCell.amountLabel.text = amounts[indexPath.row].formattedAsCad
             transactionCell.dateLabel.text = dates[indexPath.row]
             transactionCell.locationLabel.text = locations[indexPath.row]
-            transactionCell.icon.image = UIImage(named: "presto")
+            transactionCell.icon.image = UIImage(named: "presto_green")
         }
 
         return cell
