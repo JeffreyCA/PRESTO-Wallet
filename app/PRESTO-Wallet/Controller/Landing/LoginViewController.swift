@@ -127,28 +127,40 @@ fileprivate extension LoginViewController {
         button.addGestureRecognizer(tap)
     }
 
-    func startAnimating() {
-        self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
-
-        if let loadingView = loadingView {
-            self.present(loadingView, animated: true, completion: nil)
-        }
-    }
-
-    func stopAnimating(completion: @escaping () -> Void) {
-        UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
-            self.loginButton.alpha = 1.0
-        }
-
+    func dismissLoadingDialog(completion: @escaping () -> Void) {
         self.dismiss(animated: false, completion: completion)
     }
 
+    func showLoadingDialog(completion: @escaping () -> Void) {
+        if let loadingView = loadingView {
+            self.present(loadingView, animated: true, completion: completion)
+        }
+    }
+
+    func animateLoginButton(toAlpha alpha: CGFloat) {
+        UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
+            self.loginButton.alpha = alpha
+        }
+    }
+
     @objc func imageTapped(gesture: UITapGestureRecognizer) {
+        func isTapInBounds() -> Bool {
+            let point = gesture.location(in: loginButton)
+            return loginButton.bounds.contains(point)
+        }
+
         if gesture.state == .began {
             self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
         } else if gesture.state == .ended {
-            startAnimating()
-            login(username: usernameTextField.text, password: passwordTextField.text)
+            if isTapInBounds() {
+                showLoadingDialog {
+                    self.animateLoginButton(toAlpha: 1.0)
+                }
+
+                login(username: usernameTextField.text, password: passwordTextField.text)
+            } else {
+                self.animateLoginButton(toAlpha: 1.0)
+            }
         }
     }
 }
@@ -169,13 +181,13 @@ extension LoginViewController: LoginServiceDelegate {
         let alertDialog = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         alertDialog.addAction(UIAlertAction(title: "Dismiss", style: .default))
 
-        stopAnimating {
+        dismissLoadingDialog {
             self.present(alertDialog, animated: true, completion: nil)
         }
     }
 
     func loginSuccessful() {
-        stopAnimating {
+        dismissLoadingDialog {
             self.performSegue(withIdentifier: "goToDashboard", sender: nil)
         }
     }
