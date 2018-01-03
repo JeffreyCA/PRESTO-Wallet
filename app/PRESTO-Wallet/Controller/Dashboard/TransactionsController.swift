@@ -19,6 +19,12 @@ class TransactionsController: ScrollingNavigationViewController {
 
     var transactions: [Transaction] = []
 
+    private static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd YYYY - hh:mm a"
+        return formatter
+    }()
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -43,7 +49,8 @@ class TransactionsController: ScrollingNavigationViewController {
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
         monthView.addSubview(visualEffectView)
-        populateTransactions()
+        populateStubTransactions()
+        sortTransactions()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,11 +58,21 @@ class TransactionsController: ScrollingNavigationViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func populateTransactions() {
-        transactions.append(Transaction(agency: .GO, amount: -5.75, balance: 90.00, date: Date(), discount: 1.50, location: "Mount Joy GO"))
-        transactions.append(Transaction(agency: .TTC, amount: -2.05, balance: 85.00, date: Date(), discount: 1.50, location: "St. Andrew Station"))
-        transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: Date(), discount: 1.50, location: "Unionville"))
-        transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: Date(), discount: 1.50, location: "PRESTO"))
+    private func populateStubTransactions() {
+        let calendar = Calendar.current
+        var transactionDate = Date()
+
+        transactions.append(Transaction(agency: .GO, amount: 555.75, balance: 90.00, date: transactionDate, discount: 1.50, location: "Mount Joy GO"))
+        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+        transactions.append(Transaction(agency: .TTC, amount: -22.05, balance: 85.00, date: transactionDate, discount: 1.50, location: "St. Andrew Station"))
+        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+        transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
+        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+        transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "PRESTO"))
+    }
+
+    private func sortTransactions() {
+        transactions = transactions.sorted(by: { $0.date > $1.date })
     }
 }
 
@@ -75,13 +92,10 @@ extension TransactionsController: UITableViewDelegate {
         let cellIdentifier = "cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM d - h:mm a"
-
         if let transactionCell = cell as? TransactionsTableViewCell {
             let transaction = transactions[indexPath.row]
             transactionCell.amountLabel.text = transaction.amount.formattedAsCad
-            transactionCell.dateLabel.text = dateFormatter.string(from: transaction.date)
+            transactionCell.dateLabel.text = TransactionsController.dateFormatter.string(from: transaction.date)
             transactionCell.locationLabel.text = transaction.location
             transactionCell.icon.image = UIImage(named: (transaction.agency.getImage()))
         }
@@ -91,6 +105,22 @@ extension TransactionsController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastSectionIndex = tableView.numberOfSections - 1
+        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
+            print("this is the last cell")
+            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            spinner.startAnimating()
+            spinner.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 44)
+
+            self.tableView.tableFooterView = spinner
+            self.tableView.tableFooterView?.isHidden = false
+
+            // Load more transactions, then stop spinner animating
+        }
     }
 }
 
