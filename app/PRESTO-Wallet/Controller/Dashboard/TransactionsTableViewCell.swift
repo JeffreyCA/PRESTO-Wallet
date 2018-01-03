@@ -16,7 +16,12 @@ class TransactionsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        if #available(iOS 10.0, *) {
+            locationLabel.adjustsFontSizeToFitWidth = true
+            dateLabel.adjustsFontSizeToFitWidth = true
+            amountLabel.adjustsFontSizeToFitWidth = true
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

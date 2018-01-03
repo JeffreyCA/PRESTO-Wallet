@@ -63,31 +63,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LH5-hg-kuJ">
-                                                    <rect key="frame" x="20" y="0.0" width="50" height="74.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="45" height="74.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="ygz-Kv-jrm"/>
+                                                        <constraint firstAttribute="width" constant="45" id="0Si-aK-ikz"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-yi-bfd">
-                                                    <rect key="frame" x="85" y="17" width="160.5" height="42"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-yi-bfd">
+                                                    <rect key="frame" x="80" y="14.5" width="160.5" height="47"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
                                                             <rect key="frame" x="0.0" y="0.0" width="160.5" height="24"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 25, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og4-yx-6PT" userLabel="Date">
-                                                            <rect key="frame" x="0.0" y="24" width="160.5" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 25, 2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="og4-yx-6PT" userLabel="Date">
+                                                            <rect key="frame" x="0.0" y="29" width="160.5" height="18"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- $5.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-3n-aah" userLabel="Amount">
-                                                    <rect key="frame" x="286.5" y="26" width="68.5" height="24"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-98.00" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-3n-aah" userLabel="Amount">
+                                                    <rect key="frame" x="280" y="26" width="75" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="PkG-ah-OYV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -95,11 +98,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="1LF-3n-aah" secondAttribute="trailing" constant="20" id="74o-fc-l47"/>
                                                 <constraint firstItem="1LF-3n-aah" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="Dzf-dh-6tJ"/>
-                                                <constraint firstItem="Qso-yi-bfd" firstAttribute="leading" secondItem="LH5-hg-kuJ" secondAttribute="trailing" constant="15" id="FA4-tZ-wHy"/>
-                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="20" id="HOR-tg-EXb"/>
-                                                <constraint firstAttribute="bottom" secondItem="LH5-hg-kuJ" secondAttribute="bottom" id="mpX-K7-vzZ"/>
+                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="top" secondItem="4S3-EE-BR3" secondAttribute="top" id="KmD-ta-W1y"/>
+                                                <constraint firstItem="Qso-yi-bfd" firstAttribute="leading" secondItem="LH5-hg-kuJ" secondAttribute="trailing" constant="15" id="Qbw-SB-ANQ"/>
+                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="20" id="WIS-oc-o3O"/>
+                                                <constraint firstAttribute="bottom" secondItem="LH5-hg-kuJ" secondAttribute="bottom" id="aBS-Br-VKe"/>
+                                                <constraint firstItem="1LF-3n-aah" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qso-yi-bfd" secondAttribute="trailing" constant="15" id="dTw-lx-1at"/>
                                                 <constraint firstItem="Qso-yi-bfd" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="pom-0B-VcU"/>
-                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="top" secondItem="4S3-EE-BR3" secondAttribute="top" id="sfZ-7v-aSU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
