@@ -134,7 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="4QD-N6-kzg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transactions" id="vCC-XJ-Nb0">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="OK2-Fp-Zfo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" id="OK2-Fp-Zfo">
+                            <connections>
+                                <action selector="filterButtonPressed:" destination="GcI-nk-2yY" id="6za-Xn-16T"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="monthView" destination="nEG-Nh-0ID" id="6u7-ac-sku"/>
@@ -145,10 +149,54 @@
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="-292.80359820089956"/>
         </scene>
+        <!--Filter Options-->
+        <scene sceneID="pGQ-h6-MyW">
+            <objects>
+                <viewController id="bWx-Du-3Rc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j7B-If-aPw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LQ2-lI-8qb">
+                                <rect key="frame" x="124" y="290" width="138" height="87"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qFv-g9-1nW">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-NC-Xcr">
+                                        <rect key="frame" x="-2" y="28" width="142" height="31"/>
+                                    </slider>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ek8-ba-CEA">
+                                        <rect key="frame" x="0.0" y="58" width="94" height="29"/>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LQ2-lI-8qb" firstAttribute="centerY" secondItem="hmA-SF-U6n" secondAttribute="centerY" id="Rum-q5-auc"/>
+                            <constraint firstItem="LQ2-lI-8qb" firstAttribute="centerX" secondItem="hmA-SF-U6n" secondAttribute="centerX" id="Ti0-1b-Qpv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmA-SF-U6n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter Options" id="OO6-Ff-Uve">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="uzn-ih-LJo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="BTR-SQ-awt"/>
+                    </navigationItem>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6y-IL-1rx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2140" y="-293.70314842578711"/>
+        </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="J3d-JN-cr1">
             <objects>
-                <tabBarController id="DyC-Wu-wgb" customClass="DashboardViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="dashboard" id="DyC-Wu-wgb" customClass="DashboardViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jno-XM-S7U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -182,6 +230,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUQ-Jd-1bR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="265.60000000000002" y="-291.45427286356824"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AgN-Ld-zB6">
+            <objects>
+                <navigationController storyboardIdentifier="formSheetController" automaticallyAdjustsScrollViewInsets="NO" id="Tcv-aN-TTI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BA1-RA-LBW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bWx-Du-3Rc" kind="relationship" relationship="rootViewController" id="7hg-YH-3cS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gED-SF-Y4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="-294"/>
         </scene>
     </scenes>
     <resources>

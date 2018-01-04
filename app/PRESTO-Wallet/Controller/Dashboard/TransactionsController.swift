@@ -8,10 +8,24 @@
 
 import UIKit
 import AMScrollingNavbar
+import MZFormSheetPresentationController
 
 class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var monthView: MonthBar!
+
+    @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
+        print("Filter button pressed")
+
+        let navigationController = self.storyboard!.instantiateViewController(withIdentifier: "formSheetController") as? UINavigationController
+        let formSheetController = MZFormSheetPresentationViewController(contentViewController: navigationController!)
+        formSheetController.presentationController?.contentViewSize = CGSize(width: 300, height: 400)
+
+        formSheetController.allowDismissByPanningPresentedView = true
+        formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
+
+        self.present(formSheetController, animated: true, completion: nil)
+    }
 
     let amounts: [Double] = [-5.00, -7.50, -7.51, 20.00, -3.50]
     let dates: [String] = ["November 20, 2017", "November 22, 2017", "November 25, 2017", "November 28, 2017", "December 05, 2017"]
