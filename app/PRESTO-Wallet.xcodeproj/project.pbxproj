@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
+		003983811FFD885100E85297 /* FilterDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003983801FFD885100E85297 /* FilterDialog.xib */; };
 		0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */; };
 		008300E61FF88377003122C0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E51FF88377003122C0 /* Transaction.swift */; };
 		008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E71FF883B8003122C0 /* TransitAgency.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		003983801FFD885100E85297 /* FilterDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterDialog.xib; sourceTree = "<group>"; };
 		0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
 		008300E51FF88377003122C0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		008300E71FF883B8003122C0 /* TransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitAgency.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				00FC13B91FE36F8B00AA5731 /* Main.storyboard */,
 				00E38E991FF44037009160EE /* Dashboard.storyboard */,
+				003983801FFD885100E85297 /* FilterDialog.xib */,
 				00FC13BE1FE36F8B00AA5731 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -405,6 +408,7 @@
 				00DAFF661FF5F18600C45FBB /* MonthBar.xib in Resources */,
 				00FC13BB1FE36F8B00AA5731 /* Main.storyboard in Resources */,
 				00E38E9A1FF44037009160EE /* Dashboard.storyboard in Resources */,
+				003983811FFD885100E85297 /* FilterDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +496,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
+				"${BUILT_PRODUCTS_DIR}/MZFormSheetPresentationController/MZFormSheetPresentationController.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
@@ -499,6 +505,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZFormSheetPresentationController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
