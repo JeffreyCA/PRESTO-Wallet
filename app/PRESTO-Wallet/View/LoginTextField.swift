@@ -10,10 +10,12 @@ import UIKit
 import SkyFloatingLabelTextField
 
 class LoginTextField: SkyFloatingLabelTextField {
-    private static let CLEAR_BUTTON_OFFSET_X: CGFloat = -6.0
-    private static let CLEAR_BUTTON_OFFSET_Y: CGFloat = 6.0
-    private static let PLACEHOLDER_OFFSET_Y: CGFloat = -7.0
-    private static let TITLE_OFFSET_Y: CGFloat = 10.0
+    private enum Constants {
+        static let CLEAR_BUTTON_OFFSET_X: CGFloat = -6.0
+        static let CLEAR_BUTTON_OFFSET_Y: CGFloat = 6.0
+        static let PLACEHOLDER_OFFSET_Y: CGFloat = -7.0
+        static let TITLE_OFFSET_Y: CGFloat = 10.0
+    }
 
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -75,14 +77,14 @@ class LoginTextField: SkyFloatingLabelTextField {
     }
 
     override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
-        return super.clearButtonRect(forBounds: bounds).offsetBy(dx: LoginTextField.CLEAR_BUTTON_OFFSET_X, dy: LoginTextField.CLEAR_BUTTON_OFFSET_Y)
+        return super.clearButtonRect(forBounds: bounds).offsetBy(dx: Constants.CLEAR_BUTTON_OFFSET_X, dy: Constants.CLEAR_BUTTON_OFFSET_Y)
     }
 
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return super.placeholderRect(forBounds: bounds).offsetBy(dx: paddingLeft, dy: LoginTextField.PLACEHOLDER_OFFSET_Y)
+        return super.placeholderRect(forBounds: bounds).offsetBy(dx: paddingLeft, dy: Constants.PLACEHOLDER_OFFSET_Y)
     }
 
     override func titleLabelRectForBounds(_ bounds: CGRect, editing: Bool) -> CGRect {
-        return super.titleLabelRectForBounds(bounds, editing: editing).offsetBy(dx: paddingLeft, dy: LoginTextField.TITLE_OFFSET_Y)
+        return super.titleLabelRectForBounds(bounds, editing: editing).offsetBy(dx: paddingLeft, dy: Constants.TITLE_OFFSET_Y)
     }
 }

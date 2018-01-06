@@ -14,7 +14,7 @@ class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var monthView: MonthBar!
 
-    enum Constants {
+    private enum Constants {
         static let FILTER_DIALOG_SCALE_X: CGFloat = 0.9
         static let FILTER_DIALOG_SCALE_Y: CGFloat = 0.8
     }

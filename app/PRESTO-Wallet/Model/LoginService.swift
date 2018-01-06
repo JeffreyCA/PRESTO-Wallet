@@ -10,12 +10,6 @@ import Foundation
 import Alamofire
 import SwiftSoup
 
-private struct LoginConstants {
-    static let USERNAME_MIN_LENGTH = 6
-    static let PASSWORD_MIN_LENGTH = 6
-    static let DEFAULT_ERROR = "Error encountered."
-}
-
 protocol LoginService {
     var delegate: LoginServiceDelegate? { get }
     // func login(withUsername username: String?, password: String?)
@@ -30,6 +24,12 @@ protocol LoginServiceDelegate: class {
 // The class is responsible for validating form input and consequently attempt to login.
 class LoginServiceHandler: LoginService {
     weak var delegate: LoginServiceDelegate?
+
+    private enum Constants {
+        static let USERNAME_MIN_LENGTH = 6
+        static let PASSWORD_MIN_LENGTH = 6
+        static let DEFAULT_ERROR = "Error encountered."
+    }
 
     init(delegate: LoginServiceDelegate) {
         self.delegate = delegate
@@ -88,7 +88,7 @@ fileprivate extension LoginServiceHandler {
             }
         }
 
-        return LoginResponse.LOGIN_FAILURE(response.result.value as? String ?? LoginConstants.DEFAULT_ERROR)
+        return LoginResponse.LOGIN_FAILURE(response.result.value as? String ?? Constants.DEFAULT_ERROR)
     }
 
     func convertLoginResponseToString(array: [LoginError]) -> String {
@@ -112,12 +112,12 @@ fileprivate extension LoginServiceHandler {
         var errors: [LoginError] = Array()
 
         // Check username requirements
-        if !(username.count >= LoginConstants.USERNAME_MIN_LENGTH && username.isAlphanumeric()) {
+        if !(username.count >= Constants.USERNAME_MIN_LENGTH && username.isAlphanumeric()) {
             errors.append(LoginError.USERNAME_REQUIREMENTS)
         }
 
         // Check password requirements
-        if !(password.count >= LoginConstants.PASSWORD_MIN_LENGTH && password.isAlphanumeric()
+        if !(password.count >= Constants.PASSWORD_MIN_LENGTH && password.isAlphanumeric()
             && password.containsLetter() && password.containsNumber()) {
             errors.append(LoginError.PASSWORD_REQUIREMENTS)
         }
