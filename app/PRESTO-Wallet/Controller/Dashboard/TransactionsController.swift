@@ -14,16 +14,22 @@ class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var monthView: MonthBar!
 
+    enum Constants {
+        static let FILTER_DIALOG_SCALE_X: CGFloat = 0.9
+        static let FILTER_DIALOG_SCALE_Y: CGFloat = 0.8
+    }
+
     @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
         print("Filter button pressed")
 
         let navigationController = self.storyboard!.instantiateViewController(withIdentifier: "formSheetController") as? UINavigationController
         let formSheetController = MZFormSheetPresentationViewController(contentViewController: navigationController!)
-        formSheetController.presentationController?.contentViewSize = CGSize(width: 300, height: 400)
 
-        formSheetController.allowDismissByPanningPresentedView = true
+        let transform = CGAffineTransform(scaleX: Constants.FILTER_DIALOG_SCALE_X, y: Constants.FILTER_DIALOG_SCALE_Y)
+
+        formSheetController.presentationController?.contentViewSize = UIScreen.main.bounds.size.applying(transform)
+        formSheetController.presentationController?.shouldCenterVertically = true
         formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
-
         self.present(formSheetController, animated: true, completion: nil)
     }
 
