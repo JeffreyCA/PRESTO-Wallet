@@ -9,6 +9,7 @@ target 'PRESTO-Wallet' do
   pod 'MZFormSheetPresentationController'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'SwiftLint'
+  pod 'SwiftMultiSelect', :git => 'https://github.com/JeffreyCA/SwiftMultiSelect.git'
   pod 'SwiftSoup'
   
   target 'PRESTO-WalletTests' do

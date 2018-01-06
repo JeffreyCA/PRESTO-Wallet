@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */; };
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
 		003983811FFD885100E85297 /* FilterDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003983801FFD885100E85297 /* FilterDialog.xib */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		003983801FFD885100E85297 /* FilterDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterDialog.xib; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				00C7BA541FF5572600EAA781 /* DashboardViewController.swift */,
 				00BBD2A61FF68C7700A14631 /* TransactionsController.swift */,
 				00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */,
+				0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
 				"${BUILT_PRODUCTS_DIR}/MZFormSheetPresentationController/MZFormSheetPresentationController.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMultiSelect/SwiftMultiSelect.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -508,6 +512,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZFormSheetPresentationController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMultiSelect.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */,
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
 				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
