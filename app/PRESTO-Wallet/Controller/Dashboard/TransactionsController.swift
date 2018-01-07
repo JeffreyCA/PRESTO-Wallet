@@ -27,6 +27,7 @@ class TransactionsController: ScrollingNavigationViewController {
 
         let transform = CGAffineTransform(scaleX: Constants.FILTER_DIALOG_SCALE_X, y: Constants.FILTER_DIALOG_SCALE_Y)
 
+        // FIXME: Not resizing after rotation
         formSheetController.presentationController?.contentViewSize = UIScreen.main.bounds.size.applying(transform)
         formSheetController.presentationController?.shouldCenterVertically = true
         formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
@@ -109,7 +110,7 @@ extension TransactionsController: UITableViewDataSource {
 extension TransactionsController: UITableViewDelegate {
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cellIdentifier = "cell"
+        let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let transactionCell = cell as? TransactionsTableViewCell {

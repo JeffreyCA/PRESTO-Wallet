@@ -9,7 +9,6 @@
 import UIKit
 
 class FilterOptionsTableViewController: UITableViewController {
-
     @IBAction func cancelDialog() {
         self.dismiss(animated: true, completion: nil)
     }
