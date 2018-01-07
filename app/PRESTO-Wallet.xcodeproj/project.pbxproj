@@ -19,6 +19,9 @@
 		00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A61FF68C7700A14631 /* TransactionsController.swift */; };
 		00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */; };
 		00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7BA541FF5572600EAA781 /* DashboardViewController.swift */; };
+		00D5F87F2002B83400D4487A /* SelectTransitAgencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F87E2002B83400D4487A /* SelectTransitAgencyViewController.swift */; };
+		00D5F8812002BBEA00D4487A /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8802002BBEA00D4487A /* EnumCollection.swift */; };
+		00D5F8832002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */; };
 		00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94631FF1F5BE00EE1F04 /* LoginService.swift */; };
 		00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94651FF1F66C00EE1F04 /* LoginError.swift */; };
 		00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946A1FF1F90500EE1F04 /* StringExt.swift */; };
@@ -69,6 +72,9 @@
 		00BBD2A61FF68C7700A14631 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
 		00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
 		00C7BA541FF5572600EAA781 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		00D5F87E2002B83400D4487A /* SelectTransitAgencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyViewController.swift; sourceTree = "<group>"; };
+		00D5F8802002BBEA00D4487A /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
+		00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewCell.swift; sourceTree = "<group>"; };
 		00DA94631FF1F5BE00EE1F04 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		00DA94651FF1F66C00EE1F04 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		00DA946A1FF1F90500EE1F04 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 				008552C31FF32AEF00461F92 /* APIConstant.swift */,
 				008300E51FF88377003122C0 /* Transaction.swift */,
 				008300E71FF883B8003122C0 /* TransitAgency.swift */,
+				00D5F8802002BBEA00D4487A /* EnumCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +205,8 @@
 				00BBD2A61FF68C7700A14631 /* TransactionsController.swift */,
 				00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */,
 				0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */,
+				00D5F87E2002B83400D4487A /* SelectTransitAgencyViewController.swift */,
+				00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -622,7 +631,10 @@
 				00FC13B61FE36F8B00AA5731 /* WelcomeViewController.swift in Sources */,
 				009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */,
 				00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */,
+				00D5F8812002BBEA00D4487A /* EnumCollection.swift in Sources */,
+				00D5F8832002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift in Sources */,
 				008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */,
+				00D5F87F2002B83400D4487A /* SelectTransitAgencyViewController.swift in Sources */,
 				00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */,
 				00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */,
 				00DAFF681FF676D200C45FBB /* MonthBar.swift in Sources */,
