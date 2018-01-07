@@ -6,7 +6,7 @@
 //  Copyright © 2017 JeffreyCA. All rights reserved.
 //
 
-enum TransitAgency: String {
+enum TransitAgency: String, EnumCollection {
     case BRAMPTON = "Brampton Transit"
     case BURLINGTON = "Burlington Transit"
     case DURHAM = "Durham Region Transit"
