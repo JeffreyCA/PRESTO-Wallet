@@ -64,7 +64,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LH5-hg-kuJ">
-                                                    <rect key="frame" x="20" y="15" width="45" height="45"/>
+                                                    <rect key="frame" x="15" y="15" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="65" id="0Si-aK-ikz">
                                                             <variation key="heightClass=regular-widthClass=compact" constant="45"/>
@@ -76,7 +76,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-yi-bfd">
-                                                    <rect key="frame" x="80" y="14.5" width="160.5" height="47"/>
+                                                    <rect key="frame" x="75" y="14.5" width="160.5" height="47"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
                                                             <rect key="frame" x="0.0" y="0.0" width="160.5" height="24"/>
@@ -93,7 +93,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-98.00" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-3n-aah" userLabel="Amount">
-                                                    <rect key="frame" x="280" y="26" width="75" height="24"/>
+                                                    <rect key="frame" x="285" y="26" width="75" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="75" id="PkG-ah-OYV"/>
                                                     </constraints>
@@ -104,12 +104,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="LH5-hg-kuJ" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="4PU-kV-ISj"/>
-                                                <constraint firstAttribute="trailing" secondItem="1LF-3n-aah" secondAttribute="trailing" constant="20" id="74o-fc-l47"/>
+                                                <constraint firstAttribute="trailing" secondItem="1LF-3n-aah" secondAttribute="trailing" constant="15" id="74o-fc-l47"/>
                                                 <constraint firstItem="1LF-3n-aah" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="Dzf-dh-6tJ"/>
                                                 <constraint firstItem="Qso-yi-bfd" firstAttribute="leading" secondItem="LH5-hg-kuJ" secondAttribute="trailing" constant="15" id="Qbw-SB-ANQ">
                                                     <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                                                 </constraint>
-                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="20" id="WIS-oc-o3O"/>
+                                                <constraint firstItem="LH5-hg-kuJ" firstAttribute="leading" secondItem="4S3-EE-BR3" secondAttribute="leading" constant="15" id="WIS-oc-o3O"/>
                                                 <constraint firstItem="1LF-3n-aah" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qso-yi-bfd" secondAttribute="trailing" constant="15" id="dTw-lx-1at"/>
                                                 <constraint firstItem="Qso-yi-bfd" firstAttribute="centerY" secondItem="4S3-EE-BR3" secondAttribute="centerY" id="pom-0B-VcU"/>
                                             </constraints>
@@ -450,10 +450,10 @@
             </objects>
             <point key="canvasLocation" x="265.60000000000002" y="-291.45427286356824"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Form Sheet Content Sizing Navigation Controller-->
         <scene sceneID="AgN-Ld-zB6">
             <objects>
-                <navigationController storyboardIdentifier="formSheetController" automaticallyAdjustsScrollViewInsets="NO" id="Tcv-aN-TTI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="formSheetController" automaticallyAdjustsScrollViewInsets="NO" id="Tcv-aN-TTI" customClass="MZFormSheetContentSizingNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BA1-RA-LBW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -461,7 +461,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="f71-HX-RPX" kind="relationship" relationship="rootViewController" id="jF6-t9-A3K"/>
+                        <segue destination="f71-HX-RPX" kind="relationship" relationship="rootViewController" id="lml-5l-CSH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gED-SF-Y4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
