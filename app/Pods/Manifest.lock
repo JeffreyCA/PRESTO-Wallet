@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftMultiSelect:
-    :commit: 2e8a35d24c5c879dc488d424531b4e2d97c0d1aa
+    :commit: f4d77b2e993847784453fef9a37b1191ad0d62eb
     :git: https://github.com/JeffreyCA/SwiftMultiSelect.git
 
 SPEC CHECKSUMS:
