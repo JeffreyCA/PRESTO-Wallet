@@ -25,8 +25,8 @@ class FilterOptionsTableViewController: UITableViewController {
         static let DATE_TODAY_HINT: String = " (Today)"
     }
 
-    @IBAction func cancelDialog() {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func resetDialog() {
+        print("Reset filter options")
     }
 
     @IBAction func finishDialog() {
@@ -98,7 +98,7 @@ extension FilterOptionsTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
         // Toggle corresponding date picker
         if indexPath.row == 1 {
             // Only one date picker should be visible at any time

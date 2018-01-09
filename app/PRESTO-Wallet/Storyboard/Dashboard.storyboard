@@ -323,9 +323,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Filter Options" id="8gf-Qj-tc2">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="tMm-MS-MkL">
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="tMm-MS-MkL">
                             <connections>
-                                <action selector="cancelDialog" destination="f71-HX-RPX" id="Ydk-x9-N3z"/>
+                                <action selector="resetDialog" destination="f71-HX-RPX" id="taX-Dh-prB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="cUv-J6-BZA">
