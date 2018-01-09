@@ -12,10 +12,17 @@ import UIKit
 class FilterOptionsTableViewController: UITableViewController {
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var endDateLabel: UILabel!
+
+    // Used to expand/collapse date pickers
+    private var isStartDatePickerVisible = false
+    private var isEndDatePickerVisible = false
 
     private enum DateConstants {
         static let MINIMUM_FILTER_YEARS_AGO: Int = 2
         static let DEFAULT_START_MONTHS_AGO: Int = 1
+        static let DATE_TODAY_HINT: String = " (Today)"
     }
 
     @IBAction func cancelDialog() {
@@ -24,6 +31,11 @@ class FilterOptionsTableViewController: UITableViewController {
 
     @IBAction func finishDialog() {
         self.dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction
+    public func didChangeDate() {
+        updateDateText()
     }
 
     override func viewDidLoad() {
@@ -37,6 +49,7 @@ class FilterOptionsTableViewController: UITableViewController {
     }
 }
 
+// Configure date picker and date labels
 extension FilterOptionsTableViewController {
     private func initializeDatePickers() {
         let today = Date()
@@ -44,16 +57,80 @@ extension FilterOptionsTableViewController {
         let minimumDate = Calendar.current.date(byAdding: .year, value: -DateConstants.MINIMUM_FILTER_YEARS_AGO, to: today)
 
         startDatePicker.minimumDate = minimumDate
-        startDatePicker.maximumDate = today
         endDatePicker.minimumDate = minimumDate
+        startDatePicker.maximumDate = today
         endDatePicker.maximumDate = today
 
         if let defaultStartDate = defaultStartDate {
             startDatePicker.date = defaultStartDate
         }
+
         endDatePicker.date = today
+        updateDateText()
+    }
+
+    private func toggleStartDatePicker() {
+        isStartDatePickerVisible = !isStartDatePickerVisible
+
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
+    }
+
+    private func toggleEndDatePicker() {
+        isEndDatePickerVisible = !isEndDatePickerVisible
+
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
+    }
+
+    private func updateDateText() {
+        startDateLabel.text = DateFormatter.localizedString(from: startDatePicker.date, dateStyle: .long, timeStyle: .none)
+        endDateLabel.text = DateFormatter.localizedString(from: endDatePicker.date, dateStyle: .long, timeStyle: .none)
+
+        // Append "(Today)" hint to end of date text if date is today
+        if Calendar.current.isDateInToday(startDatePicker.date) {
+            startDateLabel.text?.append(DateConstants.DATE_TODAY_HINT)
+        }
+
+        if Calendar.current.isDateInToday(endDatePicker.date) {
+            endDateLabel.text?.append(DateConstants.DATE_TODAY_HINT)
+        }
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Toggle corresponding date picker
+        if indexPath.row == 1 {
+            // Only one date picker should be visible at any time
+            // Collapse other cell if visible
+            if isEndDatePickerVisible {
+                toggleEndDatePicker()
+            }
+            toggleStartDatePicker()
+        } else if indexPath.row == 3 {
+            // Only one date picker should be visible at any time
+            // Collapse other cell if visible
+            if isStartDatePickerVisible {
+                toggleStartDatePicker()
+            }
+            toggleEndDatePicker()
+        }
+
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    // TODO: Use Enums for cell indices
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if !isStartDatePickerVisible && indexPath.row == 2 {
+            return 0
+        } else if !isEndDatePickerVisible && indexPath.row == 4 {
+            return 0
+        } else {
+            return super.tableView(tableView, heightForRowAt: indexPath)
+        }
     }
 }
+
 // Workaround for correct dialog size after rotating device
 extension FilterOptionsTableViewController: MZFormSheetPresentationContentSizing {
     private enum FrameConstants {
