@@ -8,7 +8,7 @@ target 'PRESTO-Wallet' do
   use_frameworks!
   pod 'Alamofire', '~> 4.5'
   pod 'AMScrollingNavbar'
-  pod 'MZFormSheetPresentationController'
+  pod 'MZFormSheetPresentationController', :git => 'https://github.com/JeffreyCA/MZFormSheetPresentationController'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'SwiftLint'
   pod 'SwiftMultiSelect', :git => 'https://github.com/JeffreyCA/SwiftMultiSelect.git'

@@ -10,12 +10,8 @@
 #import "MZFormSheetPresentationController.h"
 #import "MZFormSheetPresentationViewController.h"
 
-@interface MZFormSheetContentSizingNavigationController ()
-@property (nonatomic, strong) MZFormSheetContentSizingNavigationControllerAnimator *animator;
-@end
-
 @implementation MZFormSheetContentSizingNavigationController
-
+shouldUseCustomAnimator = YES;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,8 +35,13 @@
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC {
-    self.animator.operation = operation;
-    return self.animator;
+    
+    if (self.shouldUseCustomAnimator) {
+        self.animator.operation = operation;
+        return self.animator;
+    } else {
+        return super.navigationController;
+    }
 }
 
 @end

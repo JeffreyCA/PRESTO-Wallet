@@ -10,6 +10,7 @@
 #import "MZFormSheetContentSizingNavigationControllerAnimator.h"
 #import "MZFormSheetPresentationContentSizing.h"
 
-@interface MZFormSheetContentSizingNavigationController : UINavigationController <UINavigationControllerDelegate, MZFormSheetPresentationContentSizing>
-@property (nonatomic, strong, readonly) MZFormSheetContentSizingNavigationControllerAnimator *animator;
+@interface MZFormSheetContentSizingNavigationController: UINavigationController <UINavigationControllerDelegate, MZFormSheetPresentationContentSizing>
+@property (nonatomic, strong) MZFormSheetContentSizingNavigationControllerAnimator *animator;
+@property(nonatomic) BOOL shouldUseCustomAnimator;
 @end

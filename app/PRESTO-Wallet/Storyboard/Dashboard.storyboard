@@ -480,6 +480,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldUseCustomAnimator" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="f71-HX-RPX" kind="relationship" relationship="rootViewController" id="lml-5l-CSH"/>
                     </connections>
