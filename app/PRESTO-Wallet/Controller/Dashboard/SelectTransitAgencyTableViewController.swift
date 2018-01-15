@@ -15,7 +15,6 @@ protocol SelectTransitAgencyDelegate: class {
 
 class SelectTransitAgencyTableViewController: UITableViewController {
     weak var delegate: SelectTransitAgencyDelegate?
-    // var agencies: [FilterTransitAgency]!
     var filterOptions: FilterOptions!
 
     override func viewDidLoad() {
@@ -45,7 +44,6 @@ class SelectTransitAgencyTableViewController: UITableViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
         // Update delegate class
         if isMovingFromParentViewController {
             delegate?.updateSelectedTransitAgencies(agencies: filterOptions.agencies)
@@ -55,8 +53,10 @@ class SelectTransitAgencyTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
-    // MARK: - Table view data source
+// MARK: - Table view functions
+extension SelectTransitAgencyTableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -67,7 +67,7 @@ class SelectTransitAgencyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
+        
         if let selectCell = cell as? SelectTransitAgencyTableViewCell {
             selectCell.name.text = filterOptions.agencies[indexPath.row].agency.rawValue
             selectCell.icon.image = UIImage(named: filterOptions.agencies[indexPath.row].agency.getImage())
