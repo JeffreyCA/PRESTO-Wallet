@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */; };
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
+		0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016B2B8200C007500B5BC21 /* FilterOptions.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
 		003983811FFD885100E85297 /* FilterDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003983801FFD885100E85297 /* FilterDialog.xib */; };
 		0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */; };
@@ -18,6 +19,7 @@
 		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
 		00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A61FF68C7700A14631 /* TransactionsController.swift */; };
 		00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */; };
+		00C0212B200C30AB00D068B9 /* FilterTransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */; };
 		00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7BA541FF5572600EAA781 /* DashboardViewController.swift */; };
 		00D5F8812002BBEA00D4487A /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8802002BBEA00D4487A /* EnumCollection.swift */; };
 		00D5F8832002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */; };
@@ -62,6 +64,7 @@
 /* Begin PBXFileReference section */
 		0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		0016B2B8200C007500B5BC21 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		003983801FFD885100E85297 /* FilterDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterDialog.xib; sourceTree = "<group>"; };
 		0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		00BBD2A61FF68C7700A14631 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
 		00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransitAgency.swift; sourceTree = "<group>"; };
 		00C7BA541FF5572600EAA781 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		00D5F8802002BBEA00D4487A /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
 		00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,12 +151,14 @@
 		0083A6D11FEE04640018A9FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0016B2B8200C007500B5BC21 /* FilterOptions.swift */,
 				00DA94631FF1F5BE00EE1F04 /* LoginService.swift */,
 				00DA94651FF1F66C00EE1F04 /* LoginError.swift */,
 				0002F8C41FF2B9AD000B849F /* LoginResponse.swift */,
 				008552C31FF32AEF00461F92 /* APIConstant.swift */,
 				008300E51FF88377003122C0 /* Transaction.swift */,
 				008300E71FF883B8003122C0 /* TransitAgency.swift */,
+				00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */,
 				00D5F8802002BBEA00D4487A /* EnumCollection.swift */,
 			);
 			path = Model;
@@ -621,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */,
+				0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */,
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
 				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
@@ -641,6 +648,7 @@
 				00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */,
 				00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */,
 				0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */,
+				00C0212B200C30AB00D068B9 /* FilterTransitAgency.swift in Sources */,
 				00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
