@@ -10,12 +10,16 @@ import MZFormSheetPresentationController
 import UIKit
 
 protocol SelectTransitAgencyDelegate: class {
-    func updateSelectedTransitAgencies(agencies: [FilterTransitAgency])
+    func updateSelectedTransitAgencies(agencies: [FilterTransitAgency]?)
 }
 
 class SelectTransitAgencyTableViewController: UITableViewController {
     weak var delegate: SelectTransitAgencyDelegate?
-    var filterOptions: FilterOptions!
+    var filterOptions: FilterOptions?
+
+    private enum ImageConstants {
+        static let DEFAULT_IMAGE: String = "icon_presto_green"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,12 +37,14 @@ class SelectTransitAgencyTableViewController: UITableViewController {
 
         var index: Int = 0
 
-        for agency in filterOptions.agencies {
-            if agency.enabled {
-                let indexPath = IndexPath(row: index, section: 0)
-                tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+        if let agencies = filterOptions?.agencies {
+            for agency in agencies {
+                if agency.enabled {
+                    let indexPath = IndexPath(row: index, section: 0)
+                    tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+                }
+                index += 1
             }
-            index += 1
         }
     }
 
@@ -46,7 +52,7 @@ class SelectTransitAgencyTableViewController: UITableViewController {
         super.viewWillDisappear(animated)
         // Update delegate class
         if isMovingFromParentViewController {
-            delegate?.updateSelectedTransitAgencies(agencies: filterOptions.agencies)
+            delegate?.updateSelectedTransitAgencies(agencies: filterOptions?.agencies)
         }
     }
     override func didReceiveMemoryWarning() {
@@ -62,26 +68,26 @@ extension SelectTransitAgencyTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filterOptions.agencies.count
+        return filterOptions?.agencies?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+
         if let selectCell = cell as? SelectTransitAgencyTableViewCell {
-            selectCell.name.text = filterOptions.agencies[indexPath.row].agency.rawValue
-            selectCell.icon.image = UIImage(named: filterOptions.agencies[indexPath.row].agency.getImage())
+            selectCell.name.text = filterOptions?.agencies?[indexPath.row].agency.rawValue ?? ""
+            selectCell.icon.image = UIImage(named: filterOptions?.agencies?[indexPath.row].agency.getImage() ?? ImageConstants.DEFAULT_IMAGE)
         }
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        filterOptions.agencies[indexPath.row].enabled = true
+        filterOptions?.agencies?[indexPath.row].enabled = true
     }
 
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        filterOptions.agencies[indexPath.row].enabled = false
+        filterOptions?.agencies?[indexPath.row].enabled = false
     }
 }
 

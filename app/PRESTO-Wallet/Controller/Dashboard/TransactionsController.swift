@@ -16,10 +16,15 @@ class TransactionsController: ScrollingNavigationViewController {
 
     @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
         let navigationController = self.storyboard!.instantiateViewController(withIdentifier: "formSheetController") as? UINavigationController
+        let filterOptionsController = navigationController?.viewControllers.first as? FilterOptionsTableViewController
         let formSheetController = MZFormSheetPresentationViewController(contentViewController: navigationController!)
+
+        filterOptionsController?.delegate = self
+        filterOptionsController?.filterOptions = filterOptions
 
         formSheetController.presentationController?.shouldCenterVertically = true
         formSheetController.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
+
         self.present(formSheetController, animated: true, completion: nil)
     }
 
@@ -28,6 +33,7 @@ class TransactionsController: ScrollingNavigationViewController {
     let locations: [String] = ["Union Station", "Mount Joy GO", "Bloor/Yonge", "PRESTO", "St. Andrew"]
 
     var transactions: [Transaction] = []
+    var filterOptions: FilterOptions?
 
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -61,11 +67,6 @@ class TransactionsController: ScrollingNavigationViewController {
         monthView.addSubview(visualEffectView)
         populateStubTransactions()
         sortTransactions()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     private func populateStubTransactions() {
@@ -131,6 +132,12 @@ extension TransactionsController: UITableViewDelegate {
 
             // Load more transactions, then stop spinner animating
         }
+    }
+}
+
+extension TransactionsController: FilterOptionsDelegate {
+    func updateFilterOptions(filterOptions: FilterOptions?) {
+        self.filterOptions = filterOptions
     }
 }
 

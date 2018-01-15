@@ -9,6 +9,10 @@
 import MZFormSheetPresentationController
 import UIKit
 
+protocol FilterOptionsDelegate: class {
+    func updateFilterOptions(filterOptions: FilterOptions?)
+}
+
 class FilterOptionsTableViewController: UITableViewController {
     @IBOutlet weak var selectedAgenciesLabel: UILabel!
     @IBOutlet weak var startDatePicker: UIDatePicker!
@@ -19,8 +23,8 @@ class FilterOptionsTableViewController: UITableViewController {
     // Used to expand/collapse date pickers
     private var isStartDatePickerVisible = false
     private var isEndDatePickerVisible = false
-
-    private var filterOptions: FilterOptions?
+    weak var delegate: FilterOptionsDelegate?
+    var filterOptions: FilterOptions?
 
     private enum Constants {
         static let MINIMUM_FILTER_YEARS_AGO: Int = 2
@@ -34,6 +38,7 @@ class FilterOptionsTableViewController: UITableViewController {
     }
 
     @IBAction func finishDialog() {
+        delegate?.updateFilterOptions(filterOptions: filterOptions)
         self.dismiss(animated: true, completion: nil)
     }
 
@@ -47,7 +52,9 @@ class FilterOptionsTableViewController: UITableViewController {
         super.viewDidLoad()
         initializeDatePickers()
 
-        filterOptions = FilterOptions(startDate: startDatePicker.date, endDate: endDatePicker.date, agencies: createTransitAgencyArray())
+        if filterOptions == nil {
+            filterOptions = FilterOptions(startDate: startDatePicker.date, endDate: endDatePicker.date, agencies: createTransitAgencyArray())
+        }
 
         updateDateText()
         updateSelectedAgenciesText()
@@ -69,7 +76,7 @@ extension FilterOptionsTableViewController {
         TransitAgency.cases().forEach({
             array.append(FilterTransitAgency(agency: $0, enabled: true))
         })
-        
+
         return array
     }
 
@@ -119,14 +126,14 @@ extension FilterOptionsTableViewController {
     // Count number of agencies that are enabled
     private func getSelectedAgenciesCount() -> Int {
         var count: Int = 0
-        self.filterOptions?.agencies.forEach({ (agency) in
+        self.filterOptions?.agencies?.forEach({ (agency) in
             if agency.enabled {
                 count += 1
             }
         })
         return count
     }
-    
+
     private func updateSelectedAgenciesText() {
         selectedAgenciesLabel.text = String(getSelectedAgenciesCount()) + Constants.SELECTED_AGENCIES_HINT
     }
@@ -173,7 +180,7 @@ extension FilterOptionsTableViewController {
 }
 
 extension FilterOptionsTableViewController: SelectTransitAgencyDelegate {
-    func updateSelectedTransitAgencies(agencies: [FilterTransitAgency]) {
+    func updateSelectedTransitAgencies(agencies: [FilterTransitAgency]?) {
         print("Update")
         self.filterOptions?.agencies = agencies
         updateSelectedAgenciesText()

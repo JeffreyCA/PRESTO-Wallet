@@ -11,7 +11,7 @@ import Foundation
 class FilterOptions {
     var startDate: Date?
     var endDate: Date?
-    var agencies: [FilterTransitAgency]
+    var agencies: [FilterTransitAgency]?
 
     init(startDate: Date, endDate: Date, agencies: [FilterTransitAgency]) {
         self.startDate = startDate
