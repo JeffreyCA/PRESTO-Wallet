@@ -10,6 +10,7 @@ import MZFormSheetPresentationController
 import UIKit
 
 class FilterOptionsTableViewController: UITableViewController {
+    @IBOutlet weak var selectedAgenciesLabel: UILabel!
     @IBOutlet weak var startDatePicker: UIDatePicker!
     @IBOutlet weak var endDatePicker: UIDatePicker!
     @IBOutlet weak var startDateLabel: UILabel!
@@ -19,9 +20,12 @@ class FilterOptionsTableViewController: UITableViewController {
     private var isStartDatePickerVisible = false
     private var isEndDatePickerVisible = false
 
-    private enum DateConstants {
+    private var filterOptions: FilterOptions?
+
+    private enum Constants {
         static let MINIMUM_FILTER_YEARS_AGO: Int = 2
         static let DEFAULT_START_MONTHS_AGO: Int = 1
+        static let SELECTED_AGENCIES_HINT: String = " Selected"
         static let DATE_TODAY_HINT: String = " (Today)"
     }
 
@@ -36,25 +40,43 @@ class FilterOptionsTableViewController: UITableViewController {
     @IBAction
     public func didChangeDate() {
         updateDateText()
+        updateFilterOptionsDates()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeDatePickers()
+
+        filterOptions = FilterOptions(startDate: startDatePicker.date, endDate: endDatePicker.date, agencies: createTransitAgencyArray())
+
+        updateDateText()
+        updateSelectedAgenciesText()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Prepare")
+        let destination = segue.destination as? SelectTransitAgencyTableViewController
+        destination?.delegate = self
+        destination?.filterOptions = filterOptions
     }
 }
 
 // Configure date picker and date labels
 extension FilterOptionsTableViewController {
+    // Create array of all transit agencies set to enabled
+    private func createTransitAgencyArray() -> [FilterTransitAgency] {
+        var array = [FilterTransitAgency]()
+        TransitAgency.cases().forEach({
+            array.append(FilterTransitAgency(agency: $0, enabled: true))
+        })
+        
+        return array
+    }
+
     private func initializeDatePickers() {
         let today = Date()
-        let defaultStartDate = Calendar.current.date(byAdding: .month, value: -DateConstants.DEFAULT_START_MONTHS_AGO, to: today)
-        let minimumDate = Calendar.current.date(byAdding: .year, value: -DateConstants.MINIMUM_FILTER_YEARS_AGO, to: today)
+        let defaultStartDate = Calendar.current.date(byAdding: .month, value: -Constants.DEFAULT_START_MONTHS_AGO, to: today)
+        let minimumDate = Calendar.current.date(byAdding: .year, value: -Constants.MINIMUM_FILTER_YEARS_AGO, to: today)
 
         startDatePicker.minimumDate = minimumDate
         endDatePicker.minimumDate = minimumDate
@@ -66,19 +88,16 @@ extension FilterOptionsTableViewController {
         }
 
         endDatePicker.date = today
-        updateDateText()
     }
 
     private func toggleStartDatePicker() {
         isStartDatePickerVisible = !isStartDatePickerVisible
-
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
     }
 
     private func toggleEndDatePicker() {
         isEndDatePickerVisible = !isEndDatePickerVisible
-
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
     }
@@ -89,16 +108,38 @@ extension FilterOptionsTableViewController {
 
         // Append "(Today)" hint to end of date text if date is today
         if Calendar.current.isDateInToday(startDatePicker.date) {
-            startDateLabel.text?.append(DateConstants.DATE_TODAY_HINT)
+            startDateLabel.text?.append(Constants.DATE_TODAY_HINT)
         }
 
         if Calendar.current.isDateInToday(endDatePicker.date) {
-            endDateLabel.text?.append(DateConstants.DATE_TODAY_HINT)
+            endDateLabel.text?.append(Constants.DATE_TODAY_HINT)
         }
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // Count number of agencies that are enabled
+    private func getSelectedAgenciesCount() -> Int {
+        var count: Int = 0
+        self.filterOptions?.agencies.forEach({ (agency) in
+            if agency.enabled {
+                count += 1
+            }
+        })
+        return count
+    }
+    
+    private func updateSelectedAgenciesText() {
+        selectedAgenciesLabel.text = String(getSelectedAgenciesCount()) + Constants.SELECTED_AGENCIES_HINT
+    }
 
+    private func updateFilterOptionsDates() {
+        self.filterOptions?.startDate = startDatePicker.date
+        self.filterOptions?.endDate = endDatePicker.date
+    }
+}
+
+// UITableViewController functions
+extension FilterOptionsTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Toggle corresponding date picker
         if indexPath.row == 1 {
             // Only one date picker should be visible at any time
@@ -128,6 +169,14 @@ extension FilterOptionsTableViewController {
         } else {
             return super.tableView(tableView, heightForRowAt: indexPath)
         }
+    }
+}
+
+extension FilterOptionsTableViewController: SelectTransitAgencyDelegate {
+    func updateSelectedTransitAgencies(agencies: [FilterTransitAgency]) {
+        print("Update")
+        self.filterOptions?.agencies = agencies
+        updateSelectedAgenciesText()
     }
 }
 
