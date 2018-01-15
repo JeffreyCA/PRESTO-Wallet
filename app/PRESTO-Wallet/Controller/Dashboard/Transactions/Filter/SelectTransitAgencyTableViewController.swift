@@ -17,6 +17,14 @@ class SelectTransitAgencyTableViewController: UITableViewController {
     weak var delegate: SelectTransitAgencyDelegate?
     var filterOptions: FilterOptions?
 
+    @IBAction func resetSelection() {
+        // Select all agencies
+        for row in 0 ..< tableView.numberOfRows(inSection: 0) {
+            filterOptions?.agencies?[row].enabled = true
+            tableView.selectRow(at: IndexPath(row: row, section: 0), animated: false, scrollPosition: .none)
+        }
+    }
+
     private enum ImageConstants {
         static let DEFAULT_IMAGE: String = "icon_presto_green"
     }

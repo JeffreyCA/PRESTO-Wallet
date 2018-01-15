@@ -29,8 +29,10 @@ class FilterOptionsTableViewController: UITableViewController {
     private enum Constants {
         static let MINIMUM_FILTER_YEARS_AGO: Int = 2
         static let DEFAULT_START_MONTHS_AGO: Int = 1
-        static let SELECTED_AGENCIES_HINT: String = " Selected"
         static let DATE_TODAY_HINT: String = " (Today)"
+
+        static let ALL_SELECTED: String = "All"
+        static let SELECTED_AGENCIES_HINT: String = " Selected"
     }
 
     @IBAction func resetDialog() {
@@ -123,6 +125,10 @@ extension FilterOptionsTableViewController {
         }
     }
 
+    private func getTotalAgenciesCount() -> Int? {
+        return filterOptions?.agencies?.count
+    }
+
     // Count number of agencies that are enabled
     private func getSelectedAgenciesCount() -> Int {
         var count: Int = 0
@@ -135,7 +141,18 @@ extension FilterOptionsTableViewController {
     }
 
     private func updateSelectedAgenciesText() {
-        selectedAgenciesLabel.text = String(getSelectedAgenciesCount()) + Constants.SELECTED_AGENCIES_HINT
+        let selectedAgenciesCount = getSelectedAgenciesCount()
+        var selectedText: String
+
+        if let totalAgenciesCount = getTotalAgenciesCount(), selectedAgenciesCount == totalAgenciesCount {
+            // Display "All Selected" if all agencies are selected
+            selectedText = String(Constants.ALL_SELECTED)
+        } else {
+            // Otherwise display number
+            selectedText = String(selectedAgenciesCount)
+        }
+
+        selectedAgenciesLabel.text = selectedText + Constants.SELECTED_AGENCIES_HINT
     }
 
     private func updateFilterOptionsDates() {

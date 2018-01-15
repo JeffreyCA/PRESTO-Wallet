@@ -423,7 +423,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Transit Agency" id="ikg-yX-Eim">
-                        <barButtonItem key="rightBarButtonItem" title="Reset" id="ix7-gA-YEt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="ix7-gA-YEt">
+                            <connections>
+                                <action selector="resetSelection" destination="hUz-MK-uxM" id="Vz0-Ie-Deu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wc-AD-FJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
