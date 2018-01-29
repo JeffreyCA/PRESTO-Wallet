@@ -33,6 +33,9 @@ class FilterOptionsTableViewController: UITableViewController {
 
         static let ALL_SELECTED: String = "All"
         static let SELECTED_AGENCIES_HINT: String = " Selected"
+    
+        static let START_DATE_PICKER_ROW = 2
+        static let END_DATE_PICKER_ROW = 4
     }
 
     @IBAction func resetDialog() {
@@ -184,11 +187,10 @@ extension FilterOptionsTableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
-    // TODO: Use Enums for cell indices
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if !isStartDatePickerVisible && indexPath.row == 2 {
+        if !isStartDatePickerVisible && indexPath.row == Constants.START_DATE_PICKER_ROW {
             return 0
-        } else if !isEndDatePickerVisible && indexPath.row == 4 {
+        } else if !isEndDatePickerVisible && indexPath.row == Constants.END_DATE_PICKER_ROW {
             return 0
         } else {
             return super.tableView(tableView, heightForRowAt: indexPath)
