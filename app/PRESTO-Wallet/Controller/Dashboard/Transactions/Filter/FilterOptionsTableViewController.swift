@@ -33,13 +33,18 @@ class FilterOptionsTableViewController: UITableViewController {
 
         static let ALL_SELECTED: String = "All"
         static let SELECTED_AGENCIES_HINT: String = " Selected"
-    
+
         static let START_DATE_PICKER_ROW = 2
         static let END_DATE_PICKER_ROW = 4
     }
 
     @IBAction func resetDialog() {
-        print("Reset filter options")
+        initializeDatePickers()
+        resetSelectedAgencies()
+
+        updateFilterOptionsDates()
+        updateDateText()
+        updateSelectedAgenciesText()
     }
 
     @IBAction func finishDialog() {
@@ -49,6 +54,7 @@ class FilterOptionsTableViewController: UITableViewController {
 
     @IBAction
     public func didChangeDate() {
+        updateMinMaxDates()
         updateDateText()
         updateFilterOptionsDates()
     }
@@ -114,6 +120,10 @@ extension FilterOptionsTableViewController {
         self.tableView.endUpdates()
     }
 
+    private func resetSelectedAgencies() {
+        filterOptions?.agencies = createTransitAgencyArray()
+    }
+
     private func updateDateText() {
         startDateLabel.text = DateFormatter.localizedString(from: startDatePicker.date, dateStyle: .long, timeStyle: .none)
         endDateLabel.text = DateFormatter.localizedString(from: endDatePicker.date, dateStyle: .long, timeStyle: .none)
@@ -156,6 +166,11 @@ extension FilterOptionsTableViewController {
         }
 
         selectedAgenciesLabel.text = selectedText + Constants.SELECTED_AGENCIES_HINT
+    }
+
+    private func updateMinMaxDates() {
+        startDatePicker.maximumDate = endDatePicker.date
+        endDatePicker.minimumDate = startDatePicker.date
     }
 
     private func updateFilterOptionsDates() {
