@@ -33,6 +33,7 @@ class TransactionsController: ScrollingNavigationViewController {
     let locations: [String] = ["Union Station", "Mount Joy GO", "Bloor/Yonge", "PRESTO", "St. Andrew"]
 
     var transactions: [Transaction] = []
+    var filteredTransactions: [Transaction] = []
     var filterOptions: FilterOptions?
 
     private static let dateFormatter: DateFormatter = {
@@ -84,6 +85,10 @@ class TransactionsController: ScrollingNavigationViewController {
 
     private func sortTransactions() {
         transactions = transactions.sorted(by: { $0.date > $1.date })
+    }
+
+    private func applyFilter() {
+        print("Apply filter to transactions array.")
     }
 }
 
@@ -138,6 +143,10 @@ extension TransactionsController: UITableViewDelegate {
 extension TransactionsController: FilterOptionsDelegate {
     func updateFilterOptions(filterOptions: FilterOptions?) {
         self.filterOptions = filterOptions
+        // TODO: Remove
+        transactions = [] // Test transactions are removed after filter
+        applyFilter()
+        tableView.reloadData()
     }
 }
 
