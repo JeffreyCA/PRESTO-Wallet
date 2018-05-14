@@ -1,5 +1,5 @@
 //
-//  StringExtensionTests.swift
+//  StringExtTest.swift
 //  PRESTO-WalletTests
 //
 //  Created by Jeffrey on 2017-12-25.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import PRESTO_Wallet
 
-class StringExtension: XCTestCase {
+class StringExtTest: XCTestCase {
     var testString: String!
     
     override func setUp() {
