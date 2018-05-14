@@ -50,7 +50,7 @@ github "andreamazz/AMScrollingNavbar"
 
 ## Usage
 
-Make sure to use a subclass of `ScrollingNavigationController` for your `UINavigationController`. Either set the class of your `UINavigationController` in your storyboard, or create programmatically a `ScrollingNavigationController` instance in your code.
+Make sure to use `ScrollingNavigationController` instead of the standard `UINavigationController`. Either set the class of your `UINavigationController` in your storyboard, or create programmatically a `ScrollingNavigationController` instance in your code.
 
 Use `followScrollView(_: delay:)` to start following the scrolling of a scrollable view (e.g.: a `UIScrollView` or `UITableView`).
 #### Swift
@@ -97,12 +97,13 @@ override func viewWillAppear(_ animated: Bool) {
 ```
 
 ## Followers
-To move another view, like a toolbar, alongside the navigation bar you can provide the view or multiple views as the `followers` parameter:
+To move another view, like a toolbar, alongside the navigation bar you can provide the view or multiple views as the `followers` parameter. Since you might want to have the follower up or down, you'll have to specify the scroll direction of the view once it starts to follow the navigation bar:
 ```swift
 if let navigationController = navigationController as? ScrollingNavigationController {
-    navigationController.followScrollView(tableView, delay: 50.0, followers: [toolbar])
+    navigationController.followScrollView(tableView, delay: 50.0, followers: [NavigationBarFollower(view: customFooter, direction: .scrollDown)])
 }
 ```
+
 Note that when navigating away from the controller the followers might keep the scroll offset. Refer to [Handling navigation](https://github.com/andreamazz/AMScrollingNavbar#handling-navigation) for proper setup.  
 
 ## Scrolling the TabBar
@@ -179,7 +180,7 @@ Want to support the development of [these free libraries](https://cocoapods.org/
 # MIT License
     The MIT License (MIT)
 
-    Copyright (c) 2017 Andrea Mazzini
+    Copyright (c) 2018 Andrea Mazzini
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in

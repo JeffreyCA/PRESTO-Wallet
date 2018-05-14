@@ -46,7 +46,7 @@ class TransactionsController: ScrollingNavigationViewController {
         super.viewWillAppear(animated)
 
         if let navigationController = self.navigationController as? ScrollingNavigationController {
-            navigationController.followScrollView(tableView, delay: 0.0, followers: [monthView])
+            navigationController.followScrollView(tableView, delay: 0.0, followers: [NavigationBarFollower(view: monthView, direction: .scrollDown)])
             navigationController.scrollingNavbarDelegate = self
         }
     }
