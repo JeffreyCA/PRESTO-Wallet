@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0000CC4120A946D400C628AD /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000CC4020A946D400C628AD /* DateExt.swift */; };
+		0000CC4520A9483D00C628AD /* DateExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000CC4420A9483D00C628AD /* DateExtTest.swift */; };
 		0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */; };
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016B2B8200C007500B5BC21 /* FilterOptions.swift */; };
@@ -25,7 +27,7 @@
 		00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94631FF1F5BE00EE1F04 /* LoginService.swift */; };
 		00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94651FF1F66C00EE1F04 /* LoginError.swift */; };
 		00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946A1FF1F90500EE1F04 /* StringExt.swift */; };
-		00DA946D1FF1FB7200EE1F04 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */; };
+		00DA946D1FF1FB7200EE1F04 /* StringExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */; };
 		00DAFF661FF5F18600C45FBB /* MonthBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DAFF651FF5F18600C45FBB /* MonthBar.xib */; };
 		00DAFF681FF676D200C45FBB /* MonthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAFF671FF676D200C45FBB /* MonthBar.swift */; };
 		00E03BD8200412DB003C96CA /* SelectTransitAgencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0000CC4020A946D400C628AD /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		0000CC4420A9483D00C628AD /* DateExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtTest.swift; sourceTree = "<group>"; };
 		0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		0016B2B8200C007500B5BC21 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
@@ -79,7 +83,7 @@
 		00DA94631FF1F5BE00EE1F04 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		00DA94651FF1F66C00EE1F04 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		00DA946A1FF1F90500EE1F04 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
-		00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtTest.swift; sourceTree = "<group>"; };
 		00DAFF651FF5F18600C45FBB /* MonthBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthBar.xib; sourceTree = "<group>"; };
 		00DAFF671FF676D200C45FBB /* MonthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBar.swift; sourceTree = "<group>"; };
 		00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +287,7 @@
 			children = (
 				00DA946A1FF1F90500EE1F04 /* StringExt.swift */,
 				0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */,
+				0000CC4020A946D400C628AD /* DateExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -327,8 +332,9 @@
 		00FC13C91FE36F8B00AA5731 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */,
+				00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */,
 				00FC13CC1FE36F8B00AA5731 /* Info.plist */,
+				0000CC4420A9483D00C628AD /* DateExtTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -688,6 +694,7 @@
 			files = (
 				0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */,
 				0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */,
+				0000CC4120A946D400C628AD /* DateExt.swift in Sources */,
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
 				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
@@ -717,7 +724,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DA946D1FF1FB7200EE1F04 /* StringExtensionTests.swift in Sources */,
+				00DA946D1FF1FB7200EE1F04 /* StringExtTest.swift in Sources */,
+				0000CC4520A9483D00C628AD /* DateExtTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

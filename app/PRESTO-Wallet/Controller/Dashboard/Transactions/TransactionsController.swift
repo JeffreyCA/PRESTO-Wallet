@@ -87,8 +87,19 @@ class TransactionsController: ScrollingNavigationViewController {
         transactions = transactions.sorted(by: { $0.date > $1.date })
     }
 
-    private func applyFilter() {
-        print("Apply filter to transactions array.")
+    private func applyFilter(_ filterOptions: FilterOptions?) {
+        if let filterOptions = filterOptions {
+            let agencies = filterOptions.agencies
+            // Inclusive dates
+            let startDate = filterOptions.startDate
+            let endDate = filterOptions.endDate
+            
+            transactions = transactions.filter { (tx) -> Bool in
+                // return agencies?.contains(element: tx.agency) && tx.'
+                false
+            }
+            print("Filtered")
+        }
     }
 }
 
@@ -144,8 +155,8 @@ extension TransactionsController: FilterOptionsDelegate {
     func updateFilterOptions(filterOptions: FilterOptions?) {
         self.filterOptions = filterOptions
         // TODO: Remove
-        transactions = [] // Test transactions are removed after filter
-        applyFilter()
+        // transactions = [] // Test transactions are removed after filter
+        applyFilter(filterOptions)
         tableView.reloadData()
     }
 }
