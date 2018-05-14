@@ -3,7 +3,7 @@
 //  PRESTO-Wallet
 //
 //  Created by Jeffrey on 2017-12-30.
-//  Copyright © 2017 JeffreyCA. All rights reserved.
+//  Copyright © 2018 JeffreyCA. All rights reserved.
 //
 
 enum TransitAgency: String, EnumCollection {

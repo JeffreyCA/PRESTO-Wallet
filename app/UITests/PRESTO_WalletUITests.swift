@@ -3,7 +3,7 @@
 //  PRESTO WalletUITests
 //
 //  Created by Jeffrey on 2017-12-14.
-//  Copyright © 2017 JeffreyCA. All rights reserved.
+//  Copyright © 2018 JeffreyCA. All rights reserved.
 //
 
 import XCTest
