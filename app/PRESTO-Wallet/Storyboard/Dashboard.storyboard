@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DyC-Wu-wgb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DyC-Wu-wgb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -350,7 +350,7 @@
         <scene sceneID="rOb-Z1-xyu">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="hUz-MK-uxM" customClass="SelectTransitAgencyTableViewController" customModule="PRESTO_Wallet" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ex1-XO-3LZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ex1-XO-3LZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -372,7 +372,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="60" id="KaM-B0-uPM" customClass="SelectTransitAgencyTableViewCell" customModule="PRESTO_Wallet" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="KaM-B0-uPM" customClass="SelectTransitAgencyTableViewCell" customModule="PRESTO_Wallet" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KaM-B0-uPM" id="Bo0-dA-06e">
@@ -380,22 +380,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kfz-N8-3Wa">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="59.5"/>
+                                            <rect key="frame" x="15" y="7.5" width="345" height="45"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_go" translatesAutoresizingMaskIntoConstraints="NO" id="9Wm-hC-4CB" userLabel="Icon">
-                                                    <rect key="frame" x="0.0" y="7.5" width="45" height="45"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="9Wm-hC-4CB" secondAttribute="height" multiplier="1:1" id="Kyr-fm-UJr"/>
-                                                        <constraint firstAttribute="height" constant="60" id="hc1-le-bUc">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="45"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="width" constant="60" id="sc6-6C-whj">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="45"/>
-                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="45" id="B3v-Ca-kff"/>
+                                                        <constraint firstAttribute="width" constant="45" id="egf-RR-TcJ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-OD-Jwy">
-                                                    <rect key="frame" x="60" y="19" width="285" height="21.5"/>
+                                                    <rect key="frame" x="60" y="11.5" width="285" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -404,8 +399,7 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="kfz-N8-3Wa" secondAttribute="bottom" id="PhM-fj-9S3"/>
-                                        <constraint firstItem="kfz-N8-3Wa" firstAttribute="top" secondItem="Bo0-dA-06e" secondAttribute="top" id="YZs-Jv-N5m"/>
+                                        <constraint firstItem="kfz-N8-3Wa" firstAttribute="centerY" secondItem="Bo0-dA-06e" secondAttribute="centerY" id="gfX-3g-121"/>
                                         <constraint firstItem="kfz-N8-3Wa" firstAttribute="leading" secondItem="Bo0-dA-06e" secondAttribute="leading" constant="15" id="pyA-9o-XRr"/>
                                         <constraint firstAttribute="trailing" secondItem="kfz-N8-3Wa" secondAttribute="trailing" constant="15" id="vKX-Xs-YvY"/>
                                     </constraints>
