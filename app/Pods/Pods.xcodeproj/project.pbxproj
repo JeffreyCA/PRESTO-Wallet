@@ -10,12 +10,13 @@
 		00E153632A414101E0A66AE23569802B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC2726A784867691D2EFBE396C90725 /* Result.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0121437972D75BA9349795B0CC123883 /* StructuralEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECA9AEBEC96A50D467447780669AA /* StructuralEvaluator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0134024263B2239BFE87FFDD1CB27767 /* ContactsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1210C2C9C171AE5A22FB6E90834843 /* ContactsLibrary.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0460515EEFD8CCC28DE252275F45E218 /* SwiftMultiSelect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CE9D249A986B44A6755A74FA7C3248 /* SwiftMultiSelect-dummy.m */; };
+		0460515EEFD8CCC28DE252275F45E218 /* SwiftMultiSelect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E781CC0A6F63838986F8408F82A2F /* SwiftMultiSelect-dummy.m */; };
 		04CFB712CEAE48B14D9C315B5D4FD1D6 /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E5FF4651BB24A0FA03E61C9568A02F /* DataUtil.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		054727119F49E790BDAF7557B7ACC823 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924991F6D1AB425353A3B2C4DCC834AC /* Elements.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		079D990738735591330332B5F2551AE4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51391FB53C7717582492B5BB377E76 /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0C92DF88111A78EAA9B66682668F9925 /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EA99FA75D982E3BC0508D6ED06CF2 /* SwiftSoup-dummy.m */; };
-		0EC9B361606D9DEF36BE0E1F12112561 /* Pods-PRESTO-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1860F8A60C0813BDAD12D11570AEE10 /* Pods-PRESTO-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		085BD394958F1013077F4ED42BDC6132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */; };
+		0C92DF88111A78EAA9B66682668F9925 /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BBE2EDBEB9138AF6F94CC012C887C8 /* SwiftSoup-dummy.m */; };
+		0EC9B361606D9DEF36BE0E1F12112561 /* Pods-PRESTO-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11DF22ED47242ADA9F6D8306829B8D98 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB61C864D95F88175DD0F8BCD96FE7 /* Cleaner.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		12A3EBA423A9EB93014BC0330AAE70BE /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9BDB148BFE9B9964BAC3E8A67E061 /* Selector.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		14CECE238604E1D44104E5BCD14EB2BE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA52430808E49424A1DF36A19186D54 /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -24,43 +25,43 @@
 		164781197625A3149B3BDBCAA2AC8CC3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B04B575957E1143EF5D6EA9FAB7AAE /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		199079342E6012B05A16286B4E6F749A /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81C1E8C03535282F4308979625FBC69 /* UIViewController+TargetViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1AFA5103C8F26936B56D9EFAF68D8926 /* ScrollingNavbar+Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF769C23DFF41BEB00DADB5FCF1EE11 /* ScrollingNavbar+Sizes.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5B307DC16E34790EEB084C7EBD9BDF /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0BF49E2C45850FB12745C552FB688B7 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E263BA11F0BDEE368B136D33B400AB9 /* SerializationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DEE930D98052335373C2CAA58176A4 /* SerializationException.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		204944D67267632DD7CD4BEFB60AC389 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E92CAF1213B7FBB3B7A5E4FAFF496 /* Response.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20F0AD2EFEF1156C980E99780D90B3C4 /* CombiningEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E636836DAC862821523B7095A2EE /* CombiningEvaluator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20F0F6378F8C973E4D2BFAE1D68F9EFD /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F543CDF964A47E7D1F09E0BBB6AAFA8 /* Document.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		21BE0C514FD8BAC96A4F72737A49044D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308803C1B9242445FA7E1BA19BC9BE46 /* QuartzCore.framework */; };
 		23BCD4380AF56C50E0132D0C4212A909 /* ScrollingNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E83E52F7D94031D13DEE22284A231 /* ScrollingNavigationViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		262679DF67FD368AD86DA70F4054D198 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA5C7664DC0A5F2C1F915874D82590D /* Tag.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		263660D5043336353BB4777642C72345 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE3ADAF20B85F8BFB20A8371A40B972 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263660D5043336353BB4777642C72345 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6677C33B49CD6BF092B7CE0412B9E8E0 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27D0DCE386320D9846E2547D30620A52 /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E9A61E9ABAC8312B4FD19EDBEB8795 /* FormElement.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2B4A46A1B7841381264CFDAE5ABC5974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 		2B58B070F9D7324583D01EE906BC918C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FA2C1BEB4BA25FF89A91B35C2D6F2 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		341C804B6CCA05F8460B2727A54C14C3 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343B30C989188B77FB1149FED753A63C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF68589649632E0211114FC2AE5B25 /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		34E5CD6811E36B83E841C13B26608CAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308803C1B9242445FA7E1BA19BC9BE46 /* QuartzCore.framework */; };
 		3533AF7CAA1AD5296D74D6B7DFCFB619 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB183E1F0AA223FC559C266C1FB61129 /* OrderedSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3558D5A460E490F5D93334DC2E688C0F /* SwiftMultiSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5CFFC8294E34B44BD81C7C4D71836 /* SwiftMultiSelect.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3573B01CA3DD35D42F74F3A9BEE72972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 		367F41D950DABB11633662E9D9836995 /* ScrollingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276F687A47B16611DA1C0F825343DAEB /* ScrollingNavigationController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		398BF4786AAFBD935D74DFD2DEADFC1B /* SwiftMultiSelect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFC78F25E61894994ED468F137E867B /* SwiftMultiSelect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		398BF4786AAFBD935D74DFD2DEADFC1B /* SwiftMultiSelect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E5B1D5D0D21CEFB480573EDF20F0E8 /* SwiftMultiSelect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A945C8CCF70F9F138A1D858A8330A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		3A321E2CDD46C766202743D6EFD70DCE /* MZFormSheetPresentationViewControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 783CBCAC9961E895EF1172140C5B00B4 /* MZFormSheetPresentationViewControllerAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3E70D15B0BC83428998C92EDA44B2168 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD3C5624F268E31EC68E65C42F0E0 /* XmlTreeBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3EC743C4529D4FC3AF48AC06FC806CED /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C2E63A226DE10DB37B73CE06E2D945 /* OrderedDictionary.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		40F67A12F31AF2401EF58D1B08B62D8F /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BD1A64F175A0B1EFAE2549718FF94 /* MZFormSheetContentSizingNavigationControllerAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		422ADF7B57FABBE3353EAA0BA0D08738 /* MZFormSheetPresentationContentSizing.h in Headers */ = {isa = PBXBuildFile; fileRef = 109106080895FDBA260B849687F9FA99 /* MZFormSheetPresentationContentSizing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4294BCFEA24EE754DD00D481FD6AE36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		4342978CED4EAB2A88958AA47718D905 /* MZTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 951DBD378A135C30267199B4C5BE61A9 /* MZTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		437619DAA6A88A3882BCEFDD61E9D366 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D2C1CAA7567F3AA2068851D7100F77 /* MZTransition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4429C71543E38B5BB0A9020A6C81A1D7 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556354B2EE80F2D5DC5605A83356459C /* Connection.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		471DEECB4D1D79951525B515F117834F /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F391A8AE4226D74E4F1FC0FCCFB3E672 /* MZBlurEffectAdapter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4B8CB87131CFF438D4E1DFB186A97FC6 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9177B732E8BC20B4DE338E285F053BCF /* SkyFloatingLabelTextField-dummy.m */; };
+		4910DD7C30B4C7C8AFCAFC1CC71F896B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606E05F8B6D5974A36F2F63D269E619B /* UIKit.framework */; };
+		4B8CB87131CFF438D4E1DFB186A97FC6 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B834BDB9E49C38E28FC41A0422D234F9 /* SkyFloatingLabelTextField-dummy.m */; };
 		4C9E443B79E6FB1601A98B29CBDA20ED /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F487B8CDA1B152F080A6097B0E6F8 /* CharacterExt.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4E338ECE0E2D15AFB0A50ABEE399394F /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51992F79186605E911C11E146B3200A6 /* Attribute.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		51E8BF6AB18881D874577D8C1BAA6AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984468047B7EB2BACD083A5E7D0C9092 /* UIKit.framework */; };
 		5208248E86A219BA26E212DBAFCEE754 /* MZAppearance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF853F08A8AF065E3F8839B7B24C3EBB /* MZAppearance.framework */; };
 		537473816D8F0AAE6A456AA8E71C8644 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B4468B10E75BB5AE0F15593F02C52 /* Element.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		538F4787BC8195FB7D73DCB03586B469 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7242A7856FBDA03147103C7B9AA090E /* StringUtil.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54501C661840EAB80E00C1E27484FDA2 /* MZFormSheetPresentationViewControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E5F5A96736BF014646C1A8840632A0 /* MZFormSheetPresentationViewControllerSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		561F1B4F7698ED684D634F6B74D68BEA /* Pods-PRESTO-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE8C861ED140DFF9D09E4254DB2CF5 /* Pods-PRESTO-Wallet-dummy.m */; };
+		561F1B4F7698ED684D634F6B74D68BEA /* Pods-PRESTO-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */; };
+		5718A86A50339FA1345D2E92174C9324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		5787A552EFB00447481BA6E13ED60B7B /* MultiSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAECED0561EC00F4AAC448A4B6F966F /* MultiSelectionViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58446751414EED7885105C76B8F86D32 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1370A1CAD3FC17942214405CADDF1A08 /* MZAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58812AABBC0A1E7AE019752424DF31A7 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EEF1848418D48753FD2649322389FF /* MultipartFormData.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -69,74 +70,75 @@
 		5E25BCD30BDE2E7A68D1A6FAF7253AD4 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9661D1295D0D3FE3086AB7B8FEEE5A /* DispatchQueue+Alamofire.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5E8810F584CAD06059CD24E4EA52DAD0 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB995C85E4D995A7EA17C2A70F6834C /* Validate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5EBDA568EC6C14E396D3CF9E6EB0EB1F /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2FCD257E6C61A6127689A8C18E859 /* TreeBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60B0E08D1002C320CA804FA8AC18C151 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		6525BCA1562E47E0D9986E6223605646 /* MZFormSheetPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E0831BBF4C9C63F3CF85581EE3175B /* MZFormSheetPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6540CC4D369A32F6DE54AFA8D5D6FAF9 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829EF91F912ED5E1C761E4AB4984E0A2 /* Alamofire-dummy.m */; };
+		6540CC4D369A32F6DE54AFA8D5D6FAF9 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA42C462F2A7A3BC20089064D74B40DD /* Alamofire-dummy.m */; };
+		665F6F88853698F2FCC08669956DC41D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */; };
 		678177F815C23940087CCAFB700952C9 /* Tokeniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD878A0F2E55DE77710C7A9A5FF01A4 /* Tokeniser.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		678B5E0B27EB7CF7C7FEF684A46DA669 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB804986C14BCB6E9A1D8CB0F6160D4 /* NSInvocation+Copy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		68C3DB1B510E0BF7BB1B6FC9F9FFBE60 /* MZFormSheetContentSizingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06F448E58F8F187BF2819CA35A01121 /* MZFormSheetContentSizingNavigationController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6C148C988AB8AE4A8AE7DB25A0F70A37 /* AMScrollingNavbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D1370C73547B7934A15B036E64D4E2 /* AMScrollingNavbar-dummy.m */; };
+		6C148C988AB8AE4A8AE7DB25A0F70A37 /* AMScrollingNavbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF487DD92808DDC6D0989F5760F7C8 /* AMScrollingNavbar-dummy.m */; };
 		6CD378ABA84DDC7DA3F1BF294909E735 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F87B9CEAE6AA684F1344A194A7BC5D /* String.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7017C96A4752104D360ED656F4B41281 /* MZFormSheetContentSizingNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFFFF6EABA34C2880A974A5DCACC9B9 /* MZFormSheetContentSizingNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		718619805FA5EB305A145A13D179139A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466EA9A2A61F64CDD3647ABB040F0A27 /* SkyFloatingLabelTextField.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 		78F4229B4A746A38341474FEB9DADB25 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0D019F306C26CEDC5A5964444E81E /* ParameterEncoding.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		799EFBDDED78CB13DC036197AD2C0DA8 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E23B764A6A3D247CB8CDBC736BA85 /* Collector.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7CB2E4C847D622AFFFD4DEA2D3B842C7 /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C85B45562BA98098D23EDB034C7838 /* Whitelist.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		80B1B27DC1B95C34E5FAFE439CD66738 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
+		7F118403FE3C7101D710714E8D63B90B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
+		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		852EBCD01673F6FFEF5BBA21A8CE28AE /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F46435C8375B700C696887E2D3A7F1A6 /* UIViewController+TargetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8889690CC0BC1FB754D3E030A6765FF6 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3151CA28E2BFE5014820AD8B70C9EC /* Entities.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89AE2CCF4F4199B38940C3BB860A6453 /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B904AF55DAE2105569B35314059E149 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFDB2E0806825F440BF030C666F194 /* Comment.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D95EDA83CC8E875A84EA4A93C12801C /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FBE943C754D629BD057D0235D1329 /* DocumentType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8F5C0849D2757FC5A7C81B81BA3813C3 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771A875B78336BE563DFF90ABA6F0A26 /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8F9B6E646C46021FDAD32C04BCC88FD5 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A38E5F61D5C1BDA82CF709E4427D279 /* ArrayExt.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8FCE78066A61546E557B4730EC961ED8 /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8510A2497B9A024104515BCE4EBC196 /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90C09E9B490873995278A64A12F6967A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
+		8FCE78066A61546E557B4730EC961ED8 /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B4448C5232955C26E41F5F42410D5F /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93B24D31AAB83FAA3CAB46E61F0EC41B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CDF3F24F4CC2B8543F4B93B98A4554 /* Evaluator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9551990F75DA997F4F018125B731D2E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 		96B10BB9AC3402EFCC52C4A833520F34 /* MultiSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416BD17533B64114B19856A558847E0 /* MultiSelectionTableView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9734AE604EE909E9F1C790315D2F2B09 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561CB3BD1C0D0C6263CD3A947CD45B85 /* Attributes.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		97ED6F1AA5A07ACEDF982802FEEF45A1 /* AMScrollingNavbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B532DDCBE8EF47C81C1B7DB98F6F106F /* AMScrollingNavbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97ED6F1AA5A07ACEDF982802FEEF45A1 /* AMScrollingNavbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C592DC410A8370ECC714EA58B0CA91BD /* AMScrollingNavbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		981EFF1371FCE40F1907DA262743B93E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78BB5646A6CC83F538CAB884112EE8A /* Notifications.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9B61274CECA168D0B04D4537D03FD999 /* ParseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36F83C208A1F861B2434461D6986C3 /* ParseSettings.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9B81689F93F2768CC95AE8E888A9FDA9 /* NodeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F4DACFC90D3893A282993E3F45724 /* NodeVisitor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9C2D92E9F12F806C95F7A24A8B980D85 /* TokeniserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D0093CCDA3ED7CA1449E63C6CC72D /* TokeniserState.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9DC43AFC581D667E850AD0C0BA1DC8B4 /* MZAppearance-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A848BE8143D5D828FAE5EEAAAE116F /* MZAppearance-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FD3BA6170A1B34AD098087455A5AB35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
+		9DC43AFC581D667E850AD0C0BA1DC8B4 /* MZAppearance-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3867F75805E50C1430E30EED0D37DA00 /* MZAppearance-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A298D5B533D963381C92E84295CA991D /* TokenQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86111E2BA6F011173A96E88E9B611899 /* TokenQueue.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A2ED3F9B998306BE41A1CD76A1C4437E /* UnicodeScalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F3DE2C588EDDF807FD55AE0D156DB6 /* UnicodeScalar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A75B40CCE087D06974F4F5FE1EE2892E /* MZFormSheetPresentationViewControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3705F63CDF9DA719C3E884EF77B6050B /* MZFormSheetPresentationViewControllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7706D59CC401418E3B5874DD881D030 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E485E99FA522EE511A233BA238B4A007 /* UITextField+fixCaretPosition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A8967A5CF89CA348FC8197E5BBCA6D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		A8A46304C18957EF3163C12D5CC4C1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7979F7FE97AAE351344A68EE6CDE960E /* Assets.xcassets */; };
-		A8E97C25959BA940DA1DE8625A0A9CCC /* Pods-PRESTO-WalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CD6165AFC76831BA337EE967FFAC71 /* Pods-PRESTO-WalletTests-dummy.m */; };
 		AD2C576F50E67B2417C1D17FBF5E32B2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF14CC1A35F2649FE5FE04C8977564F5 /* AFError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AD74142E06EEF3F7D910ADBD52701B84 /* MZFormSheetPresentationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4ACAA643659807C35BD28CB6998320 /* MZFormSheetPresentationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD74142E06EEF3F7D910ADBD52701B84 /* MZFormSheetPresentationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FBC90DBA4A48FA57AA38F653F1FECE /* MZFormSheetPresentationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B01E05ACBD7D4B29388115D1FAB19E13 /* MZFormSheetContentSizingNavigationControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 849BEEA9C997564DB898AF7B5599A5E3 /* MZFormSheetContentSizingNavigationControllerAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3929F161719BCEEB8D39EAA87087752 /* CharacterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B65BF2329FBCEFD7849456945ADB8E /* CharacterReader.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B4280BFA5B9972CF165D278092708A22 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1656C0872B894B1576EF8ED8197925 /* Pods-PRESTO-WalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D96A0CEE53916A20E7EEF31C8213B4 /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD71430BDFAE53B7BCD74FAD5AABD2D /* MZAppearance-dummy.m */; };
+		B69FD0F480B15917001DB3333C916B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
+		B9D96A0CEE53916A20E7EEF31C8213B4 /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CBAAA3E52D2EDCAE052FB8E081E2A2 /* MZAppearance-dummy.m */; };
 		BAEBFABDA6FACE7B10E528AEDB9F448D /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F589EDA942FD04B31C902F60051D4 /* SimpleDictionary.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BD11FE286D5B013AB5E864C31460983E /* Pods-PRESTO-WalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */; };
 		C0920116D6D5DA2EBF75D0D85EAAFCC6 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68147F5F8C6B7B3FA091EDC201017ECD /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C285EB13C1A9461A332838FD7BF9F89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		C2F58607A10EB52F50659F0281AC3468 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F143685F7AC9EF3BE0F27F1AD0A5F07 /* Pattern.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C5FD57751548EFFA6567AFD2EB47CD56 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179F83E810C5FDD7730562D7CAF753A /* Request.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C65435ECC95DAA9653455299B987D37F /* MZFormSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1103DBFB72477EF6DAA54CB56E337831 /* MZFormSheetPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9A7F629BE9149E5F2625FA347652E1D /* MZFormSheetPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 953AD4C3D7D4A4AA972C5D8517AC21EF /* MZFormSheetPresentationController-dummy.m */; };
+		C9A7F629BE9149E5F2625FA347652E1D /* MZFormSheetPresentationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 637B98E741ECDA1854FD34C3E340CF02 /* MZFormSheetPresentationController-dummy.m */; };
 		C9B6915AB00C9716908317A51DECBDBC /* ParseErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1DF8676FF7213D7904213AF866669 /* ParseErrorList.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C9F6A74AB277A7050F8EB6C52A43A16E /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063DD329C6E0B7F3CDE06DD9245948C9 /* ParseError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CB4146AF29753530F0F8EC191F87D1B3 /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2024509D67874FB8F5D9057A8A461245 /* MZFormSheetPresentationController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CDF0B657369898CB5CDECD7151F2141D /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ABC9B89D496CB1F1614DA25AEE1F /* CustomTableCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CE9DC5BBB18A0EFB183E9C10D476E493 /* MZFormSheetPresentationController-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5E2712D5E4FC0331EA873EAF608D55 /* MZFormSheetPresentationController-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB3EF3CAF53DCB14386544F8B803FF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		D47DED287F744D92678B86F1DFB41627 /* MultiSelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C9FA5AEAE6868989B91437B901A27 /* MultiSelectionCollectionView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D5686072DEC1A0E14F8C100FCC873F73 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7796861E312B1432996199B5BBE1174 /* TaskDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D57BE1790657309D6A64D27B90DD9375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
+		D5A3883058E7F749125454A7734CC0DD /* Pods-PRESTO-WalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */; };
 		D71DB2CB5A5CA59B2B1D8C234DAB24BC /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F1130D63AACF2BD097A6DE1FF6DFE /* SwiftSoup.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D71E9B00768383536419CDBC7BE9E121 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91987260CA84EA5196C4DF558286D4 /* StreamReader.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D779CC7DA483310A331A2AD66A74C490 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD58FD653F62C7F12BF03FE6892111 /* StringBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DA730A2F02924A1772086B022FEF28AA /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D84342897F2865E067ED4F819B78756D /* Pods-PRESTO-WalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAD89227FC01BAC72644DC8BE7AAA964 /* MZFormSheetPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8947695B29338C3254E286A3E2FDCF0B /* MZFormSheetPresentationViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DCF8E05295027001BCE050E376E73460 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570DEC5293F73C368F5DEA16B3538DDE /* Node.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DDDDC277B73F1357E49F9F1A011A8355 /* HtmlTreeBuilderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF5861A059F8F55E2548DA12442823 /* HtmlTreeBuilderState.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DE0C244A6801ACEF07BF53EC25E954EF /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BA7B5CABF657BD71F5FD8692B7654B /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF166A82DF58512DB0908330B037E29E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 		DFD907F2BAFD8EF23BD39562C1D912EF /* NodeTraversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296744478192D5FC70AF10A6C6A32AF /* NodeTraversor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E0073C0C1583708374D07185689EBF54 /* MZFormSheetPresentationViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCC19E3E714791440AF7E54C44CE79 /* MZFormSheetPresentationViewControllerSegue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E12D52CA2014B54980C9C97854E3197B /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF45E2143D2778879C9E80F089EB2809 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -152,15 +154,20 @@
 		ED643FC8B0D4AB177DA9B34DD48A4F27 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DB8327EFD37B578A7132DE2F24407 /* SkyFloatingLabelTextFieldWithIcon.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F541AE6D7FFEB7C4266F01707AE06458 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = F1451A5BDB2462075C620B7DC54D767D /* NSInvocation+Copy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5A1F55F63ECF67162E18A8F632DAC03 /* HttpStatusException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81908A31F15F3914CF82E93EDEFABBA8 /* HttpStatusException.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F8730511F6DCD77056535570A9BE666F /* Pods-PRESTO-WalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2925DFAFBF48F3FB69F9CC0042089A23 /* Pods-PRESTO-WalletUITests-dummy.m */; };
 		FD4334DCCD9725E664306C6A2DE4E55D /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = D472A340A2FDC3FDE79321D2D69F04A3 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD81002E8EC7AFC7156A2A4DDC824091 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C2994224A7053D66164D2DAFBA9D8 /* Exception.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FDF904D924B8361864CFA8A8978E0C3D /* MZBlurEffectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB84C6D36578CE0CE1523AEE158CEE8 /* MZBlurEffectAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEA5BF681867EC7C2A375D16A0111967 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E05E7743AD41A9BEDBC9ACF53A6FDF1 /* TextNode.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FF2B305373E5CB55C2632EB6FF395BA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		046D73EAA55D69B852DA3B3E29632DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C40A7DAC21DF6E8F11E81E5EB9189C3;
+			remoteInfo = "Pods-PRESTO-Wallet";
+		};
 		3C2585DD075CC0D147C27DA73307E74C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -217,27 +224,44 @@
 			remoteGlobalIDString = ED84D8F63B0AF32EFE5517425546341A;
 			remoteInfo = SwiftSoup;
 		};
+		E6614B68BDB0D60634CFA5612EB6ACA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C40A7DAC21DF6E8F11E81E5EB9189C3;
+			remoteInfo = "Pods-PRESTO-Wallet";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		007F5D4ABC07EDC747702A370E42FD4C /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
 		00C0D019F306C26CEDC5A5964444E81E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		014B369A772319217205C2293D77A8DF /* Pods-PRESTO-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		0179F83E810C5FDD7730562D7CAF753A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		02FF68589649632E0211114FC2AE5B25 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		0416BD17533B64114B19856A558847E0 /* MultiSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionTableView.swift; path = SwiftMultiSelect/MultiSelectionTableView.swift; sourceTree = "<group>"; };
 		063DD329C6E0B7F3CDE06DD9245948C9 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
+		077B4CF224C8607D82DD643625F9704B /* Pods-PRESTO-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
+		07BBE2EDBEB9138AF6F94CC012C887C8 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
 		08EEF1848418D48753FD2649322389FF /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		09C85B45562BA98098D23EDB034C7838 /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
+		0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		0ACCE6D71FA10D38D7818056F7BE519C /* DataNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataNode.swift; path = Sources/DataNode.swift; sourceTree = "<group>"; };
-		0B2E2951CC221664C3DBF49FA0292393 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		0DD72E721B2DDB20BF29583E3E35B7AA /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		0DEF06111D18DBDAF5BA4D663EC66D5D /* AMScrollingNavbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AMScrollingNavbar.modulemap; sourceTree = "<group>"; };
 		0E91987260CA84EA5196C4DF558286D4 /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = Sources/StreamReader.swift; sourceTree = "<group>"; };
 		0F143685F7AC9EF3BE0F27F1AD0A5F07 /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
 		109106080895FDBA260B849687F9FA99 /* MZFormSheetPresentationContentSizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationContentSizing.h; path = MZFormSheetPresentationController/MZFormSheetPresentationContentSizing.h; sourceTree = "<group>"; };
 		1103DBFB72477EF6DAA54CB56E337831 /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationController.h; sourceTree = "<group>"; };
 		1370A1CAD3FC17942214405CADDF1A08 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
-		18559461D1D2B8D8B7E779F1741E5AAE /* Pods-PRESTO-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
+		146F801CD822A71E3DF640D0D4F44CD2 /* Pods-PRESTO-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-frameworks.sh"; sourceTree = "<group>"; };
+		148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
+		1739BC4F2B188488E4D0BB0B8FD5844A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E5B1D5D0D21CEFB480573EDF20F0E8 /* SwiftMultiSelect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-umbrella.h"; sourceTree = "<group>"; };
+		1CD0B3019DC51336814C1EE7464F32EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB84C6D36578CE0CE1523AEE158CEE8 /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZBlurEffectAdapter.h; path = MZFormSheetPresentationController/MZBlurEffectAdapter.h; sourceTree = "<group>"; };
+		1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		1E42EE8869C2573F28BE4154642378D2 /* Pods-PRESTO-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2024509D67874FB8F5D9057A8A461245 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationController.m; sourceTree = "<group>"; };
 		22E0831BBF4C9C63F3CF85581EE3175B /* MZFormSheetPresentationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.h; sourceTree = "<group>"; };
 		248B4468B10E75BB5AE0F15593F02C52 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
@@ -246,67 +270,71 @@
 		268533C10633EAF3647527CE33A9AE1D /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSoup.framework; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27202811F354C455E9647A8A8D5E873C /* SwiftMultiSelect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMultiSelect.framework; path = SwiftMultiSelect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276F687A47B16611DA1C0F825343DAEB /* ScrollingNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationController.swift; path = Source/ScrollingNavigationController.swift; sourceTree = "<group>"; };
-		28A848BE8143D5D828FAE5EEAAAE116F /* MZAppearance-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-umbrella.h"; sourceTree = "<group>"; };
-		2925DFAFBF48F3FB69F9CC0042089A23 /* Pods-PRESTO-WalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletUITests-dummy.m"; sourceTree = "<group>"; };
-		2A4ACAA643659807C35BD28CB6998320 /* MZFormSheetPresentationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-umbrella.h"; sourceTree = "<group>"; };
+		2894876A8C7C4959F155DDC61BE3E261 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4C6542CB15A56D555CA7B4F9D7733B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		2A8E92CAF1213B7FBB3B7A5E4FAFF496 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		2C4F487B8CDA1B152F080A6097B0E6F8 /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
-		2CEA1DC725ED5E3420404426DE1A1B6E /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
 		2D36F83C208A1F861B2434461D6986C3 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
-		308803C1B9242445FA7E1BA19BC9BE46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		316742DB129EFC22D9A42F52EB3EC947 /* SwiftSoup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.xcconfig; sourceTree = "<group>"; };
-		33EF3FDDCD3EFDD4954019FAE83986FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
 		36C2E63A226DE10DB37B73CE06E2D945 /* OrderedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedDictionary.swift; path = Sources/OrderedDictionary.swift; sourceTree = "<group>"; };
 		3705F63CDF9DA719C3E884EF77B6050B /* MZFormSheetPresentationViewControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimator.h; sourceTree = "<group>"; };
-		37F73F56908D9A3A7212BBF2EEC43C73 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		37BBDFA710B9DACA05EFD6F20721166C /* Pods-PRESTO-WalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-frameworks.sh"; sourceTree = "<group>"; };
+		37FC9BCD234FB3D2405DA9BDE2DAA319 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3867F75805E50C1430E30EED0D37DA00 /* MZAppearance-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-umbrella.h"; sourceTree = "<group>"; };
 		3BF5CFFC8294E34B44BD81C7C4D71836 /* SwiftMultiSelect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMultiSelect.swift; path = SwiftMultiSelect/SwiftMultiSelect.swift; sourceTree = "<group>"; };
 		3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_WalletTests.framework; path = "Pods-PRESTO-WalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D6CB194A5506238799FF8230AE02D17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCA6F23F566E84DC17DEAB4C69E82A5 /* SwiftMultiSelect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftMultiSelect.modulemap; sourceTree = "<group>"; };
 		3F8B936EDCB89B83B0C50FC7B50E2415 /* MZMethodSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZMethodSwizzler.m; path = MZFormSheetPresentationController/MZMethodSwizzler.m; sourceTree = "<group>"; };
 		41D2C1CAA7567F3AA2068851D7100F77 /* MZTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTransition.m; path = MZFormSheetPresentationController/MZTransition.m; sourceTree = "<group>"; };
+		434A4CB9ED30E1060BE85C4D839FCA1A /* Pods-PRESTO-WalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-resources.sh"; sourceTree = "<group>"; };
+		45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-Wallet-dummy.m"; sourceTree = "<group>"; };
 		466EA9A2A61F64CDD3647ABB040F0A27 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		47B2F365A284EC0AA4E35C17FD6B928D /* MZAppearance.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MZAppearance.modulemap; sourceTree = "<group>"; };
 		499FA2C1BEB4BA25FF89A91B35C2D6F2 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		4AD643D2D78EC768A884BF28017F51F3 /* Pods-PRESTO-WalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-WalletTests.modulemap"; sourceTree = "<group>"; };
 		4BA52430808E49424A1DF36A19186D54 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		4C6BD1A64F175A0B1EFAE2549718FF94 /* MZFormSheetContentSizingNavigationControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.m; sourceTree = "<group>"; };
-		4EE3ADAF20B85F8BFB20A8371A40B972 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		4F1210C2C9C171AE5A22FB6E90834843 /* ContactsLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactsLibrary.swift; path = SwiftMultiSelect/ContactsLibrary.swift; sourceTree = "<group>"; };
 		503DB8327EFD37B578A7132DE2F24407 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		507B46901273654E842ECE6753DD4CFD /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		50DD58FD653F62C7F12BF03FE6892111 /* StringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBuilder.swift; path = Sources/StringBuilder.swift; sourceTree = "<group>"; };
 		50E9A61E9ABAC8312B4FD19EDBEB8795 /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
-		5153E789F75281D28766A0D5C3BD0553 /* SwiftMultiSelect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-prefix.pch"; sourceTree = "<group>"; };
+		51851A47E2E12A62C64175E2167F3451 /* MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
 		51992F79186605E911C11E146B3200A6 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
-		51B1A6C8CA00F7307B415D057E5DB4CF /* Pods-PRESTO-WalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		52D1709C8E360EE7D7769DA850240431 /* Pods-PRESTO-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5431B4D06E39D6F84F208FE41EF21BB4 /* Pods-PRESTO-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-resources.sh"; sourceTree = "<group>"; };
+		51EDDCEA711D21BB571B999BA0757A11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5544511F6AEFFACD2D9776E40F8B5980 /* Pods-PRESTO-WalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-WalletUITests.modulemap"; sourceTree = "<group>"; };
 		556354B2EE80F2D5DC5605A83356459C /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
-		55F256BF8577EF100B47CF9537D1548B /* Pods-PRESTO-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		561CB3BD1C0D0C6263CD3A947CD45B85 /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletTests-dummy.m"; sourceTree = "<group>"; };
 		570DEC5293F73C368F5DEA16B3538DDE /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
-		58443DD5386F6F63A520AA3A394161B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572A24038EDC6B8BBA5C49BA973360FF /* Pods-PRESTO-WalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		58BE4D3099FE2BD863A4E040BE953A32 /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMScrollingNavbar.framework; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BA7B5CABF657BD71F5FD8692B7654B /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimatedTransitioning.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		5A4C605E1B2A0929737377BE1A174EF0 /* MZAppearance.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MZAppearance.modulemap; sourceTree = "<group>"; };
+		5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DC2726A784867691D2EFBE396C90725 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		5DCF808310D0D1D6702618FC1725591B /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
 		5E14405CA4DA109073DA47A2E1AA3A5D /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZAppearance.framework; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2E781CC0A6F63838986F8408F82A2F /* SwiftMultiSelect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMultiSelect-dummy.m"; sourceTree = "<group>"; };
 		5F8D69DC3608FB9C98D586FA7C90EB45 /* MZMethodSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZMethodSwizzler.h; path = MZFormSheetPresentationController/MZMethodSwizzler.h; sourceTree = "<group>"; };
+		606E05F8B6D5974A36F2F63D269E619B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		62CDF3F24F4CC2B8543F4B93B98A4554 /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
-		63062146F56D8E2AF1E7F658B36D7A31 /* Pods-PRESTO-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-frameworks.sh"; sourceTree = "<group>"; };
-		646995827CA8C288DFCE09D91E4DFB40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637B98E741ECDA1854FD34C3E340CF02 /* MZFormSheetPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetPresentationController-dummy.m"; sourceTree = "<group>"; };
+		6677C33B49CD6BF092B7CE0412B9E8E0 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
 		66F3DE2C588EDDF807FD55AE0D156DB6 /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
 		67DEE930D98052335373C2CAA58176A4 /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
 		68147F5F8C6B7B3FA091EDC201017ECD /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerInteractiveAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.h; sourceTree = "<group>"; };
 		687016A8A80A6EFAE2EA3B6BCE2E52FB /* Pods_PRESTO_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_WalletUITests.framework; path = "Pods-PRESTO-WalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6895AB86195B75D4D3B7E12EADDEF5F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DAE8C861ED140DFF9D09E4254DB2CF5 /* Pods-PRESTO-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-Wallet-dummy.m"; sourceTree = "<group>"; };
 		6DBBD3C5624F268E31EC68E65C42F0E0 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
 		6DF769C23DFF41BEB00DADB5FCF1EE11 /* ScrollingNavbar+Sizes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollingNavbar+Sizes.swift"; path = "Source/ScrollingNavbar+Sizes.swift"; sourceTree = "<group>"; };
-		6E0B5121ED5DF18A47CE9A574B633D24 /* MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetPresentationController.xcconfig; sourceTree = "<group>"; };
+		6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletTests-umbrella.h"; sourceTree = "<group>"; };
 		707DB26741B146FBE8EFB37832D0FD20 /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
-		717D236C10A2395725679AB3683B758E /* Pods-PRESTO-Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PRESTO-Wallet.modulemap"; sourceTree = "<group>"; };
+		7138A30F53F57F752AA2DE3611EB6D3F /* Pods-PRESTO-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-resources.sh"; sourceTree = "<group>"; };
+		7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72833C44E10F59D1DCE32DE4349C8882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B23F7B16C87696C0D3742AC03C347D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetPresentationController.xcconfig; sourceTree = "<group>"; };
 		750B27CEA255834C85281DAE3056B4D5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		76469B2EB9EC59397F2BABE0CFF56CDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771A875B78336BE563DFF90ABA6F0A26 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		772F4DACFC90D3893A282993E3F45724 /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
 		783CBCAC9961E895EF1172140C5B00B4 /* MZFormSheetPresentationViewControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimator.m; sourceTree = "<group>"; };
@@ -314,116 +342,102 @@
 		79B04B575957E1143EF5D6EA9FAB7AAE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		7B4D0093CCDA3ED7CA1449E63C6CC72D /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
 		7CA1DF8676FF7213D7904213AF866669 /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
-		7D743E8717CA63967D6A420825F10D71 /* SwiftMultiSelect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftMultiSelect.modulemap; sourceTree = "<group>"; };
 		7E05E7743AD41A9BEDBC9ACF53A6FDF1 /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
-		7EBBF57177EA44FD1B76CA7A9BF9C17A /* Pods-PRESTO-WalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F543CDF964A47E7D1F09E0BBB6AAFA8 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
-		80E0C21070B422C19C2B061B134324EE /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
 		81908A31F15F3914CF82E93EDEFABBA8 /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
 		824F192510C09F51A61D268BF82F0D49 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		829EF91F912ED5E1C761E4AB4984E0A2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletUITests-umbrella.h"; sourceTree = "<group>"; };
 		849BEEA9C997564DB898AF7B5599A5E3 /* MZFormSheetContentSizingNavigationControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.h; sourceTree = "<group>"; };
 		86111E2BA6F011173A96E88E9B611899 /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
 		8699C929DD5C48F3A5409AFF74674127 /* Pods_PRESTO_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_Wallet.framework; path = "Pods-PRESTO-Wallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C9E4764AA1769BB3A4A0D7291C95B0 /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZFormSheetPresentationController.framework; path = MZFormSheetPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A0E7E172650AD9729FECF34C3EE526 /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
 		87E7CA8D80F9C36B8875F875E59D4D03 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
-		87FE60B6812DC3CBB4ED247E00051593 /* Pods-PRESTO-WalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-resources.sh"; sourceTree = "<group>"; };
 		8947695B29338C3254E286A3E2FDCF0B /* MZFormSheetPresentationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.m; sourceTree = "<group>"; };
-		8998E482168AB3F971D54A5897D122D1 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
 		89E5F5A96736BF014646C1A8840632A0 /* MZFormSheetPresentationViewControllerSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerSegue.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerSegue.h; sourceTree = "<group>"; };
-		8B80F3C0E698EB0D0D3C303EEDE008D8 /* Pods-PRESTO-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BFFFF6EABA34C2880A974A5DCACC9B9 /* MZFormSheetContentSizingNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationController.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.h; sourceTree = "<group>"; };
-		8C4EA99FA75D982E3BC0508D6ED06CF2 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
-		8E1C7F7C4B2A96DBC1B3BAB54BCFDC7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FDCC19E3E714791440AF7E54C44CE79 /* MZFormSheetPresentationViewControllerSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerSegue.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerSegue.m; sourceTree = "<group>"; };
 		902508A97371791ACA1EAF8686C8FC6F /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
-		9177B732E8BC20B4DE338E285F053BCF /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		902BD474ED41538DCCC0C5F33577860D /* Pods-PRESTO-WalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-frameworks.sh"; sourceTree = "<group>"; };
 		924991F6D1AB425353A3B2C4DCC834AC /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
+		9303C8E248DB593F194D1B9513268026 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D1370C73547B7934A15B036E64D4E2 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
-		9472E9DB42458E9456C5293FD2218979 /* Pods-PRESTO-WalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-resources.sh"; sourceTree = "<group>"; };
 		951DBD378A135C30267199B4C5BE61A9 /* MZTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTransition.h; path = MZFormSheetPresentationController/MZTransition.h; sourceTree = "<group>"; };
-		953AD4C3D7D4A4AA972C5D8517AC21EF /* MZFormSheetPresentationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetPresentationController-dummy.m"; sourceTree = "<group>"; };
 		961C9FA5AEAE6868989B91437B901A27 /* MultiSelectionCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionCollectionView.swift; path = SwiftMultiSelect/MultiSelectionCollectionView.swift; sourceTree = "<group>"; };
-		984468047B7EB2BACD083A5E7D0C9092 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		998959004F97D91C2DCF90DE32E3610E /* SwiftMultiSelect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMultiSelect.xcconfig; sourceTree = "<group>"; };
+		96453FB6DD6F4B95A918F541099AB8AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A38E5F61D5C1BDA82CF709E4427D279 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
-		9A5B307DC16E34790EEB084C7EBD9BDF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		9C55D4D314DBB774D7F2D1538F796496 /* MZFormSheetPresentationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MZFormSheetPresentationController.modulemap; sourceTree = "<group>"; };
-		9DD71430BDFAE53B7BCD74FAD5AABD2D /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
-		9E22F70119BAA4C1AEFD47927C0D3096 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9ECB7E3FBB696D7DCB01D7DEA9BDB6E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFF65273547A7BA252E44DF58BD63CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D73948AEE021873B5733FBF79B3F864 /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		A14617628CA53AE43BE621E6793E2A17 /* SwiftMultiSelect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-prefix.pch"; sourceTree = "<group>"; };
+		A1FBC90DBA4A48FA57AA38F653F1FECE /* MZFormSheetPresentationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-umbrella.h"; sourceTree = "<group>"; };
 		A2EA2F93765277E4F9F8785C01636B97 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		A6AF3C16C44F186EC81C4270EF82DC3B /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
 		A81C1E8C03535282F4308979625FBC69 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
 		AA6FBE943C754D629BD057D0235D1329 /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
-		AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AF14CC1A35F2649FE5FE04C8977564F5 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		AF3151CA28E2BFE5014820AD8B70C9EC /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
 		AFAECED0561EC00F4AAC448A4B6F966F /* MultiSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionViewController.swift; path = SwiftMultiSelect/MultiSelectionViewController.swift; sourceTree = "<group>"; };
+		B011D19A18565F0D1C26DCBDEDBC82C8 /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
+		B18E964224BE9D7D283C4EE020CBEF63 /* Pods-PRESTO-WalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2D2ABC9B89D496CB1F1614DA25AEE1F /* CustomTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTableCell.swift; path = SwiftMultiSelect/CustomTableCell.swift; sourceTree = "<group>"; };
 		B3F87B9CEAE6AA684F1344A194A7BC5D /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
-		B4B8BDF8344506801DB37571B970FB25 /* Pods-PRESTO-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
-		B532DDCBE8EF47C81C1B7DB98F6F106F /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
-		B84876705E3304EF519B9F294FDD0DD8 /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
-		B9C37DF0E3D7B27AB5BB69270CBFC0B4 /* MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
+		B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-Wallet-umbrella.h"; sourceTree = "<group>"; };
+		B4FB22616987383A7E0C28CDBA7FD0A6 /* Pods-PRESTO-WalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-resources.sh"; sourceTree = "<group>"; };
+		B834BDB9E49C38E28FC41A0422D234F9 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
 		BAB995C85E4D995A7EA17C2A70F6834C /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
+		BAE6D97EB1C3BB04CFC57F3F9F27FC54 /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
 		BB183E1F0AA223FC559C266C1FB61129 /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
-		BC5D255288E256638802D7488F4AE0FF /* Pods-PRESTO-WalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PRESTO-WalletUITests.modulemap"; sourceTree = "<group>"; };
-		BEE4457F6827D3A9FB4B8D4DBE5C5CAA /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BBB1B87BDAA5A274C803E2BA92FEB66B /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
 		BF51391FB53C7717582492B5BB377E76 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		BF7A6EBBB76B9AFA94EA3922F0B1A635 /* Pods-PRESTO-WalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3E22CA3040628E6022FBCEB19D1673A /* Pods-PRESTO-Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-Wallet.modulemap"; sourceTree = "<group>"; };
 		C4CFDB2E0806825F440BF030C666F194 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
-		C5FF42513589F6E91A127B80A1C70EB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		C592DC410A8370ECC714EA58B0CA91BD /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
 		C78BB5646A6CC83F538CAB884112EE8A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		C7CE9D249A986B44A6755A74FA7C3248 /* SwiftMultiSelect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMultiSelect-dummy.m"; sourceTree = "<group>"; };
-		C8510A2497B9A024104515BCE4EBC196 /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletUITests-dummy.m"; sourceTree = "<group>"; };
 		C8A43450B2E2F6716C8A1E43456710F6 /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
+		C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMultiSelect.xcconfig; sourceTree = "<group>"; };
 		C9E5FF4651BB24A0FA03E61C9568A02F /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
-		CA9F805BA30529FDD34A103B578FF9F3 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
-		CAF8642E0F2A20E5A11A2847CC81A1E6 /* Pods-PRESTO-WalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-frameworks.sh"; sourceTree = "<group>"; };
-		CB65A9E40EAE57F1981AF009042A5DB2 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA6E9F55B7429F3833565764BC2AB0AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB804986C14BCB6E9A1D8CB0F6160D4 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
-		CDFACBCE23C1958F57C028BD8539C105 /* Pods-PRESTO-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 		CE2385E54E80286C2B44E19C6767B2A3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8C2994224A7053D66164D2DAFBA9D8 /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
 		CE9661D1295D0D3FE3086AB7B8FEEE5A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		CF45E2143D2778879C9E80F089EB2809 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerInteractiveAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.m; sourceTree = "<group>"; };
 		D06F448E58F8F187BF2819CA35A01121 /* MZFormSheetContentSizingNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationController.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.m; sourceTree = "<group>"; };
 		D1492321EDADBFF397091169F3A1FDE4 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomCollectionCell.swift; path = SwiftMultiSelect/CustomCollectionCell.swift; sourceTree = "<group>"; };
-		D167349EA1680D49494F18DB71719597 /* Pods-PRESTO-WalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-frameworks.sh"; sourceTree = "<group>"; };
-		D1860F8A60C0813BDAD12D11570AEE10 /* Pods-PRESTO-Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-Wallet-umbrella.h"; sourceTree = "<group>"; };
 		D1B65BF2329FBCEFD7849456945ADB8E /* CharacterReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterReader.swift; path = Sources/CharacterReader.swift; sourceTree = "<group>"; };
 		D296744478192D5FC70AF10A6C6A32AF /* NodeTraversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeTraversor.swift; path = Sources/NodeTraversor.swift; sourceTree = "<group>"; };
 		D472A340A2FDC3FDE79321D2D69F04A3 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerInteractiveTransitioning.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveTransitioning.h; sourceTree = "<group>"; };
 		D50E83E52F7D94031D13DEE22284A231 /* ScrollingNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationViewController.swift; path = Source/ScrollingNavigationViewController.swift; sourceTree = "<group>"; };
 		D6D3E636836DAC862821523B7095A2EE /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
 		D7796861E312B1432996199B5BBE1174 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		D8126E67EDBA64874A041FBC553B9F3A /* AMScrollingNavbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AMScrollingNavbar.modulemap; sourceTree = "<group>"; };
-		D84342897F2865E067ED4F819B78756D /* Pods-PRESTO-WalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletUITests-umbrella.h"; sourceTree = "<group>"; };
-		DA00ECB91D78F237B172D269E0083CCD /* Pods-PRESTO-WalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8B4448C5232955C26E41F5F42410D5F /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
 		DB5E2712D5E4FC0331EA873EAF608D55 /* MZFormSheetPresentationController-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MZFormSheetPresentationController-Bridging-Header.h"; path = "MZFormSheetPresentationController/MZFormSheetPresentationController-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCD878A0F2E55DE77710C7A9A5FF01A4 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
-		DD3A0A95430724192519B01417EA5604 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		DDFC78F25E61894994ED468F137E867B /* SwiftMultiSelect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-umbrella.h"; sourceTree = "<group>"; };
 		DF853F08A8AF065E3F8839B7B24C3EBB /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1145C7FAA80CB834658EEA0EB26C9BA /* Pods-PRESTO-WalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PRESTO-WalletTests.modulemap"; sourceTree = "<group>"; };
+		DF9844C0083F6C45F7B3BB91F7550E38 /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
+		E0AF487DD92808DDC6D0989F5760F7C8 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
+		E0BF49E2C45850FB12745C552FB688B7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		E38E23B764A6A3D247CB8CDBC736BA85 /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
-		E3CD6165AFC76831BA337EE967FFAC71 /* Pods-PRESTO-WalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletTests-dummy.m"; sourceTree = "<group>"; };
 		E485E99FA522EE511A233BA238B4A007 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
 		E6DB61C864D95F88175DD0F8BCD96FE7 /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
 		E7242A7856FBDA03147103C7B9AA090E /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
+		E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.xcconfig; sourceTree = "<group>"; };
+		E87BF22E8BB65899EBA056DF884E698E /* MZFormSheetPresentationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MZFormSheetPresentationController.modulemap; sourceTree = "<group>"; };
+		E9CBAAA3E52D2EDCAE052FB8E081E2A2 /* MZAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MZAppearance-dummy.m"; sourceTree = "<group>"; };
+		EA42C462F2A7A3BC20089064D74B40DD /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		EAF9BDB148BFE9B9964BAC3E8A67E061 /* Selector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Selector.swift; path = Sources/Selector.swift; sourceTree = "<group>"; };
 		EDA5C7664DC0A5F2C1F915874D82590D /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
-		EE2CCF2FA0B0943EBB48FE942A8D6F17 /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
 		EFFF5861A059F8F55E2548DA12442823 /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
 		F02ECA9AEBEC96A50D467447780669AA /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
 		F1451A5BDB2462075C620B7DC54D767D /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
 		F391A8AE4226D74E4F1FC0FCCFB3E672 /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZBlurEffectAdapter.m; path = MZFormSheetPresentationController/MZBlurEffectAdapter.m; sourceTree = "<group>"; };
+		F3EB8E67DEBCB6E9E96B404D2B458041 /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F46435C8375B700C696887E2D3A7F1A6 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
 		F5714FB91EC393663C9FBDB8F1F62B25 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
 		FCF2FCD257E6C61A6127689A8C18E859 /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
-		FE1656C0872B894B1576EF8ED8197925 /* Pods-PRESTO-WalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletTests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,8 +445,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF2B305373E5CB55C2632EB6FF395BA7 /* Foundation.framework in Frameworks */,
-				51E8BF6AB18881D874577D8C1BAA6AF8 /* UIKit.framework in Frameworks */,
+				4294BCFEA24EE754DD00D481FD6AE36A /* Foundation.framework in Frameworks */,
+				4910DD7C30B4C7C8AFCAFC1CC71F896B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +454,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57BE1790657309D6A64D27B90DD9375 /* Foundation.framework in Frameworks */,
+				60B0E08D1002C320CA804FA8AC18C151 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,16 +462,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3573B01CA3DD35D42F74F3A9BEE72972 /* Foundation.framework in Frameworks */,
-				21BE0C514FD8BAC96A4F72737A49044D /* QuartzCore.framework in Frameworks */,
+				A8967A5CF89CA348FC8197E5BBCA6D49 /* Foundation.framework in Frameworks */,
+				665F6F88853698F2FCC08669956DC41D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64F9F4F0770B956ACB22AA4AB9F06A84 /* Frameworks */ = {
+		789C11147880C8240DEE75A4EF42FEB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80B1B27DC1B95C34E5FAFE439CD66738 /* Foundation.framework in Frameworks */,
+				39A945C8CCF70F9F138A1D858A8330A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +479,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF166A82DF58512DB0908330B037E29E /* Foundation.framework in Frameworks */,
+				5718A86A50339FA1345D2E92174C9324 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +487,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+				834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +495,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9551990F75DA997F4F018125B731D2E4 /* Foundation.framework in Frameworks */,
+				B69FD0F480B15917001DB3333C916B63 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,15 +503,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD3BA6170A1B34AD098087455A5AB35 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC5D62BE60270E7DDFE3843907A1A0CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B4A46A1B7841381264CFDAE5ABC5974 /* Foundation.framework in Frameworks */,
+				C285EB13C1A9461A332838FD7BF9F89E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,47 +511,129 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90C09E9B490873995278A64A12F6967A /* Foundation.framework in Frameworks */,
+				7F118403FE3C7101D710714E8D63B90B /* Foundation.framework in Frameworks */,
 				5208248E86A219BA26E212DBAFCEE754 /* MZAppearance.framework in Frameworks */,
-				34E5CD6811E36B83E841C13B26608CAA /* QuartzCore.framework in Frameworks */,
+				085BD394958F1013077F4ED42BDC6132 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CC78622DB10BF128774EBBB492EACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB3EF3CAF53DCB14386544F8B803FF2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A38E7D42BE44E936520AD9AB1D223B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A4C6542CB15A56D555CA7B4F9D7733B /* Alamofire.modulemap */,
+				0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */,
+				EA42C462F2A7A3BC20089064D74B40DD /* Alamofire-dummy.m */,
+				72B23F7B16C87696C0D3742AC03C347D /* Alamofire-prefix.pch */,
+				E0BF49E2C45850FB12745C552FB688B7 /* Alamofire-umbrella.h */,
+				96453FB6DD6F4B95A918F541099AB8AC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		19A94FF06A4034DA5E5D5A875835B1E0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C615BF6ED42E3FEF68BAA809592B5CA /* Pods-PRESTO-Wallet */,
-				FEEF04E036490260579ECB0D3D0DF7CE /* Pods-PRESTO-WalletTests */,
-				8F6DF806B10E0BD0AC228088022EBA54 /* Pods-PRESTO-WalletUITests */,
+				C1B654A3119ADA484654A89B6D1E89A3 /* Pods-PRESTO-Wallet */,
+				2C5184BDA72EADD0D5AA7D646D622469 /* Pods-PRESTO-WalletTests */,
+				961359241035F9517CDDFB0A6B6CA403 /* Pods-PRESTO-WalletUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2041AD229B7113C1BA0F9B581C1D973B /* iOS */ = {
+		1EDB03D60FA9C1E81A61EB600DCB48F9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC97DE982990180B19AE4EA57EBC44D9 /* Foundation.framework */,
-				308803C1B9242445FA7E1BA19BC9BE46 /* QuartzCore.framework */,
-				984468047B7EB2BACD083A5E7D0C9092 /* UIKit.framework */,
+				37FC9BCD234FB3D2405DA9BDE2DAA319 /* Info.plist */,
+				E87BF22E8BB65899EBA056DF884E698E /* MZFormSheetPresentationController.modulemap */,
+				7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */,
+				637B98E741ECDA1854FD34C3E340CF02 /* MZFormSheetPresentationController-dummy.m */,
+				51851A47E2E12A62C64175E2167F3451 /* MZFormSheetPresentationController-prefix.pch */,
+				A1FBC90DBA4A48FA57AA38F653F1FECE /* MZFormSheetPresentationController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZFormSheetPresentationController";
+			sourceTree = "<group>";
+		};
+		219F5476549CAD211DCD519771ED7B01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1739BC4F2B188488E4D0BB0B8FD5844A /* Info.plist */,
+				DF9844C0083F6C45F7B3BB91F7550E38 /* SwiftSoup.modulemap */,
+				E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */,
+				07BBE2EDBEB9138AF6F94CC012C887C8 /* SwiftSoup-dummy.m */,
+				9D73948AEE021873B5733FBF79B3F864 /* SwiftSoup-prefix.pch */,
+				D8B4448C5232955C26E41F5F42410D5F /* SwiftSoup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSoup";
+			sourceTree = "<group>";
+		};
+		26FEFCC13BE64694FE6AA04852077A88 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */,
+				201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */,
+				606E05F8B6D5974A36F2F63D269E619B /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		38158547C77FB4D3F365635E64336D19 /* Support Files */ = {
+		2C0C25B1D15AFFAA11631F7740B9BB80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9E22F70119BAA4C1AEFD47927C0D3096 /* Info.plist */,
-				80E0C21070B422C19C2B061B134324EE /* SwiftSoup.modulemap */,
-				316742DB129EFC22D9A42F52EB3EC947 /* SwiftSoup.xcconfig */,
-				8C4EA99FA75D982E3BC0508D6ED06CF2 /* SwiftSoup-dummy.m */,
-				EE2CCF2FA0B0943EBB48FE942A8D6F17 /* SwiftSoup-prefix.pch */,
-				C8510A2497B9A024104515BCE4EBC196 /* SwiftSoup-umbrella.h */,
+				9303C8E248DB593F194D1B9513268026 /* Info.plist */,
+				3DCA6F23F566E84DC17DEAB4C69E82A5 /* SwiftMultiSelect.modulemap */,
+				C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */,
+				5F2E781CC0A6F63838986F8408F82A2F /* SwiftMultiSelect-dummy.m */,
+				A14617628CA53AE43BE621E6793E2A17 /* SwiftMultiSelect-prefix.pch */,
+				19E5B1D5D0D21CEFB480573EDF20F0E8 /* SwiftMultiSelect-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftSoup";
+			path = "../Target Support Files/SwiftMultiSelect";
+			sourceTree = "<group>";
+		};
+		2C5184BDA72EADD0D5AA7D646D622469 /* Pods-PRESTO-WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BFF65273547A7BA252E44DF58BD63CC /* Info.plist */,
+				4AD643D2D78EC768A884BF28017F51F3 /* Pods-PRESTO-WalletTests.modulemap */,
+				572A24038EDC6B8BBA5C49BA973360FF /* Pods-PRESTO-WalletTests-acknowledgements.markdown */,
+				BF7A6EBBB76B9AFA94EA3922F0B1A635 /* Pods-PRESTO-WalletTests-acknowledgements.plist */,
+				567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */,
+				37BBDFA710B9DACA05EFD6F20721166C /* Pods-PRESTO-WalletTests-frameworks.sh */,
+				434A4CB9ED30E1060BE85C4D839FCA1A /* Pods-PRESTO-WalletTests-resources.sh */,
+				6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */,
+				5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */,
+				4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */,
+			);
+			name = "Pods-PRESTO-WalletTests";
+			path = "Target Support Files/Pods-PRESTO-WalletTests";
+			sourceTree = "<group>";
+		};
+		2F8D4BAFCE3DE6E45D09F0FE28FCE6E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72833C44E10F59D1DCE32DE4349C8882 /* Info.plist */,
+				5A4C605E1B2A0929737377BE1A174EF0 /* MZAppearance.modulemap */,
+				2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */,
+				E9CBAAA3E52D2EDCAE052FB8E081E2A2 /* MZAppearance-dummy.m */,
+				BAE6D97EB1C3BB04CFC57F3F9F27FC54 /* MZAppearance-prefix.pch */,
+				3867F75805E50C1430E30EED0D37DA00 /* MZAppearance-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MZAppearance";
 			sourceTree = "<group>";
 		};
 		44A5E02CD89C30943599502C9C9696F6 /* Alamofire */ = {
@@ -568,7 +656,7 @@
 				D7796861E312B1432996199B5BBE1174 /* TaskDelegate.swift */,
 				A2EA2F93765277E4F9F8785C01636B97 /* Timeline.swift */,
 				79B04B575957E1143EF5D6EA9FAB7AAE /* Validation.swift */,
-				50E665C7AA509CC96C5C2D3AB0CBED0B /* Support Files */,
+				12A38E7D42BE44E936520AD9AB1D223B /* Support Files */,
 			);
 			name = Alamofire;
 			path = Alamofire;
@@ -580,38 +668,10 @@
 				6DF769C23DFF41BEB00DADB5FCF1EE11 /* ScrollingNavbar+Sizes.swift */,
 				276F687A47B16611DA1C0F825343DAEB /* ScrollingNavigationController.swift */,
 				D50E83E52F7D94031D13DEE22284A231 /* ScrollingNavigationViewController.swift */,
-				A430F892F07C0429A8D10FE7127F3654 /* Support Files */,
+				E4F70B198364F234C8454018400C778F /* Support Files */,
 			);
 			name = AMScrollingNavbar;
 			path = AMScrollingNavbar;
-			sourceTree = "<group>";
-		};
-		50E665C7AA509CC96C5C2D3AB0CBED0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B2E2951CC221664C3DBF49FA0292393 /* Alamofire.modulemap */,
-				507B46901273654E842ECE6753DD4CFD /* Alamofire.xcconfig */,
-				829EF91F912ED5E1C761E4AB4984E0A2 /* Alamofire-dummy.m */,
-				DD3A0A95430724192519B01417EA5604 /* Alamofire-prefix.pch */,
-				9A5B307DC16E34790EEB084C7EBD9BDF /* Alamofire-umbrella.h */,
-				C5FF42513589F6E91A127B80A1C70EB8 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		52FF1798B2EEDCCC4F72718DEA0A6D0F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9ECB7E3FBB696D7DCB01D7DEA9BDB6E6 /* Info.plist */,
-				47B2F365A284EC0AA4E35C17FD6B928D /* MZAppearance.modulemap */,
-				5DCF808310D0D1D6702618FC1725591B /* MZAppearance.xcconfig */,
-				9DD71430BDFAE53B7BCD74FAD5AABD2D /* MZAppearance-dummy.m */,
-				A6AF3C16C44F186EC81C4270EF82DC3B /* MZAppearance-prefix.pch */,
-				28A848BE8143D5D828FAE5EEAAAE116F /* MZAppearance-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MZAppearance";
 			sourceTree = "<group>";
 		};
 		53C0F3F59CAC30D73C46488DE2A08E6C /* SkyFloatingLabelTextField */ = {
@@ -620,7 +680,7 @@
 				466EA9A2A61F64CDD3647ABB040F0A27 /* SkyFloatingLabelTextField.swift */,
 				503DB8327EFD37B578A7132DE2F24407 /* SkyFloatingLabelTextFieldWithIcon.swift */,
 				E485E99FA522EE511A233BA238B4A007 /* UITextField+fixCaretPosition.swift */,
-				B1E840B1001095DE530277260D86F1D0 /* Support Files */,
+				D1EC882D50809CDFE9A17D458BF3150E /* Support Files */,
 			);
 			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
@@ -630,23 +690,9 @@
 			isa = PBXGroup;
 			children = (
 				DF853F08A8AF065E3F8839B7B24C3EBB /* MZAppearance.framework */,
-				2041AD229B7113C1BA0F9B581C1D973B /* iOS */,
+				26FEFCC13BE64694FE6AA04852077A88 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6F86841E438AAC9E1C06FF0B1B8777B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76469B2EB9EC59397F2BABE0CFF56CDA /* Info.plist */,
-				9C55D4D314DBB774D7F2D1538F796496 /* MZFormSheetPresentationController.modulemap */,
-				6E0B5121ED5DF18A47CE9A574B633D24 /* MZFormSheetPresentationController.xcconfig */,
-				953AD4C3D7D4A4AA972C5D8517AC21EF /* MZFormSheetPresentationController-dummy.m */,
-				B9C37DF0E3D7B27AB5BB69270CBFC0B4 /* MZFormSheetPresentationController-prefix.pch */,
-				2A4ACAA643659807C35BD28CB6998320 /* MZFormSheetPresentationController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MZFormSheetPresentationController";
 			sourceTree = "<group>";
 		};
 		71F5D65555798AECC9A3642284FA723D /* Products */ = {
@@ -666,24 +712,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C615BF6ED42E3FEF68BAA809592B5CA /* Pods-PRESTO-Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				3D6CB194A5506238799FF8230AE02D17 /* Info.plist */,
-				717D236C10A2395725679AB3683B758E /* Pods-PRESTO-Wallet.modulemap */,
-				52D1709C8E360EE7D7769DA850240431 /* Pods-PRESTO-Wallet-acknowledgements.markdown */,
-				18559461D1D2B8D8B7E779F1741E5AAE /* Pods-PRESTO-Wallet-acknowledgements.plist */,
-				6DAE8C861ED140DFF9D09E4254DB2CF5 /* Pods-PRESTO-Wallet-dummy.m */,
-				63062146F56D8E2AF1E7F658B36D7A31 /* Pods-PRESTO-Wallet-frameworks.sh */,
-				5431B4D06E39D6F84F208FE41EF21BB4 /* Pods-PRESTO-Wallet-resources.sh */,
-				D1860F8A60C0813BDAD12D11570AEE10 /* Pods-PRESTO-Wallet-umbrella.h */,
-				B4B8BDF8344506801DB37571B970FB25 /* Pods-PRESTO-Wallet.debug.xcconfig */,
-				CDFACBCE23C1958F57C028BD8539C105 /* Pods-PRESTO-Wallet.release.xcconfig */,
-			);
-			name = "Pods-PRESTO-Wallet";
-			path = "Target Support Files/Pods-PRESTO-Wallet";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -695,64 +723,40 @@
 			);
 			sourceTree = "<group>";
 		};
-		8F6DF806B10E0BD0AC228088022EBA54 /* Pods-PRESTO-WalletUITests */ = {
+		961359241035F9517CDDFB0A6B6CA403 /* Pods-PRESTO-WalletUITests */ = {
 			isa = PBXGroup;
 			children = (
-				33EF3FDDCD3EFDD4954019FAE83986FA /* Info.plist */,
-				BC5D255288E256638802D7488F4AE0FF /* Pods-PRESTO-WalletUITests.modulemap */,
-				BEE4457F6827D3A9FB4B8D4DBE5C5CAA /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */,
-				51B1A6C8CA00F7307B415D057E5DB4CF /* Pods-PRESTO-WalletUITests-acknowledgements.plist */,
-				2925DFAFBF48F3FB69F9CC0042089A23 /* Pods-PRESTO-WalletUITests-dummy.m */,
-				D167349EA1680D49494F18DB71719597 /* Pods-PRESTO-WalletUITests-frameworks.sh */,
-				9472E9DB42458E9456C5293FD2218979 /* Pods-PRESTO-WalletUITests-resources.sh */,
-				D84342897F2865E067ED4F819B78756D /* Pods-PRESTO-WalletUITests-umbrella.h */,
-				55F256BF8577EF100B47CF9537D1548B /* Pods-PRESTO-WalletUITests.debug.xcconfig */,
-				8B80F3C0E698EB0D0D3C303EEDE008D8 /* Pods-PRESTO-WalletUITests.release.xcconfig */,
+				51EDDCEA711D21BB571B999BA0757A11 /* Info.plist */,
+				5544511F6AEFFACD2D9776E40F8B5980 /* Pods-PRESTO-WalletUITests.modulemap */,
+				F3EB8E67DEBCB6E9E96B404D2B458041 /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */,
+				B18E964224BE9D7D283C4EE020CBEF63 /* Pods-PRESTO-WalletUITests-acknowledgements.plist */,
+				C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */,
+				902BD474ED41538DCCC0C5F33577860D /* Pods-PRESTO-WalletUITests-frameworks.sh */,
+				B4FB22616987383A7E0C28CDBA7FD0A6 /* Pods-PRESTO-WalletUITests-resources.sh */,
+				846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */,
+				C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */,
+				7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */,
 			);
 			name = "Pods-PRESTO-WalletUITests";
 			path = "Target Support Files/Pods-PRESTO-WalletUITests";
 			sourceTree = "<group>";
 		};
-		97B8DA2D9D3068B69D2315BF8B72285A /* Support Files */ = {
+		C1B654A3119ADA484654A89B6D1E89A3 /* Pods-PRESTO-Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				646995827CA8C288DFCE09D91E4DFB40 /* Info.plist */,
-				7D743E8717CA63967D6A420825F10D71 /* SwiftMultiSelect.modulemap */,
-				998959004F97D91C2DCF90DE32E3610E /* SwiftMultiSelect.xcconfig */,
-				C7CE9D249A986B44A6755A74FA7C3248 /* SwiftMultiSelect-dummy.m */,
-				5153E789F75281D28766A0D5C3BD0553 /* SwiftMultiSelect-prefix.pch */,
-				DDFC78F25E61894994ED468F137E867B /* SwiftMultiSelect-umbrella.h */,
+				1CD0B3019DC51336814C1EE7464F32EA /* Info.plist */,
+				C3E22CA3040628E6022FBCEB19D1673A /* Pods-PRESTO-Wallet.modulemap */,
+				1E42EE8869C2573F28BE4154642378D2 /* Pods-PRESTO-Wallet-acknowledgements.markdown */,
+				077B4CF224C8607D82DD643625F9704B /* Pods-PRESTO-Wallet-acknowledgements.plist */,
+				45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */,
+				146F801CD822A71E3DF640D0D4F44CD2 /* Pods-PRESTO-Wallet-frameworks.sh */,
+				7138A30F53F57F752AA2DE3611EB6D3F /* Pods-PRESTO-Wallet-resources.sh */,
+				B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */,
+				C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */,
+				6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftMultiSelect";
-			sourceTree = "<group>";
-		};
-		A430F892F07C0429A8D10FE7127F3654 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8126E67EDBA64874A041FBC553B9F3A /* AMScrollingNavbar.modulemap */,
-				2CEA1DC725ED5E3420404426DE1A1B6E /* AMScrollingNavbar.xcconfig */,
-				93D1370C73547B7934A15B036E64D4E2 /* AMScrollingNavbar-dummy.m */,
-				B84876705E3304EF519B9F294FDD0DD8 /* AMScrollingNavbar-prefix.pch */,
-				B532DDCBE8EF47C81C1B7DB98F6F106F /* AMScrollingNavbar-umbrella.h */,
-				58443DD5386F6F63A520AA3A394161B9 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AMScrollingNavbar";
-			sourceTree = "<group>";
-		};
-		B1E840B1001095DE530277260D86F1D0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6895AB86195B75D4D3B7E12EADDEF5F3 /* Info.plist */,
-				CA9F805BA30529FDD34A103B578FF9F3 /* SkyFloatingLabelTextField.modulemap */,
-				37F73F56908D9A3A7212BBF2EEC43C73 /* SkyFloatingLabelTextField.xcconfig */,
-				9177B732E8BC20B4DE338E285F053BCF /* SkyFloatingLabelTextField-dummy.m */,
-				8998E482168AB3F971D54A5897D122D1 /* SkyFloatingLabelTextField-prefix.pch */,
-				4EE3ADAF20B85F8BFB20A8371A40B972 /* SkyFloatingLabelTextField-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField";
+			name = "Pods-PRESTO-Wallet";
+			path = "Target Support Files/Pods-PRESTO-Wallet";
 			sourceTree = "<group>";
 		};
 		C45B64BFC958411588187EBA3E369676 /* MZAppearance */ = {
@@ -762,10 +766,24 @@
 				007F5D4ABC07EDC747702A370E42FD4C /* MZAppearance.m */,
 				F1451A5BDB2462075C620B7DC54D767D /* NSInvocation+Copy.h */,
 				CDB804986C14BCB6E9A1D8CB0F6160D4 /* NSInvocation+Copy.m */,
-				52FF1798B2EEDCCC4F72718DEA0A6D0F /* Support Files */,
+				2F8D4BAFCE3DE6E45D09F0FE28FCE6E6 /* Support Files */,
 			);
 			name = MZAppearance;
 			path = MZAppearance;
+			sourceTree = "<group>";
+		};
+		D1EC882D50809CDFE9A17D458BF3150E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2894876A8C7C4959F155DDC61BE3E261 /* Info.plist */,
+				BBB1B87BDAA5A274C803E2BA92FEB66B /* SkyFloatingLabelTextField.modulemap */,
+				1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */,
+				B834BDB9E49C38E28FC41A0422D234F9 /* SkyFloatingLabelTextField-dummy.m */,
+				0DD72E721B2DDB20BF29583E3E35B7AA /* SkyFloatingLabelTextField-prefix.pch */,
+				6677C33B49CD6BF092B7CE0412B9E8E0 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
 			sourceTree = "<group>";
 		};
 		D7B8C94E95DA4E4E7F7834801D1CD509 /* MZFormSheetPresentationController */ = {
@@ -797,7 +815,7 @@
 				41D2C1CAA7567F3AA2068851D7100F77 /* MZTransition.m */,
 				F46435C8375B700C696887E2D3A7F1A6 /* UIViewController+TargetViewController.h */,
 				A81C1E8C03535282F4308979625FBC69 /* UIViewController+TargetViewController.m */,
-				6F86841E438AAC9E1C06FF0B1B8777B6 /* Support Files */,
+				1EDB03D60FA9C1E81A61EB600DCB48F9 /* Support Files */,
 			);
 			name = MZFormSheetPresentationController;
 			path = MZFormSheetPresentationController;
@@ -814,10 +832,24 @@
 				AFAECED0561EC00F4AAC448A4B6F966F /* MultiSelectionViewController.swift */,
 				3BF5CFFC8294E34B44BD81C7C4D71836 /* SwiftMultiSelect.swift */,
 				F46C4847E73982DBAF094E5564EED65D /* Resources */,
-				97B8DA2D9D3068B69D2315BF8B72285A /* Support Files */,
+				2C0C25B1D15AFFAA11631F7740B9BB80 /* Support Files */,
 			);
 			name = SwiftMultiSelect;
 			path = SwiftMultiSelect;
+			sourceTree = "<group>";
+		};
+		E4F70B198364F234C8454018400C778F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DEF06111D18DBDAF5BA4D663EC66D5D /* AMScrollingNavbar.modulemap */,
+				148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */,
+				E0AF487DD92808DDC6D0989F5760F7C8 /* AMScrollingNavbar-dummy.m */,
+				B011D19A18565F0D1C26DCBDEDBC82C8 /* AMScrollingNavbar-prefix.pch */,
+				C592DC410A8370ECC714EA58B0CA91BD /* AMScrollingNavbar-umbrella.h */,
+				CA6E9F55B7429F3833565764BC2AB0AE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMScrollingNavbar";
 			sourceTree = "<group>";
 		};
 		F46C4847E73982DBAF094E5564EED65D /* Resources */ = {
@@ -895,28 +927,10 @@
 				09C85B45562BA98098D23EDB034C7838 /* Whitelist.swift */,
 				902508A97371791ACA1EAF8686C8FC6F /* XmlDeclaration.swift */,
 				6DBBD3C5624F268E31EC68E65C42F0E0 /* XmlTreeBuilder.swift */,
-				38158547C77FB4D3F365635E64336D19 /* Support Files */,
+				219F5476549CAD211DCD519771ED7B01 /* Support Files */,
 			);
 			name = SwiftSoup;
 			path = SwiftSoup;
-			sourceTree = "<group>";
-		};
-		FEEF04E036490260579ECB0D3D0DF7CE /* Pods-PRESTO-WalletTests */ = {
-			isa = PBXGroup;
-			children = (
-				8E1C7F7C4B2A96DBC1B3BAB54BCFDC7C /* Info.plist */,
-				E1145C7FAA80CB834658EEA0EB26C9BA /* Pods-PRESTO-WalletTests.modulemap */,
-				DA00ECB91D78F237B172D269E0083CCD /* Pods-PRESTO-WalletTests-acknowledgements.markdown */,
-				7EBBF57177EA44FD1B76CA7A9BF9C17A /* Pods-PRESTO-WalletTests-acknowledgements.plist */,
-				E3CD6165AFC76831BA337EE967FFAC71 /* Pods-PRESTO-WalletTests-dummy.m */,
-				CAF8642E0F2A20E5A11A2847CC81A1E6 /* Pods-PRESTO-WalletTests-frameworks.sh */,
-				87FE60B6812DC3CBB4ED247E00051593 /* Pods-PRESTO-WalletTests-resources.sh */,
-				FE1656C0872B894B1576EF8ED8197925 /* Pods-PRESTO-WalletTests-umbrella.h */,
-				CB65A9E40EAE57F1981AF009042A5DB2 /* Pods-PRESTO-WalletTests.debug.xcconfig */,
-				014B369A772319217205C2293D77A8DF /* Pods-PRESTO-WalletTests.release.xcconfig */,
-			);
-			name = "Pods-PRESTO-WalletTests";
-			path = "Target Support Files/Pods-PRESTO-WalletTests";
 			sourceTree = "<group>";
 		};
 		FFFE545207BA9B0A651B18F06951FAA7 /* Pods */ = {
@@ -968,6 +982,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69AFE169FE576A349092CA52B0366D9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341C804B6CCA05F8460B2727A54C14C3 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA4052062050035FDE5E9A3D033379D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AE2CCF4F4199B38940C3BB860A6453 /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7731D5CA2B302FAE9951DBC5640C4EFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -976,27 +1006,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1A660A89365824D82FB126AC721BDBF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4280BFA5B9972CF165D278092708A22 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A39AD5A1075C68996806AE28E03E308D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				97ED6F1AA5A07ACEDF982802FEEF45A1 /* AMScrollingNavbar-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC06FDE9899DDE1CD07104E6958D4173 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA730A2F02924A1772086B022FEF28AA /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,17 +1075,18 @@
 			productReference = 8699C929DD5C48F3A5409AFF74674127 /* Pods_PRESTO_Wallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2050FAE7CF8BFF949ED07DDA99B23254 /* Pods-PRESTO-WalletUITests */ = {
+		1FC58E5575534095521A9BF4885CA0FF /* Pods-PRESTO-WalletUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95E35548FEBA441316847E70D772155B /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */;
+			buildConfigurationList = 374E6954C1756E6676D871464372572A /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */;
 			buildPhases = (
-				664A87D91E3C50EC3798F53B0DB09363 /* Sources */,
-				BC5D62BE60270E7DDFE3843907A1A0CD /* Frameworks */,
-				AC06FDE9899DDE1CD07104E6958D4173 /* Headers */,
+				551C145F5DCD876ECEB965008A2FBFAB /* Sources */,
+				D9CC78622DB10BF128774EBBB492EACC /* Frameworks */,
+				6DA4052062050035FDE5E9A3D033379D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				26ED83F27A8A58B6A3ACEDD2948A7231 /* PBXTargetDependency */,
 			);
 			name = "Pods-PRESTO-WalletUITests";
 			productName = "Pods-PRESTO-WalletUITests";
@@ -1130,23 +1145,6 @@
 			productReference = 86C9E4764AA1769BB3A4A0D7291C95B0 /* MZFormSheetPresentationController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		776852F73CE3FF277EB51F3B329A9C61 /* Pods-PRESTO-WalletTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8C69A46B233E27B5066EEE9F09DC9A3 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletTests" */;
-			buildPhases = (
-				459BF55189124EF803D39F6A7D4C23F9 /* Sources */,
-				64F9F4F0770B956ACB22AA4AB9F06A84 /* Frameworks */,
-				A1A660A89365824D82FB126AC721BDBF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PRESTO-WalletTests";
-			productName = "Pods-PRESTO-WalletTests";
-			productReference = 3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -1199,6 +1197,24 @@
 			productReference = 27202811F354C455E9647A8A8D5E873C /* SwiftMultiSelect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C6E1A935B9A5250BD135FE15B8ABA12B /* Pods-PRESTO-WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6C12F70A34FD0E28B7BB0F99F540A4 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletTests" */;
+			buildPhases = (
+				48180EA2DDCA65642AE9CD8B10E8F751 /* Sources */,
+				789C11147880C8240DEE75A4EF42FEB3 /* Frameworks */,
+				69AFE169FE576A349092CA52B0366D9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9995D524D16AEB646921E2747B160B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-PRESTO-WalletTests";
+			productName = "Pods-PRESTO-WalletTests";
+			productReference = 3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		ED84D8F63B0AF32EFE5517425546341A /* SwiftSoup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D00CACFA8025DE4DA2FEB1884A2D3EA /* Build configuration list for PBXNativeTarget "SwiftSoup" */;
@@ -1222,8 +1238,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1242,8 +1258,8 @@
 				3CB17C6B6D5F08F6B3350CCEC6B1E0F6 /* MZAppearance */,
 				70D462634F7BD6635A7C8AC01780C67F /* MZFormSheetPresentationController */,
 				1C40A7DAC21DF6E8F11E81E5EB9189C3 /* Pods-PRESTO-Wallet */,
-				776852F73CE3FF277EB51F3B329A9C61 /* Pods-PRESTO-WalletTests */,
-				2050FAE7CF8BFF949ED07DDA99B23254 /* Pods-PRESTO-WalletUITests */,
+				C6E1A935B9A5250BD135FE15B8ABA12B /* Pods-PRESTO-WalletTests */,
+				1FC58E5575534095521A9BF4885CA0FF /* Pods-PRESTO-WalletUITests */,
 				3F3FC32B9B02D67ABB7D2E4AAE2F65C5 /* SkyFloatingLabelTextField */,
 				A237D30AAFA56516E33145697DCB5FAE /* SwiftMultiSelect */,
 				ED84D8F63B0AF32EFE5517425546341A /* SwiftSoup */,
@@ -1342,14 +1358,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		459BF55189124EF803D39F6A7D4C23F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8E97C25959BA940DA1DE8625A0A9CCC /* Pods-PRESTO-WalletTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47AA244DE0C8B2C0F0A585D845356E59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1375,11 +1383,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A87D91E3C50EC3798F53B0DB09363 /* Sources */ = {
+		48180EA2DDCA65642AE9CD8B10E8F751 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8730511F6DCD77056535570A9BE666F /* Pods-PRESTO-WalletUITests-dummy.m in Sources */,
+				D5A3883058E7F749125454A7734CC0DD /* Pods-PRESTO-WalletTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551C145F5DCD876ECEB965008A2FBFAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD11FE286D5B013AB5E864C31460983E /* Pods-PRESTO-WalletUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1463,6 +1479,12 @@
 			target = 3F3FC32B9B02D67ABB7D2E4AAE2F65C5 /* SkyFloatingLabelTextField */;
 			targetProxy = A530D6089B7E8E719E3B9B1375F60130 /* PBXContainerItemProxy */;
 		};
+		26ED83F27A8A58B6A3ACEDD2948A7231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PRESTO-Wallet";
+			target = 1C40A7DAC21DF6E8F11E81E5EB9189C3 /* Pods-PRESTO-Wallet */;
+			targetProxy = E6614B68BDB0D60634CFA5612EB6ACA6 /* PBXContainerItemProxy */;
+		};
 		46F447E61056BC743C8B4C098D9379DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMScrollingNavbar;
@@ -1493,13 +1515,20 @@
 			target = 3CB17C6B6D5F08F6B3350CCEC6B1E0F6 /* MZAppearance */;
 			targetProxy = 3D7DCE47369F5B216336F46E072343E0 /* PBXContainerItemProxy */;
 		};
+		E9995D524D16AEB646921E2747B160B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PRESTO-Wallet";
+			target = 1C40A7DAC21DF6E8F11E81E5EB9189C3 /* Pods-PRESTO-Wallet */;
+			targetProxy = 046D73EAA55D69B852DA3B3E29632DBE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		100EB7895A501054E4B130C045E4925D /* Release */ = {
+		01F53CD5D87D9A0135122B277247405B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B80F3C0E698EB0D0D3C303EEDE008D8 /* Pods-PRESTO-WalletUITests.release.xcconfig */;
+			baseConfigurationReference = 6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1509,19 +1538,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-Wallet/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_WalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1529,10 +1559,11 @@
 			};
 			name = Release;
 		};
-		1A79DB6EBBACA9D849D5C2F5529D5F47 /* Debug */ = {
+		0EE3B2508CAEDFEDF9E1CC889D0280BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB65A9E40EAE57F1981AF009042A5DB2 /* Pods-PRESTO-WalletTests.debug.xcconfig */;
+			baseConfigurationReference = 5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1552,7 +1583,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_WalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1561,226 +1592,7 @@
 			};
 			name = Debug;
 		};
-		1CE461F9576099F50968F230A316D790 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CEA1DC725ED5E3420404426DE1A1B6E /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		319F8FE80BF26324FAFBF35F67479D2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DCF808310D0D1D6702618FC1725591B /* MZAppearance.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
-				PRODUCT_NAME = MZAppearance;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3C1ECDC6AE1E04716513DA47E5EAD3AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 014B369A772319217205C2293D77A8DF /* Pods-PRESTO-WalletTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_WalletTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		590918E54E841FB65879DC461B5E448C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DCF808310D0D1D6702618FC1725591B /* MZAppearance.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
-				PRODUCT_NAME = MZAppearance;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		610017A89810C183603E1832DE5A50FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0B5121ED5DF18A47CE9A574B633D24 /* MZFormSheetPresentationController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
-				PRODUCT_NAME = MZFormSheetPresentationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		653067C60F5A81DBA922388148978707 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998959004F97D91C2DCF90DE32E3610E /* SwiftMultiSelect.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
-				PRODUCT_NAME = SwiftMultiSelect;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6A4D167C6B3BCE2D20376311FD005440 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 316742DB129EFC22D9A42F52EB3EC947 /* SwiftSoup.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
-				PRODUCT_NAME = SwiftSoup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1790,10 +1602,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1801,6 +1615,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1809,156 +1624,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		9E417A8B12D3DE09B334C95354E080D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F73F56908D9A3A7212BBF2EEC43C73 /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 507B46901273654E842ECE6753DD4CFD /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B5242D1AC96AD51A820A5392E22217BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 316742DB129EFC22D9A42F52EB3EC947 /* SwiftSoup.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
-				PRODUCT_NAME = SwiftSoup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1983,16 +1649,15 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B8CA02655A4B738D82484691EE8CA58F /* Release */ = {
+		2422DD7D13B383F273CBBA999F1E20B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 507B46901273654E842ECE6753DD4CFD /* Alamofire.xcconfig */;
+			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2003,49 +1668,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_NAME = Alamofire;
+				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
+				PRODUCT_NAME = MZFormSheetPresentationController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C878AFEBE8CA2C11DDE0267B28947A9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CEA1DC725ED5E3420404426DE1A1B6E /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2053,75 +1686,11 @@
 			};
 			name = Debug;
 		};
-		CFDE139CB9E256818D348EBADF517B96 /* Debug */ = {
+		292D5666A734D7BD2B3785C032BDED04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F73F56908D9A3A7212BBF2EEC43C73 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D038581A9E31F6760C171AFECA30B685 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDFACBCE23C1958F57C028BD8539C105 /* Pods-PRESTO-Wallet.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-Wallet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_Wallet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D1C090DCC879FB5CFD7C2BEE99246F53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55F256BF8577EF100B47CF9537D1548B /* Pods-PRESTO-WalletUITests.debug.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2141,40 +1710,9 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_WalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F60817DB676FE9D36B48C21E88AC24F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998959004F97D91C2DCF90DE32E3610E /* SwiftMultiSelect.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
-				PRODUCT_NAME = SwiftMultiSelect;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2182,10 +1720,11 @@
 			};
 			name = Release;
 		};
-		F6B392024EEF13C9FF4FA781723794D1 /* Debug */ = {
+		335A5470A645634798986C774436BE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4B8BDF8344506801DB37571B970FB25 /* Pods-PRESTO-Wallet.debug.xcconfig */;
+			baseConfigurationReference = C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2205,7 +1744,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PRESTO_Wallet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2216,9 +1755,76 @@
 			};
 			name = Debug;
 		};
-		FB271BDAED577AB3E2551C5AC6D1A946 /* Debug */ = {
+		3E90EB302E59095041A231210D691EDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0B5121ED5DF18A47CE9A574B633D24 /* MZFormSheetPresentationController.xcconfig */;
+			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		512AAD3F4DE5BE8142B6567BB0C2F852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6115B161DCF8B8DF49AC91291E972D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2235,7 +1841,268 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
 				PRODUCT_NAME = MZFormSheetPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6225105DAF9FA14FC51672CFAC525280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EE01CAB22030BCDF0C2B81DA4CFE5E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		748BAECF28BB1CA31D79E3D74EFA797E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMultiSelect;
+				PRODUCT_NAME = SwiftMultiSelect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93E9F088CA7C5093189606826591DCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0ED89879B0112CCD48A0E468ECE761D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A18C9CC7E37563F2891E7DC87F2DE6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3F592D0944A8153A7644F1BCE619418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMultiSelect;
+				PRODUCT_NAME = SwiftMultiSelect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6901E8B2C671BC5ACC6EC26BAE5485E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				PRODUCT_MODULE_NAME = MZAppearance;
+				PRODUCT_NAME = MZAppearance;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -2246,14 +2113,210 @@
 			};
 			name = Debug;
 		};
+		C7DEC60B08FD73C0B351D6CFF3F9E420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
+				PRODUCT_MODULE_NAME = AMScrollingNavbar;
+				PRODUCT_NAME = AMScrollingNavbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFD3CCCC78BDBC27CB806B2E0F74B616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
+				PRODUCT_MODULE_NAME = AMScrollingNavbar;
+				PRODUCT_NAME = AMScrollingNavbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA0ADC75B20BB62958101306980460E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FF3884753AB3334CEF4F0032A70B04B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				PRODUCT_MODULE_NAME = MZAppearance;
+				PRODUCT_NAME = MZAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		15E22F6BCE2C9FC1198908DD7D373B8B /* Build configuration list for PBXNativeTarget "AMScrollingNavbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C878AFEBE8CA2C11DDE0267B28947A9C /* Debug */,
-				1CE461F9576099F50968F230A316D790 /* Release */,
+				C7DEC60B08FD73C0B351D6CFF3F9E420 /* Debug */,
+				CFD3CCCC78BDBC27CB806B2E0F74B616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6C12F70A34FD0E28B7BB0F99F540A4 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE3B2508CAEDFEDF9E1CC889D0280BD /* Debug */,
+				512AAD3F4DE5BE8142B6567BB0C2F852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2261,8 +2324,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		374E6954C1756E6676D871464372572A /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE01CAB22030BCDF0C2B81DA4CFE5E7 /* Debug */,
+				292D5666A734D7BD2B3785C032BDED04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2270,8 +2342,8 @@
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */,
-				B8CA02655A4B738D82484691EE8CA58F /* Release */,
+				EA0ADC75B20BB62958101306980460E6 /* Debug */,
+				A18C9CC7E37563F2891E7DC87F2DE6CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2279,8 +2351,8 @@
 		45DB87639F79C99636701E01109FC9C9 /* Build configuration list for PBXNativeTarget "SwiftMultiSelect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				653067C60F5A81DBA922388148978707 /* Debug */,
-				F60817DB676FE9D36B48C21E88AC24F1 /* Release */,
+				748BAECF28BB1CA31D79E3D74EFA797E /* Debug */,
+				A3F592D0944A8153A7644F1BCE619418 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2288,17 +2360,8 @@
 		4D00CACFA8025DE4DA2FEB1884A2D3EA /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6A4D167C6B3BCE2D20376311FD005440 /* Debug */,
-				B5242D1AC96AD51A820A5392E22217BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95E35548FEBA441316847E70D772155B /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1C090DCC879FB5CFD7C2BEE99246F53 /* Debug */,
-				100EB7895A501054E4B130C045E4925D /* Release */,
+				93E9F088CA7C5093189606826591DCB5 /* Debug */,
+				6225105DAF9FA14FC51672CFAC525280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2306,17 +2369,8 @@
 		A52956240941F9AA324F3CC4F7C4D783 /* Build configuration list for PBXNativeTarget "MZAppearance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				319F8FE80BF26324FAFBF35F67479D2A /* Debug */,
-				590918E54E841FB65879DC461B5E448C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8C69A46B233E27B5066EEE9F09DC9A3 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A79DB6EBBACA9D849D5C2F5529D5F47 /* Debug */,
-				3C1ECDC6AE1E04716513DA47E5EAD3AD /* Release */,
+				C6901E8B2C671BC5ACC6EC26BAE5485E /* Debug */,
+				FF3884753AB3334CEF4F0032A70B04B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2324,8 +2378,8 @@
 		BDB6174EEF11252F33806DCE9AFF8111 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB271BDAED577AB3E2551C5AC6D1A946 /* Debug */,
-				610017A89810C183603E1832DE5A50FC /* Release */,
+				2422DD7D13B383F273CBBA999F1E20B4 /* Debug */,
+				6115B161DCF8B8DF49AC91291E972D61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2333,8 +2387,8 @@
 		C1584BECF666558BFCBF18716841FDD5 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFDE139CB9E256818D348EBADF517B96 /* Debug */,
-				9E417A8B12D3DE09B334C95354E080D8 /* Release */,
+				A0ED89879B0112CCD48A0E468ECE761D /* Debug */,
+				3E90EB302E59095041A231210D691EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2342,8 +2396,8 @@
 		C62A274300C25F99B2A9FD587F359046 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-Wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6B392024EEF13C9FF4FA781723794D1 /* Debug */,
-				D038581A9E31F6760C171AFECA30B685 /* Release */,
+				335A5470A645634798986C774436BE17 /* Debug */,
+				01F53CD5D87D9A0135122B277247405B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

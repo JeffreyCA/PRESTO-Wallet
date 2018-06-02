@@ -33,7 +33,7 @@ class TransactionsController: ScrollingNavigationViewController {
     let locations: [String] = ["Union Station", "Mount Joy GO", "Bloor/Yonge", "PRESTO", "St. Andrew"]
 
     var transactions: [Transaction] = []
-    var filteredTransactions: [Transaction] = []
+    var visibleTransactions: [Transaction] = []
     var filterOptions: FilterOptions?
 
     private static let dateFormatter: DateFormatter = {
@@ -81,6 +81,8 @@ class TransactionsController: ScrollingNavigationViewController {
         transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
         transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
         transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "PRESTO"))
+
+        visibleTransactions = transactions
     }
 
     private func sortTransactions() {
@@ -93,10 +95,19 @@ class TransactionsController: ScrollingNavigationViewController {
             // Inclusive dates
             let startDate = filterOptions.startDate
             let endDate = filterOptions.endDate
-            
-            transactions = transactions.filter { (tx) -> Bool in
-                // return agencies?.contains(element: tx.agency) && tx.'
-                false
+
+            visibleTransactions = transactions.filter { (tx) -> Bool in
+                let agency = agencies?.filter { $0.agency == tx.agency }
+                // Only show transactions within filter date and if enabled agency
+                if let result = agency?.first {
+                    let isEnabled = result.enabled
+
+                    if let startDate = startDate, let endDate = endDate {
+                        return tx.date.isBetween(startDate, endDate) && isEnabled
+                    }
+                }
+
+                return false
             }
             print("Filtered")
         }
@@ -109,7 +120,7 @@ extension TransactionsController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return transactions.count
+        return visibleTransactions.count
     }
 }
 
@@ -120,7 +131,7 @@ extension TransactionsController: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
         if let transactionCell = cell as? TransactionsTableViewCell {
-            let transaction = transactions[indexPath.row]
+            let transaction = visibleTransactions[indexPath.row]
             transactionCell.amountLabel.text = transaction.amount.formattedAsCad
             transactionCell.dateLabel.text = TransactionsController.dateFormatter.string(from: transaction.date)
             transactionCell.locationLabel.text = transaction.location
@@ -154,8 +165,6 @@ extension TransactionsController: UITableViewDelegate {
 extension TransactionsController: FilterOptionsDelegate {
     func updateFilterOptions(filterOptions: FilterOptions?) {
         self.filterOptions = filterOptions
-        // TODO: Remove
-        // transactions = [] // Test transactions are removed after filter
         applyFilter(filterOptions)
         tableView.reloadData()
     }

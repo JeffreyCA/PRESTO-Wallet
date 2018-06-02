@@ -18,7 +18,7 @@ class FilterTransitAgency: Equatable {
         self.enabled = enabled
     }
 
-    static func ==(lhs: FilterTransitAgency, rhs: FilterTransitAgency) -> Bool {
+    static func == (lhs: FilterTransitAgency, rhs: FilterTransitAgency) -> Bool {
         return lhs.agency == rhs.agency && lhs.enabled == rhs.enabled
     }
 }
