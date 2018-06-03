@@ -46,7 +46,7 @@ class TransactionsController: ScrollingNavigationViewController {
         super.viewWillAppear(animated)
 
         if let navigationController = self.navigationController as? ScrollingNavigationController {
-            navigationController.followScrollView(tableView, delay: 0.0, followers: [NavigationBarFollower(view: monthView, direction: .scrollDown)])
+            navigationController.followScrollView(tableView, delay: 0.0, followers: [NavigationBarFollower(view: monthView, direction: .scrollUp)])
             navigationController.scrollingNavbarDelegate = self
         }
     }
@@ -98,13 +98,10 @@ class TransactionsController: ScrollingNavigationViewController {
 
             visibleTransactions = transactions.filter { (tx) -> Bool in
                 let agency = agencies?.filter { $0.agency == tx.agency }
-                // Only show transactions within filter date and if enabled agency
-                if let result = agency?.first {
-                    let isEnabled = result.enabled
 
-                    if let startDate = startDate, let endDate = endDate {
-                        return tx.date.isBetween(startDate, endDate) && isEnabled
-                    }
+                // Only show transactions within filter date and if enabled agency
+                if let result = agency?.first, let startDate = startDate, let endDate = endDate {
+                    return tx.date.isBetween(startDate, endDate) && result.enabled
                 }
 
                 return false
@@ -158,6 +155,8 @@ extension TransactionsController: UITableViewDelegate {
             self.tableView.tableFooterView?.isHidden = false
 
             // Load more transactions, then stop spinner animating
+            populateStubTransactions()
+            tableView.reloadData()
         }
     }
 }
