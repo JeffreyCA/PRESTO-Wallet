@@ -36,22 +36,13 @@
 		00FC13BB1FE36F8B00AA5731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13B91FE36F8B00AA5731 /* Main.storyboard */; };
 		00FC13BD1FE36F8B00AA5731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13BC1FE36F8B00AA5731 /* Assets.xcassets */; };
 		00FC13C01FE36F8B00AA5731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13BE1FE36F8B00AA5731 /* LaunchScreen.storyboard */; };
-		00FC13D61FE36F8B00AA5731 /* PRESTO_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */; };
 		00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13E31FE3719C00AA5731 /* LandingViewController.swift */; };
 		115DDEB98FBCCB4DA7B12031 /* Pods_PRESTO_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DA1653C210CBD346059230 /* Pods_PRESTO_Wallet.framework */; };
 		6ECC426B485A48F1FC02C3F8 /* Pods_PRESTO_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5C26E0D7DE27479EB6FE5D /* Pods_PRESTO_WalletTests.framework */; };
-		A2905BD38B568E1AFB3DE5BA /* Pods_PRESTO_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3730601CBDF7F07FE259B78 /* Pods_PRESTO_WalletUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		00FC13C71FE36F8B00AA5731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00FC13A81FE36F8B00AA5731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00FC13AF1FE36F8B00AA5731;
-			remoteInfo = "PRESTO Wallet";
-		};
-		00FC13D21FE36F8B00AA5731 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00FC13A81FE36F8B00AA5731 /* Project object */;
 			proxyType = 1;
@@ -94,9 +85,6 @@
 		00FC13C11FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRESTO-WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FC13CC1FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRESTO-WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRESTO_WalletUITests.swift; sourceTree = "<group>"; };
-		00FC13D71FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FC13E31FE3719C00AA5731 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		094D16D85134ABB5738477F0 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRESTO-WalletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24DA1653C210CBD346059230 /* Pods_PRESTO_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRESTO_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,14 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ECC426B485A48F1FC02C3F8 /* Pods_PRESTO_WalletTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00FC13CE1FE36F8B00AA5731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2905BD38B568E1AFB3DE5BA /* Pods_PRESTO_WalletUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +271,6 @@
 			children = (
 				00FC13B21FE36F8B00AA5731 /* PRESTO-Wallet */,
 				00FC13C91FE36F8B00AA5731 /* Tests */,
-				00FC13D41FE36F8B00AA5731 /* UITests */,
 				00FC13B11FE36F8B00AA5731 /* Products */,
 				99FECF2BD36A82B866369484 /* Pods */,
 				5DE5DF83A0284623ADE5AF7A /* Frameworks */,
@@ -303,7 +282,6 @@
 			children = (
 				00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */,
 				00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */,
-				00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,15 +309,6 @@
 				0000CC4420A9483D00C628AD /* DateExtTest.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		00FC13D41FE36F8B00AA5731 /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */,
-				00FC13D71FE36F8B00AA5731 /* Info.plist */,
-			);
-			path = UITests;
 			sourceTree = "<group>";
 		};
 		5DE5DF83A0284623ADE5AF7A /* Frameworks */ = {
@@ -407,25 +376,6 @@
 			productReference = 00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00FC13D01FE36F8B00AA5731 /* PRESTO-WalletUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00FC13E01FE36F8C00AA5731 /* Build configuration list for PBXNativeTarget "PRESTO-WalletUITests" */;
-			buildPhases = (
-				EA67D5581E5C2B8501FE63C5 /* [CP] Check Pods Manifest.lock */,
-				00FC13CD1FE36F8B00AA5731 /* Sources */,
-				00FC13CE1FE36F8B00AA5731 /* Frameworks */,
-				00FC13CF1FE36F8B00AA5731 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00FC13D31FE36F8B00AA5731 /* PBXTargetDependency */,
-			);
-			name = "PRESTO-WalletUITests";
-			productName = "PRESTO WalletUITests";
-			productReference = 00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -441,11 +391,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					00FC13C51FE36F8B00AA5731 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 00FC13AF1FE36F8B00AA5731;
-					};
-					00FC13D01FE36F8B00AA5731 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 00FC13AF1FE36F8B00AA5731;
@@ -467,7 +412,6 @@
 			targets = (
 				00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */,
 				00FC13C51FE36F8B00AA5731 /* PRESTO-WalletTests */,
-				00FC13D01FE36F8B00AA5731 /* PRESTO-WalletUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -485,13 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		00FC13C41FE36F8B00AA5731 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00FC13CF1FE36F8B00AA5731 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,24 +517,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA67D5581E5C2B8501FE63C5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PRESTO-WalletUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -641,14 +560,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00FC13CD1FE36F8B00AA5731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00FC13D61FE36F8B00AA5731 /* PRESTO_WalletUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -656,11 +567,6 @@
 			isa = PBXTargetDependency;
 			target = 00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */;
 			targetProxy = 00FC13C71FE36F8B00AA5731 /* PBXContainerItemProxy */;
-		};
-		00FC13D31FE36F8B00AA5731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */;
-			targetProxy = 00FC13D21FE36F8B00AA5731 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -865,42 +771,6 @@
 			};
 			name = Release;
 		};
-		00FC13E11FE36F8C00AA5731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6297890C51994F740A3CCC15 /* Pods-PRESTO-WalletUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS7W828M3J;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-WalletUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PRESTO-Wallet";
-			};
-			name = Debug;
-		};
-		00FC13E21FE36F8C00AA5731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46189AA72DD86D3D53BAD534 /* Pods-PRESTO-WalletUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS7W828M3J;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-WalletUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PRESTO-Wallet";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -927,15 +797,6 @@
 			buildConfigurations = (
 				00FC13DE1FE36F8C00AA5731 /* Debug */,
 				00FC13DF1FE36F8C00AA5731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00FC13E01FE36F8C00AA5731 /* Build configuration list for PBXNativeTarget "PRESTO-WalletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00FC13E11FE36F8C00AA5731 /* Debug */,
-				00FC13E21FE36F8C00AA5731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
