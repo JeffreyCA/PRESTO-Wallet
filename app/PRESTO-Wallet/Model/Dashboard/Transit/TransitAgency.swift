@@ -19,6 +19,7 @@ enum TransitAgency: String, EnumCollection {
     case TTC = "Toronto Transit Commission"
     case UP_EXPRESS = "UP Express"
     case YRT_VIVA = "York Region Transit/VIVA"
+    case DEBUG = "Test"
 
     func getImage() -> String {
         switch self {
@@ -45,6 +46,8 @@ enum TransitAgency: String, EnumCollection {
         case .UP_EXPRESS:
             return "icon_up_express"
         case .YRT_VIVA:
+            return "icon_yrt_viva"
+        case .DEBUG:
             return "icon_yrt_viva"
         }
     }

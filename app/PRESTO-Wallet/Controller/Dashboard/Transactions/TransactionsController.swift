@@ -68,6 +68,9 @@ class TransactionsController: ScrollingNavigationViewController {
         monthView.addSubview(visualEffectView)
         populateStubTransactions()
         sortTransactions()
+
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     private func populateStubTransactions() {
@@ -80,7 +83,7 @@ class TransactionsController: ScrollingNavigationViewController {
         transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
         transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
         transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-        transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "PRESTO"))
+        transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Top Up"))
 
         visibleTransactions = transactions
     }
@@ -127,24 +130,31 @@ extension TransactionsController: UITableViewDelegate {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
 
-        if let transactionCell = cell as? TransactionsTableViewCell {
-            let transaction = visibleTransactions[indexPath.row]
-            transactionCell.amountLabel.text = transaction.amount.formattedAsCad
-            transactionCell.dateLabel.text = TransactionsController.dateFormatter.string(from: transaction.date)
-            transactionCell.locationLabel.text = transaction.location
-            transactionCell.icon.image = UIImage(named: (transaction.agency.getImage()))
+        guard let transactionCell = cell as? TransactionsTableViewCell else {
+            return cell
         }
 
-        return cell
+        let transaction = visibleTransactions[indexPath.row]
+        transactionCell.amountLabel.text = transaction.amount.formattedAsCad
+        transactionCell.discountAmountLabel.text = transaction.discount.formattedAsCad
+        transactionCell.dateLabel.text = TransactionsController.dateFormatter.string(from: transaction.date)
+        transactionCell.locationLabel.text = transaction.location
+        transactionCell.icon.image = UIImage(named: (transaction.agency.getImage()))
+        transactionCell.cellSelected(content: transaction)
+
+        return transactionCell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        let transaction = visibleTransactions[indexPath.row]
+        transaction.expanded = !transaction.expanded
+        animateRow(indexPath: indexPath)
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastSectionIndex = tableView.numberOfSections - 1
         let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+
         if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
             print("this is the last cell")
             let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -158,6 +168,19 @@ extension TransactionsController: UITableViewDelegate {
             populateStubTransactions()
             tableView.reloadData()
         }
+    }
+
+    private func animateRow(indexPath: IndexPath) {
+        let transition = CATransition()
+
+        transition.type = kCATransitionPush
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        transition.fillMode = kCAFillModeForwards
+        transition.duration = 0.3
+        transition.subtype = kCATransitionPush
+        self.tableView.layer.add(transition, forKey: "refreshRowTransition")
+
+        tableView.reloadRows(at: [indexPath], with: .none)
     }
 }
 

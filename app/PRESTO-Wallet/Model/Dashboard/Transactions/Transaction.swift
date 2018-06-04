@@ -15,6 +15,7 @@ class Transaction {
     var date: Date
     var discount: Double
     var location: String
+    var expanded: Bool
 
     init(agency: TransitAgency?, amount: Double?, balance: Double?, date: Date?, discount: Double?, location: String?) {
         self.agency = agency ?? TransitAgency.PRESTO
@@ -23,5 +24,6 @@ class Transaction {
         self.date = date ?? Date()
         self.discount = discount ?? 0.99
         self.location = location ?? "Location"
+        self.expanded = false
     }
 }
