@@ -28,8 +28,6 @@
 		00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94651FF1F66C00EE1F04 /* LoginError.swift */; };
 		00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946A1FF1F90500EE1F04 /* StringExt.swift */; };
 		00DA946D1FF1FB7200EE1F04 /* StringExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */; };
-		00DAFF661FF5F18600C45FBB /* MonthBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DAFF651FF5F18600C45FBB /* MonthBar.xib */; };
-		00DAFF681FF676D200C45FBB /* MonthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAFF671FF676D200C45FBB /* MonthBar.swift */; };
 		00E03BD8200412DB003C96CA /* SelectTransitAgencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */; };
 		00E38E9A1FF44037009160EE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E38E991FF44037009160EE /* Dashboard.storyboard */; };
 		00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */; };
@@ -84,8 +82,6 @@
 		00DA94651FF1F66C00EE1F04 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		00DA946A1FF1F90500EE1F04 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtTest.swift; sourceTree = "<group>"; };
-		00DAFF651FF5F18600C45FBB /* MonthBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthBar.xib; sourceTree = "<group>"; };
-		00DAFF671FF676D200C45FBB /* MonthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthBar.swift; sourceTree = "<group>"; };
 		00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewController.swift; sourceTree = "<group>"; };
 		00E38E991FF44037009160EE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRESTO-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,8 +263,6 @@
 		00C28338200CF58E00B304AB /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				00DAFF651FF5F18600C45FBB /* MonthBar.xib */,
-				00DAFF671FF676D200C45FBB /* MonthBar.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -485,7 +479,6 @@
 			files = (
 				00FC13C01FE36F8B00AA5731 /* LaunchScreen.storyboard in Resources */,
 				00FC13BD1FE36F8B00AA5731 /* Assets.xcassets in Resources */,
-				00DAFF661FF5F18600C45FBB /* MonthBar.xib in Resources */,
 				00FC13BB1FE36F8B00AA5731 /* Main.storyboard in Resources */,
 				00E38E9A1FF44037009160EE /* Dashboard.storyboard in Resources */,
 			);
@@ -631,7 +624,6 @@
 				00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */,
 				00E03BD8200412DB003C96CA /* SelectTransitAgencyTableViewController.swift in Sources */,
 				00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */,
-				00DAFF681FF676D200C45FBB /* MonthBar.swift in Sources */,
 				00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */,
 				00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */,
 				0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */,

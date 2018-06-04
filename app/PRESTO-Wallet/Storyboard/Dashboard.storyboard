@@ -97,21 +97,21 @@
                                                     <rect key="frame" x="75" y="77" width="285" height="100.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vY-R6-7L5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="76.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="77.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-fh-FJ9">
-                                                            <rect key="frame" x="0.0" y="76.5" width="285" height="24"/>
+                                                            <rect key="frame" x="0.0" y="82.5" width="285" height="18"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Discount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqi-pq-weT">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="242.5" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="254" height="18"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-3n-svX">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJD-3n-svX">
                                                                     <rect key="frame" x="254" y="0.0" width="31" height="18"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                     <nil key="textColor"/>
@@ -162,21 +162,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nEG-Nh-0ID" customClass="MonthBar" customModule="PRESTO_Wallet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lrp-bF-vFL"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rP0-Hl-k8i" secondAttribute="bottom" id="47i-s2-P1C"/>
                             <constraint firstItem="rP0-Hl-k8i" firstAttribute="top" secondItem="Qa6-c3-3ar" secondAttribute="top" id="9wa-qr-QUw"/>
-                            <constraint firstItem="nEG-Nh-0ID" firstAttribute="trailing" secondItem="4QD-N6-kzg" secondAttribute="trailing" id="Bge-7o-qcT"/>
-                            <constraint firstItem="nEG-Nh-0ID" firstAttribute="leading" secondItem="4QD-N6-kzg" secondAttribute="leading" id="M7W-3E-3gU"/>
                             <constraint firstItem="rP0-Hl-k8i" firstAttribute="leading" secondItem="4QD-N6-kzg" secondAttribute="leading" id="QTI-J0-q5K"/>
                             <constraint firstItem="rP0-Hl-k8i" firstAttribute="trailing" secondItem="4QD-N6-kzg" secondAttribute="trailing" id="jMt-8A-3NZ"/>
-                            <constraint firstItem="nEG-Nh-0ID" firstAttribute="top" secondItem="4QD-N6-kzg" secondAttribute="top" id="sjM-ET-6iz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4QD-N6-kzg"/>
                     </view>
@@ -188,7 +179,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="monthView" destination="nEG-Nh-0ID" id="6u7-ac-sku"/>
                         <outlet property="tableView" destination="rP0-Hl-k8i" id="e2Z-ES-Std"/>
                     </connections>
                 </viewController>

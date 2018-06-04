@@ -12,7 +12,6 @@ import MZFormSheetPresentationController
 
 class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var monthView: MonthBar!
 
     @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
         let navigationController = self.storyboard!.instantiateViewController(withIdentifier: "formSheetController") as? UINavigationController
@@ -46,7 +45,9 @@ class TransactionsController: ScrollingNavigationViewController {
         super.viewWillAppear(animated)
 
         if let navigationController = self.navigationController as? ScrollingNavigationController {
-            navigationController.followScrollView(tableView, delay: 0.0, followers: [NavigationBarFollower(view: monthView, direction: .scrollUp)])
+
+            navigationController.followScrollView(tableView, delay: 50.0)
+            navigationController.shouldUpdateContentInset = false
             navigationController.scrollingNavbarDelegate = self
         }
     }
@@ -56,16 +57,12 @@ class TransactionsController: ScrollingNavigationViewController {
         tableView.dataSource = self
         tableView.delegate = self
 
-        tableView.contentInset = UIEdgeInsets(top: monthView.frame.height, left: 0, bottom: 100, right: 0)
-
         let blurEffect = UIBlurEffect(style: .extraLight)
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
 
         visualEffectView.isUserInteractionEnabled = false
-        visualEffectView.frame = monthView.bounds
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
-        monthView.addSubview(visualEffectView)
         populateStubTransactions()
         sortTransactions()
 
@@ -77,14 +74,15 @@ class TransactionsController: ScrollingNavigationViewController {
         let calendar = Calendar.current
         var transactionDate = Date()
 
-        transactions.append(Transaction(agency: .GO, amount: 555.75, balance: 90.00, date: transactionDate, discount: 1.50, location: "Mount Joy GO"))
-        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-        transactions.append(Transaction(agency: .TTC, amount: -22.05, balance: 85.00, date: transactionDate, discount: 1.50, location: "St. Andrew Station"))
-        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-        transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
-        transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-        transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Top Up"))
-
+        for _ in 1...5 {
+            transactions.append(Transaction(agency: .GO, amount: 555.75, balance: 90.00, date: transactionDate, discount: 1.50, location: "Mount Joy GO"))
+            transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+            transactions.append(Transaction(agency: .TTC, amount: -22.05, balance: 85.00, date: transactionDate, discount: 1.50, location: "St. Andrew Station"))
+            transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+            transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
+            transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
+            transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Top Up"))
+        }
         visibleTransactions = transactions
     }
 
