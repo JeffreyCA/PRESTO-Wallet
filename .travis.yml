@@ -6,7 +6,8 @@ before_install:
   - gem install xcpretty -N
 script:
     - set -o pipefail
-    - xcodebuild clean test -workspace app/PRESTO-Wallet.xcworkspace -scheme PRESTO-Wallet -destination "platform=iOS Simulator,name=iPhone 8,OS=11.2" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty -c
+    - xcodebuild clean test -workspace app/PRESTO-Wallet.xcworkspace 
+-scheme PRESTO-Wallet -destination "platform=iOS Simulator,name=iPhone 8,OS=11.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty -c
     - swiftlint --path app/
 notifications:
   email:
