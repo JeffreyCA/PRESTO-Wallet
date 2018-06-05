@@ -16,12 +16,29 @@ protocol SelectTransitAgencyDelegate: class {
 class SelectTransitAgencyTableViewController: UITableViewController {
     weak var delegate: SelectTransitAgencyDelegate?
     var filterOptions: FilterOptions?
+    var selectedRows: Int = 0
 
     @IBAction func resetSelection() {
-        // Select all agencies
+        let shouldCheck: Bool
+
+        if self.selectedRows == filterOptions?.agencies?.count {
+            self.navigationItem.rightBarButtonItem?.title = "Select All"
+            self.selectedRows = 0
+            shouldCheck = false
+        } else {
+            self.navigationItem.rightBarButtonItem?.title = "Deselect All"
+            self.selectedRows = (filterOptions?.agencies?.count)!
+            shouldCheck = true
+        }
+
+        // Deselect/select all agencies
         for row in 0 ..< tableView.numberOfRows(inSection: 0) {
-            filterOptions?.agencies?[row].enabled = true
-            tableView.selectRow(at: IndexPath(row: row, section: 0), animated: false, scrollPosition: .none)
+            filterOptions?.agencies?[row].enabled = shouldCheck
+            if shouldCheck {
+                tableView.selectRow(at: IndexPath(row: row, section: 0), animated: false, scrollPosition: .none)
+            } else {
+                tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: false)
+            }
         }
     }
 
@@ -54,6 +71,8 @@ class SelectTransitAgencyTableViewController: UITableViewController {
                 index += 1
             }
         }
+
+        self.selectedRows = (filterOptions?.agencies?.count)!
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -92,10 +111,18 @@ extension SelectTransitAgencyTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         filterOptions?.agencies?[indexPath.row].enabled = true
+        selectedRows += 1
+
+        if selectedRows == filterOptions?.agencies?.count {
+            self.navigationItem.rightBarButtonItem?.title = "Deselect All"
+        }
     }
 
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         filterOptions?.agencies?[indexPath.row].enabled = false
+        selectedRows -= 1
+
+        self.navigationItem.rightBarButtonItem?.title = "Select All"
     }
 }
 

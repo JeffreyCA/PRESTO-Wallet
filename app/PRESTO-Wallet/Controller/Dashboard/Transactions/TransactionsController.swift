@@ -99,7 +99,6 @@ class TransactionsController: ScrollingNavigationViewController {
 
             visibleTransactions = transactions.filter { (tx) -> Bool in
                 let agency = agencies?.filter { $0.agency == tx.agency }
-
                 // Only show transactions within filter date and if enabled agency
                 if let result = agency?.first, let startDate = startDate, let endDate = endDate {
                     return tx.date.isBetween(startDate, endDate) && result.enabled
@@ -107,7 +106,6 @@ class TransactionsController: ScrollingNavigationViewController {
 
                 return false
             }
-            print("Filtered")
         }
     }
 }
@@ -154,7 +152,7 @@ extension TransactionsController: UITableViewDelegate {
         let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
 
         if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
-            print("this is the last cell")
+            print("Loading more transactions")
             let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
             spinner.startAnimating()
             spinner.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 44)
@@ -164,6 +162,7 @@ extension TransactionsController: UITableViewDelegate {
 
             // Load more transactions, then stop spinner animating
             populateStubTransactions()
+            applyFilter(filterOptions)
             tableView.reloadData()
         }
     }

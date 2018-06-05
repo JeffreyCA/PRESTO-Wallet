@@ -63,19 +63,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IhT-6v-gp5">
-                                                    <rect key="frame" x="75" y="15" width="285" height="47"/>
+                                                    <rect key="frame" x="75" y="15" width="285" height="44.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-yi-bfd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="47"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="44.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St. Andrew Station" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="5i6-a2-4f2" userLabel="Location">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="24"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="21.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 25, 2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="og4-yx-6PT" userLabel="Date">
-                                                                    <rect key="frame" x="0.0" y="29" width="195" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="26.5" width="195" height="18"/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -83,7 +83,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-98.00" textAlignment="right" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="1LF-3n-aah" userLabel="Amount">
-                                                            <rect key="frame" x="210" y="0.0" width="75" height="47"/>
+                                                            <rect key="frame" x="210" y="0.0" width="75" height="44.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="75" id="PkG-ah-OYV"/>
                                                             </constraints>
@@ -94,16 +94,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-Sa-Wbb">
-                                                    <rect key="frame" x="75" y="77" width="285" height="100.5"/>
+                                                    <rect key="frame" x="75" y="74.5" width="285" height="103"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vY-R6-7L5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="77.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vY-R6-7L5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="285" height="80"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-fh-FJ9">
-                                                            <rect key="frame" x="0.0" y="82.5" width="285" height="18"/>
+                                                            <rect key="frame" x="0.0" y="85" width="285" height="18"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Discount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqi-pq-weT">
                                                                     <rect key="frame" x="0.0" y="0.0" width="254" height="18"/>
@@ -386,7 +386,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select those to include in filter results:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="dbt-I4-pRj">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select those to include in filter results:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbt-I4-pRj">
                                     <rect key="frame" x="15" y="12" width="277" height="20"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
@@ -417,7 +417,7 @@
                                                         <constraint firstAttribute="width" constant="45" id="egf-RR-TcJ"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-OD-Jwy">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO Transit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-OD-Jwy">
                                                     <rect key="frame" x="60" y="12" width="285" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -445,11 +445,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Transit Agency" id="ikg-yX-Eim">
-                        <barButtonItem key="rightBarButtonItem" title="Reset" id="ix7-gA-YEt">
+                        <barButtonItem key="rightBarButtonItem" title="Deselect All" id="ix7-gA-YEt">
                             <connections>
                                 <action selector="resetSelection" destination="hUz-MK-uxM" id="Vz0-Ie-Deu"/>
                             </connections>
                         </barButtonItem>
+                        <connections>
+                            <outlet property="rightBarButtonItem" destination="ix7-gA-YEt" id="HIu-6g-7r3"/>
+                        </connections>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wc-AD-FJk" userLabel="First Responder" sceneMemberID="firstResponder"/>
