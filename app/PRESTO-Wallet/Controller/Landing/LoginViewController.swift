@@ -3,7 +3,7 @@
 //  PRESTO Wallet
 //
 //  Created by Jeffrey on 2017-12-14.
-//  Copyright © 2017 JeffreyCA. All rights reserved.
+//  Copyright © 2018 JeffreyCA. All rights reserved.
 //
 
 import UIKit
@@ -14,10 +14,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var loginButton: UIImageView!
 
-    private static let LOGIN_BUTTON_CORNER_RADIUS: CGFloat = 5.0
-    private static let LOGIN_BUTTON_MASK_ALPHA: CGFloat = 0.7
-    private static let LOGIN_BUTTON_TAPPED_ALPHA: CGFloat = 0.7
-    private static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
+    private enum Constants {
+        static let LOGIN_BUTTON_CORNER_RADIUS: CGFloat = 5.0
+        static let LOGIN_BUTTON_MASK_ALPHA: CGFloat = 0.7
+        static let LOGIN_BUTTON_TAPPED_ALPHA: CGFloat = 0.7
+        static let LOGIN_BUTTON_ANIMATE_DURATION: Double = 0.3
+    }
 
     private var loginService: LoginServiceHandler?
     private var loadingView: UIAlertController?
@@ -91,7 +93,7 @@ fileprivate extension LoginViewController {
             if let mask = mask {
                 UIGraphicsBeginImageContextWithOptions(loginButton.bounds.size, false, 0)
                 UIGraphicsGetCurrentContext()?.clip(to: loginButton.bounds, mask: mask)
-                UIColor.white.withAlphaComponent(LoginViewController.LOGIN_BUTTON_MASK_ALPHA)
+                UIColor.white.withAlphaComponent(Constants.LOGIN_BUTTON_MASK_ALPHA)
                     .setFill()
                 UIBezierPath(rect: loginButton.bounds).fill()
             }
@@ -102,7 +104,7 @@ fileprivate extension LoginViewController {
 
         // Use image
         loginButton.image = background
-        loginButton.layer.cornerRadius = LoginViewController.LOGIN_BUTTON_CORNER_RADIUS
+        loginButton.layer.cornerRadius = Constants.LOGIN_BUTTON_CORNER_RADIUS
         loginButton.layer.masksToBounds = true
     }
 
@@ -138,7 +140,7 @@ fileprivate extension LoginViewController {
     }
 
     func animateLoginButton(toAlpha alpha: CGFloat) {
-        UIView.animate(withDuration: LoginViewController.LOGIN_BUTTON_ANIMATE_DURATION) {
+        UIView.animate(withDuration: Constants.LOGIN_BUTTON_ANIMATE_DURATION) {
             self.loginButton.alpha = alpha
         }
     }
@@ -150,7 +152,7 @@ fileprivate extension LoginViewController {
         }
 
         if gesture.state == .began {
-            self.loginButton.alpha = LoginViewController.LOGIN_BUTTON_TAPPED_ALPHA
+            self.loginButton.alpha = Constants.LOGIN_BUTTON_TAPPED_ALPHA
         } else if gesture.state == .ended {
             if isTapInBounds() {
                 showLoadingDialog {

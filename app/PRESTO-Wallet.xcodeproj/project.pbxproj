@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0000CC4120A946D400C628AD /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000CC4020A946D400C628AD /* DateExt.swift */; };
+		0000CC4520A9483D00C628AD /* DateExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000CC4420A9483D00C628AD /* DateExtTest.swift */; };
+		0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */; };
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
+		0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016B2B8200C007500B5BC21 /* FilterOptions.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
+		0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */; };
+		008300E61FF88377003122C0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E51FF88377003122C0 /* Transaction.swift */; };
+		008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E71FF883B8003122C0 /* TransitAgency.swift */; };
 		008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008552C31FF32AEF00461F92 /* APIConstant.swift */; };
 		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
+		00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A61FF68C7700A14631 /* TransactionsController.swift */; };
+		00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */; };
+		00C0212B200C30AB00D068B9 /* FilterTransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */; };
+		00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7BA541FF5572600EAA781 /* DashboardViewController.swift */; };
+		00D5F8812002BBEA00D4487A /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8802002BBEA00D4487A /* EnumCollection.swift */; };
+		00D5F8832002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */; };
 		00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94631FF1F5BE00EE1F04 /* LoginService.swift */; };
 		00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA94651FF1F66C00EE1F04 /* LoginError.swift */; };
 		00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946A1FF1F90500EE1F04 /* StringExt.swift */; };
-		00DA946D1FF1FB7200EE1F04 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */; };
+		00DA946D1FF1FB7200EE1F04 /* StringExtTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */; };
+		00E03BD8200412DB003C96CA /* SelectTransitAgencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */; };
 		00E38E9A1FF44037009160EE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E38E991FF44037009160EE /* Dashboard.storyboard */; };
 		00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */; };
 		00FC13B61FE36F8B00AA5731 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13B51FE36F8B00AA5731 /* WelcomeViewController.swift */; };
@@ -22,11 +36,9 @@
 		00FC13BB1FE36F8B00AA5731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13B91FE36F8B00AA5731 /* Main.storyboard */; };
 		00FC13BD1FE36F8B00AA5731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13BC1FE36F8B00AA5731 /* Assets.xcassets */; };
 		00FC13C01FE36F8B00AA5731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FC13BE1FE36F8B00AA5731 /* LaunchScreen.storyboard */; };
-		00FC13D61FE36F8B00AA5731 /* PRESTO_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */; };
 		00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC13E31FE3719C00AA5731 /* LandingViewController.swift */; };
 		115DDEB98FBCCB4DA7B12031 /* Pods_PRESTO_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DA1653C210CBD346059230 /* Pods_PRESTO_Wallet.framework */; };
 		6ECC426B485A48F1FC02C3F8 /* Pods_PRESTO_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5C26E0D7DE27479EB6FE5D /* Pods_PRESTO_WalletTests.framework */; };
-		A2905BD38B568E1AFB3DE5BA /* Pods_PRESTO_WalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3730601CBDF7F07FE259B78 /* Pods_PRESTO_WalletUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,24 +49,31 @@
 			remoteGlobalIDString = 00FC13AF1FE36F8B00AA5731;
 			remoteInfo = "PRESTO Wallet";
 		};
-		00FC13D21FE36F8B00AA5731 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00FC13A81FE36F8B00AA5731 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00FC13AF1FE36F8B00AA5731;
-			remoteInfo = "PRESTO Wallet";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0000CC4020A946D400C628AD /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		0000CC4420A9483D00C628AD /* DateExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtTest.swift; sourceTree = "<group>"; };
+		0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		0016B2B8200C007500B5BC21 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
+		008300E51FF88377003122C0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		008300E71FF883B8003122C0 /* TransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitAgency.swift; sourceTree = "<group>"; };
 		008552C31FF32AEF00461F92 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		00BBD2A61FF68C7700A14631 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
+		00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransitAgency.swift; sourceTree = "<group>"; };
+		00C7BA541FF5572600EAA781 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		00D5F8802002BBEA00D4487A /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
+		00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewCell.swift; sourceTree = "<group>"; };
 		00DA94631FF1F5BE00EE1F04 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		00DA94651FF1F66C00EE1F04 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
 		00DA946A1FF1F90500EE1F04 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
-		00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtTest.swift; sourceTree = "<group>"; };
+		00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewController.swift; sourceTree = "<group>"; };
 		00E38E991FF44037009160EE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRESTO-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,9 +85,6 @@
 		00FC13C11FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRESTO-WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FC13CC1FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PRESTO-WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRESTO_WalletUITests.swift; sourceTree = "<group>"; };
-		00FC13D71FE36F8B00AA5731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FC13E31FE3719C00AA5731 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		094D16D85134ABB5738477F0 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRESTO-WalletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24DA1653C210CBD346059230 /* Pods_PRESTO_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRESTO_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,20 +114,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00FC13CE1FE36F8B00AA5731 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2905BD38B568E1AFB3DE5BA /* Pods_PRESTO_WalletUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0083A6D01FEE04590018A9FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				00C7BA531FF5570800EAA781 /* Dashboard */,
 				0083A6D41FEE05100018A9FD /* Landing */,
 			);
 			path = Controller;
@@ -120,10 +129,9 @@
 		0083A6D11FEE04640018A9FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				00DA94631FF1F5BE00EE1F04 /* LoginService.swift */,
-				00DA94651FF1F66C00EE1F04 /* LoginError.swift */,
-				0002F8C41FF2B9AD000B849F /* LoginResponse.swift */,
-				008552C31FF32AEF00461F92 /* APIConstant.swift */,
+				00C28334200CF53500B304AB /* Dashboard */,
+				00C28332200CF4DB00B304AB /* Login */,
+				00D5F8802002BBEA00D4487A /* EnumCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,15 +168,100 @@
 		0083A6D51FEE08270018A9FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				009318811FEEEC0C00FC7D2F /* LoginTextField.swift */,
+				00C28338200CF58E00B304AB /* Dashboard */,
+				00C28337200CF58900B304AB /* Login */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		00C28330200CF4A700B304AB /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				00C28331200CF4B300B304AB /* Filter */,
+				00BBD2A61FF68C7700A14631 /* TransactionsController.swift */,
+				00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		00C28331200CF4B300B304AB /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				0002A7FF20012F5A001C5A76 /* FilterOptionsTableViewController.swift */,
+				00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */,
+				00D5F8822002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		00C28332200CF4DB00B304AB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				008552C31FF32AEF00461F92 /* APIConstant.swift */,
+				00DA94631FF1F5BE00EE1F04 /* LoginService.swift */,
+				00DA94651FF1F66C00EE1F04 /* LoginError.swift */,
+				0002F8C41FF2B9AD000B849F /* LoginResponse.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		00C28333200CF50C00B304AB /* Transit */ = {
+			isa = PBXGroup;
+			children = (
+				008300E71FF883B8003122C0 /* TransitAgency.swift */,
+			);
+			path = Transit;
+			sourceTree = "<group>";
+		};
+		00C28334200CF53500B304AB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				00C28333200CF50C00B304AB /* Transit */,
+				00C28335200CF53C00B304AB /* Transactions */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		00C28335200CF53C00B304AB /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				0016B2B8200C007500B5BC21 /* FilterOptions.swift */,
+				00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */,
+				008300E51FF88377003122C0 /* Transaction.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		00C28337200CF58900B304AB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				009318811FEEEC0C00FC7D2F /* LoginTextField.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		00C28338200CF58E00B304AB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		00C7BA531FF5570800EAA781 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				00C7BA541FF5572600EAA781 /* DashboardViewController.swift */,
+				00C28330200CF4A700B304AB /* Transactions */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		00DA94691FF1F8FA00EE1F04 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				00DA946A1FF1F90500EE1F04 /* StringExt.swift */,
+				0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */,
+				0000CC4020A946D400C628AD /* DateExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -178,7 +271,6 @@
 			children = (
 				00FC13B21FE36F8B00AA5731 /* PRESTO-Wallet */,
 				00FC13C91FE36F8B00AA5731 /* Tests */,
-				00FC13D41FE36F8B00AA5731 /* UITests */,
 				00FC13B11FE36F8B00AA5731 /* Products */,
 				99FECF2BD36A82B866369484 /* Pods */,
 				5DE5DF83A0284623ADE5AF7A /* Frameworks */,
@@ -190,7 +282,6 @@
 			children = (
 				00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */,
 				00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */,
-				00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,8 +293,8 @@
 				0083A6D31FEE05020018A9FD /* Application */,
 				0083A6D21FEE04920018A9FD /* Storyboard */,
 				0083A6D11FEE04640018A9FD /* Model */,
-				0083A6D51FEE08270018A9FD /* View */,
 				0083A6D01FEE04590018A9FD /* Controller */,
+				0083A6D51FEE08270018A9FD /* View */,
 				00FC13BC1FE36F8B00AA5731 /* Assets.xcassets */,
 				00FC13C11FE36F8B00AA5731 /* Info.plist */,
 			);
@@ -213,19 +304,11 @@
 		00FC13C91FE36F8B00AA5731 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				00DA946C1FF1FB7200EE1F04 /* StringExtensionTests.swift */,
+				00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */,
 				00FC13CC1FE36F8B00AA5731 /* Info.plist */,
+				0000CC4420A9483D00C628AD /* DateExtTest.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		00FC13D41FE36F8B00AA5731 /* UITests */ = {
-			isa = PBXGroup;
-			children = (
-				00FC13D51FE36F8B00AA5731 /* PRESTO_WalletUITests.swift */,
-				00FC13D71FE36F8B00AA5731 /* Info.plist */,
-			);
-			path = UITests;
 			sourceTree = "<group>";
 		};
 		5DE5DF83A0284623ADE5AF7A /* Frameworks */ = {
@@ -263,7 +346,6 @@
 				00FC13AD1FE36F8B00AA5731 /* Frameworks */,
 				00FC13AE1FE36F8B00AA5731 /* Resources */,
 				9465E0728D42B63EFCD73019 /* [CP] Embed Pods Frameworks */,
-				6725137C82102E6B13F3D1F3 /* [CP] Copy Pods Resources */,
 				00E41F481FF3321F00721315 /* ShellScript */,
 			);
 			buildRules = (
@@ -283,8 +365,6 @@
 				00FC13C21FE36F8B00AA5731 /* Sources */,
 				00FC13C31FE36F8B00AA5731 /* Frameworks */,
 				00FC13C41FE36F8B00AA5731 /* Resources */,
-				04F4A80E80E27F75B2339903 /* [CP] Embed Pods Frameworks */,
-				E1964121690A84276F5F5674 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,27 +376,6 @@
 			productReference = 00FC13C61FE36F8B00AA5731 /* PRESTO-WalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00FC13D01FE36F8B00AA5731 /* PRESTO-WalletUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00FC13E01FE36F8C00AA5731 /* Build configuration list for PBXNativeTarget "PRESTO-WalletUITests" */;
-			buildPhases = (
-				EA67D5581E5C2B8501FE63C5 /* [CP] Check Pods Manifest.lock */,
-				00FC13CD1FE36F8B00AA5731 /* Sources */,
-				00FC13CE1FE36F8B00AA5731 /* Frameworks */,
-				00FC13CF1FE36F8B00AA5731 /* Resources */,
-				6CC598DD3C92237B1B35339F /* [CP] Embed Pods Frameworks */,
-				DF343780B3C55A762C9A5248 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00FC13D31FE36F8B00AA5731 /* PBXTargetDependency */,
-			);
-			name = "PRESTO-WalletUITests";
-			productName = "PRESTO WalletUITests";
-			productReference = 00FC13D11FE36F8B00AA5731 /* PRESTO-WalletUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,7 +383,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = JeffreyCA;
 				TargetAttributes = {
 					00FC13AF1FE36F8B00AA5731 = {
@@ -332,11 +391,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					00FC13C51FE36F8B00AA5731 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 00FC13AF1FE36F8B00AA5731;
-					};
-					00FC13D01FE36F8B00AA5731 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 00FC13AF1FE36F8B00AA5731;
@@ -358,7 +412,6 @@
 			targets = (
 				00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */,
 				00FC13C51FE36F8B00AA5731 /* PRESTO-WalletTests */,
-				00FC13D01FE36F8B00AA5731 /* PRESTO-WalletUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,13 +435,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00FC13CF1FE36F8B00AA5731 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -405,51 +451,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		04F4A80E80E27F75B2339903 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6725137C82102E6B13F3D1F3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6CC598DD3C92237B1B35339F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9465E0728D42B63EFCD73019 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,14 +458,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
+				"${BUILT_PRODUCTS_DIR}/MZFormSheetPresentationController/MZFormSheetPresentationController.framework",
 				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMultiSelect/SwiftMultiSelect.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZFormSheetPresentationController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMultiSelect.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,54 +517,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF343780B3C55A762C9A5248 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1964121690A84276F5F5674 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA67D5581E5C2B8501FE63C5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PRESTO-WalletUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -563,16 +524,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0002A80020012F5A001C5A76 /* FilterOptionsTableViewController.swift in Sources */,
+				0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */,
+				0000CC4120A946D400C628AD /* DateExt.swift in Sources */,
 				00FC13B81FE36F8B00AA5731 /* LoginViewController.swift in Sources */,
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
+				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
 				002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */,
 				00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */,
 				00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */,
+				008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */,
 				00FC13B61FE36F8B00AA5731 /* WelcomeViewController.swift in Sources */,
 				009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */,
+				00C7BA551FF5572600EAA781 /* DashboardViewController.swift in Sources */,
+				00D5F8812002BBEA00D4487A /* EnumCollection.swift in Sources */,
+				00D5F8832002BD6E00D4487A /* SelectTransitAgencyTableViewCell.swift in Sources */,
 				008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */,
 				00DA94641FF1F5BE00EE1F04 /* LoginService.swift in Sources */,
+				00E03BD8200412DB003C96CA /* SelectTransitAgencyTableViewController.swift in Sources */,
 				00DA94661FF1F66C00EE1F04 /* LoginError.swift in Sources */,
+				00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */,
+				00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */,
+				0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */,
+				00C0212B200C30AB00D068B9 /* FilterTransitAgency.swift in Sources */,
 				00DA946B1FF1F90500EE1F04 /* StringExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,15 +555,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DA946D1FF1FB7200EE1F04 /* StringExtensionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		00FC13CD1FE36F8B00AA5731 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00FC13D61FE36F8B00AA5731 /* PRESTO_WalletUITests.swift in Sources */,
+				00DA946D1FF1FB7200EE1F04 /* StringExtTest.swift in Sources */,
+				0000CC4520A9483D00C628AD /* DateExtTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,11 +567,6 @@
 			isa = PBXTargetDependency;
 			target = 00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */;
 			targetProxy = 00FC13C71FE36F8B00AA5731 /* PBXContainerItemProxy */;
-		};
-		00FC13D31FE36F8B00AA5731 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 00FC13AF1FE36F8B00AA5731 /* PRESTO-Wallet */;
-			targetProxy = 00FC13D21FE36F8B00AA5731 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -642,6 +604,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -649,6 +612,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -699,6 +663,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -706,6 +671,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -743,6 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS7W828M3J;
 				INFOPLIST_FILE = "$(SRCROOT)/PRESTO-Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -759,6 +726,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS7W828M3J;
 				INFOPLIST_FILE = "$(SRCROOT)/PRESTO-Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -803,42 +771,6 @@
 			};
 			name = Release;
 		};
-		00FC13E11FE36F8C00AA5731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6297890C51994F740A3CCC15 /* Pods-PRESTO-WalletUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS7W828M3J;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-WalletUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PRESTO-Wallet";
-			};
-			name = Debug;
-		};
-		00FC13E21FE36F8C00AA5731 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46189AA72DD86D3D53BAD534 /* Pods-PRESTO-WalletUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MS7W828M3J;
-				INFOPLIST_FILE = UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.jeffrey.PRESTO-WalletUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PRESTO-Wallet";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -865,15 +797,6 @@
 			buildConfigurations = (
 				00FC13DE1FE36F8C00AA5731 /* Debug */,
 				00FC13DF1FE36F8C00AA5731 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00FC13E01FE36F8C00AA5731 /* Build configuration list for PBXNativeTarget "PRESTO-WalletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00FC13E11FE36F8C00AA5731 /* Debug */,
-				00FC13E21FE36F8C00AA5731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

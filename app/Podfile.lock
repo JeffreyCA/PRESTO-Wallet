@@ -1,21 +1,56 @@
 PODS:
-  - Alamofire (4.6.0)
-  - SkyFloatingLabelTextField (3.4.0)
-  - SwiftLint (0.24.0)
-  - SwiftSoup (1.5.8)
+  - Alamofire (4.7.2)
+  - AMScrollingNavbar (5.0.2)
+  - MZAppearance (1.1.6)
+  - MZFormSheetPresentationController (2.4.2):
+    - MZAppearance
+  - SkyFloatingLabelTextField (3.5.1)
+  - SwiftLint (0.25.1)
+  - SwiftMultiSelect (0.2.3)
+  - SwiftSoup (1.7.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - AMScrollingNavbar
+  - MZFormSheetPresentationController (from `https://github.com/JeffreyCA/MZFormSheetPresentationController`)
   - SkyFloatingLabelTextField (~> 3.0)
   - SwiftLint
+  - SwiftMultiSelect (from `https://github.com/JeffreyCA/SwiftMultiSelect.git`)
   - SwiftSoup
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AMScrollingNavbar
+    - MZAppearance
+    - SkyFloatingLabelTextField
+    - SwiftLint
+    - SwiftSoup
+
+EXTERNAL SOURCES:
+  MZFormSheetPresentationController:
+    :git: https://github.com/JeffreyCA/MZFormSheetPresentationController
+  SwiftMultiSelect:
+    :git: https://github.com/JeffreyCA/SwiftMultiSelect.git
+
+CHECKOUT OPTIONS:
+  MZFormSheetPresentationController:
+    :commit: f865bcc933fe716fcb062f0acab893e31d7eae42
+    :git: https://github.com/JeffreyCA/MZFormSheetPresentationController
+  SwiftMultiSelect:
+    :commit: f4d77b2e993847784453fef9a37b1191ad0d62eb
+    :git: https://github.com/JeffreyCA/SwiftMultiSelect.git
+
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
-  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
-  SwiftSoup: 86a1f5ad07b7e3d14ab1a9324a58c75ae2215e79
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AMScrollingNavbar: d941641a4b05c329e6050ab19e54105ba3785471
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetPresentationController: c1dc3bce639d2393b3cc416fcb6e050eb5bca062
+  SkyFloatingLabelTextField: 4cbeece9c3aae97c6019d8fae511cb5b755874f7
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftMultiSelect: f43fea2b0fde0593b5492c6c5bd3a403d8cba403
+  SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
 
-PODFILE CHECKSUM: 7f0a94e5d6b2ce8db0380997d4106f1dd104955a
+PODFILE CHECKSUM: 56f5b0d697586a7728fa07d1ff9a1adcc13cde41
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.2
