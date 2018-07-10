@@ -75,6 +75,7 @@
 		00DA946C1FF1FB7200EE1F04 /* StringExtTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtTest.swift; sourceTree = "<group>"; };
 		00E03BD7200412DB003C96CA /* SelectTransitAgencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTransitAgencyTableViewController.swift; sourceTree = "<group>"; };
 		00E38E991FF44037009160EE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		00F832F620F1C626007EEF2D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		00FC13B01FE36F8B00AA5731 /* PRESTO-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRESTO-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FC13B31FE36F8B00AA5731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00FC13B51FE36F8B00AA5731 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +270,7 @@
 		00FC13A71FE36F8B00AA5731 = {
 			isa = PBXGroup;
 			children = (
+				00F832F620F1C626007EEF2D /* MyPlayground.playground */,
 				00FC13B21FE36F8B00AA5731 /* PRESTO-Wallet */,
 				00FC13C91FE36F8B00AA5731 /* Tests */,
 				00FC13B11FE36F8B00AA5731 /* Products */,

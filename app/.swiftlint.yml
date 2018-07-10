@@ -4,6 +4,7 @@ disabled_rules:
   - identifier_name
   - line_length
   - todo
+  - switch_case_alignment
 included: # paths to include during linting. `--path` is ignored if present.
   - PRESTO-Wallet
 excluded: # paths to ignore during linting. Takes precedence over `included`.
