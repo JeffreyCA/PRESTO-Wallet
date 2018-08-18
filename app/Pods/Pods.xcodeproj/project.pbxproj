@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		079D990738735591330332B5F2551AE4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51391FB53C7717582492B5BB377E76 /* NetworkReachabilityManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		085BD394958F1013077F4ED42BDC6132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */; };
 		0C92DF88111A78EAA9B66682668F9925 /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BBE2EDBEB9138AF6F94CC012C887C8 /* SwiftSoup-dummy.m */; };
-		0EC9B361606D9DEF36BE0E1F12112561 /* Pods-PRESTO-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EC9B361606D9DEF36BE0E1F12112561 /* Pods-PRESTO-Wallet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE33E242F44C170E9B4AC62F276AE57 /* Pods-PRESTO-Wallet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11DF22ED47242ADA9F6D8306829B8D98 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DB61C864D95F88175DD0F8BCD96FE7 /* Cleaner.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		12A3EBA423A9EB93014BC0330AAE70BE /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9BDB148BFE9B9964BAC3E8A67E061 /* Selector.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		14CECE238604E1D44104E5BCD14EB2BE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA52430808E49424A1DF36A19186D54 /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -35,7 +35,7 @@
 		263660D5043336353BB4777642C72345 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6677C33B49CD6BF092B7CE0412B9E8E0 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27D0DCE386320D9846E2547D30620A52 /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E9A61E9ABAC8312B4FD19EDBEB8795 /* FormElement.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B58B070F9D7324583D01EE906BC918C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FA2C1BEB4BA25FF89A91B35C2D6F2 /* SessionManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		341C804B6CCA05F8460B2727A54C14C3 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		341C804B6CCA05F8460B2727A54C14C3 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6A2DF45096D207368354B1BA55E6A5 /* Pods-PRESTO-WalletTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343B30C989188B77FB1149FED753A63C /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF68589649632E0211114FC2AE5B25 /* ServerTrustPolicy.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3533AF7CAA1AD5296D74D6B7DFCFB619 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB183E1F0AA223FC559C266C1FB61129 /* OrderedSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3558D5A460E490F5D93334DC2E688C0F /* SwiftMultiSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5CFFC8294E34B44BD81C7C4D71836 /* SwiftMultiSelect.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -60,7 +60,7 @@
 		537473816D8F0AAE6A456AA8E71C8644 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B4468B10E75BB5AE0F15593F02C52 /* Element.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		538F4787BC8195FB7D73DCB03586B469 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7242A7856FBDA03147103C7B9AA090E /* StringUtil.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54501C661840EAB80E00C1E27484FDA2 /* MZFormSheetPresentationViewControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E5F5A96736BF014646C1A8840632A0 /* MZFormSheetPresentationViewControllerSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		561F1B4F7698ED684D634F6B74D68BEA /* Pods-PRESTO-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */; };
+		561F1B4F7698ED684D634F6B74D68BEA /* Pods-PRESTO-Wallet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B41E01181BCE4A66F00D49231AAA9D /* Pods-PRESTO-Wallet-dummy.m */; };
 		5718A86A50339FA1345D2E92174C9324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		5787A552EFB00447481BA6E13ED60B7B /* MultiSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAECED0561EC00F4AAC448A4B6F966F /* MultiSelectionViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58446751414EED7885105C76B8F86D32 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1370A1CAD3FC17942214405CADDF1A08 /* MZAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,7 +88,6 @@
 		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		852EBCD01673F6FFEF5BBA21A8CE28AE /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F46435C8375B700C696887E2D3A7F1A6 /* UIViewController+TargetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8889690CC0BC1FB754D3E030A6765FF6 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3151CA28E2BFE5014820AD8B70C9EC /* Entities.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		89AE2CCF4F4199B38940C3BB860A6453 /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B904AF55DAE2105569B35314059E149 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFDB2E0806825F440BF030C666F194 /* Comment.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D95EDA83CC8E875A84EA4A93C12801C /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6FBE943C754D629BD057D0235D1329 /* DocumentType.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8F5C0849D2757FC5A7C81B81BA3813C3 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771A875B78336BE563DFF90ABA6F0A26 /* ResponseSerialization.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -116,7 +115,6 @@
 		B69FD0F480B15917001DB3333C916B63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		B9D96A0CEE53916A20E7EEF31C8213B4 /* MZAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CBAAA3E52D2EDCAE052FB8E081E2A2 /* MZAppearance-dummy.m */; };
 		BAEBFABDA6FACE7B10E528AEDB9F448D /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F589EDA942FD04B31C902F60051D4 /* SimpleDictionary.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BD11FE286D5B013AB5E864C31460983E /* Pods-PRESTO-WalletUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */; };
 		C0920116D6D5DA2EBF75D0D85EAAFCC6 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68147F5F8C6B7B3FA091EDC201017ECD /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C285EB13C1A9461A332838FD7BF9F89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		C2F58607A10EB52F50659F0281AC3468 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F143685F7AC9EF3BE0F27F1AD0A5F07 /* Pattern.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -128,10 +126,9 @@
 		CB4146AF29753530F0F8EC191F87D1B3 /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2024509D67874FB8F5D9057A8A461245 /* MZFormSheetPresentationController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CDF0B657369898CB5CDECD7151F2141D /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D2ABC9B89D496CB1F1614DA25AEE1F /* CustomTableCell.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CE9DC5BBB18A0EFB183E9C10D476E493 /* MZFormSheetPresentationController-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5E2712D5E4FC0331EA873EAF608D55 /* MZFormSheetPresentationController-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEB3EF3CAF53DCB14386544F8B803FF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A2B385C96307E34D9DC0B995456500 /* Foundation.framework */; };
 		D47DED287F744D92678B86F1DFB41627 /* MultiSelectionCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961C9FA5AEAE6868989B91437B901A27 /* MultiSelectionCollectionView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D5686072DEC1A0E14F8C100FCC873F73 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7796861E312B1432996199B5BBE1174 /* TaskDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D5A3883058E7F749125454A7734CC0DD /* Pods-PRESTO-WalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */; };
+		D5A3883058E7F749125454A7734CC0DD /* Pods-PRESTO-WalletTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF125CAFAD4D21B384C172B52217FB75 /* Pods-PRESTO-WalletTests-dummy.m */; };
 		D71DB2CB5A5CA59B2B1D8C234DAB24BC /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254F1130D63AACF2BD097A6DE1FF6DFE /* SwiftSoup.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D71E9B00768383536419CDBC7BE9E121 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91987260CA84EA5196C4DF558286D4 /* StreamReader.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D779CC7DA483310A331A2AD66A74C490 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD58FD653F62C7F12BF03FE6892111 /* StringBuilder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -224,23 +221,18 @@
 			remoteGlobalIDString = ED84D8F63B0AF32EFE5517425546341A;
 			remoteInfo = SwiftSoup;
 		};
-		E6614B68BDB0D60634CFA5612EB6ACA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C40A7DAC21DF6E8F11E81E5EB9189C3;
-			remoteInfo = "Pods-PRESTO-Wallet";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0042B24DE357B685694678A619D7B895 /* Pods-PRESTO-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.release.xcconfig"; sourceTree = "<group>"; };
 		007F5D4ABC07EDC747702A370E42FD4C /* MZAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZAppearance.m; path = MZAppearance/MZAppearance.m; sourceTree = "<group>"; };
 		00C0D019F306C26CEDC5A5964444E81E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		0179F83E810C5FDD7730562D7CAF753A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		02FF68589649632E0211114FC2AE5B25 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		03B41E01181BCE4A66F00D49231AAA9D /* Pods-PRESTO-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-Wallet-dummy.m"; sourceTree = "<group>"; };
 		0416BD17533B64114B19856A558847E0 /* MultiSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionTableView.swift; path = SwiftMultiSelect/MultiSelectionTableView.swift; sourceTree = "<group>"; };
+		0428D62F600EE507BF6495A8E2234394 /* Pods_PRESTO_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRESTO_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		063DD329C6E0B7F3CDE06DD9245948C9 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
-		077B4CF224C8607D82DD643625F9704B /* Pods-PRESTO-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
 		07BBE2EDBEB9138AF6F94CC012C887C8 /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
 		08EEF1848418D48753FD2649322389FF /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		09C85B45562BA98098D23EDB034C7838 /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
@@ -253,46 +245,43 @@
 		109106080895FDBA260B849687F9FA99 /* MZFormSheetPresentationContentSizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationContentSizing.h; path = MZFormSheetPresentationController/MZFormSheetPresentationContentSizing.h; sourceTree = "<group>"; };
 		1103DBFB72477EF6DAA54CB56E337831 /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationController.h; sourceTree = "<group>"; };
 		1370A1CAD3FC17942214405CADDF1A08 /* MZAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZAppearance.h; path = MZAppearance/MZAppearance.h; sourceTree = "<group>"; };
-		146F801CD822A71E3DF640D0D4F44CD2 /* Pods-PRESTO-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-frameworks.sh"; sourceTree = "<group>"; };
 		148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMScrollingNavbar.xcconfig; sourceTree = "<group>"; };
 		1739BC4F2B188488E4D0BB0B8FD5844A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19506B1014CF88558C92D92E756F240E /* Pods-PRESTO-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		19E5B1D5D0D21CEFB480573EDF20F0E8 /* SwiftMultiSelect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-umbrella.h"; sourceTree = "<group>"; };
-		1CD0B3019DC51336814C1EE7464F32EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB84C6D36578CE0CE1523AEE158CEE8 /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZBlurEffectAdapter.h; path = MZFormSheetPresentationController/MZBlurEffectAdapter.h; sourceTree = "<group>"; };
 		1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
-		1E42EE8869C2573F28BE4154642378D2 /* Pods-PRESTO-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
 		201A7B3B3323F043ED1A623B6309A54A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2024509D67874FB8F5D9057A8A461245 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationController.m; sourceTree = "<group>"; };
 		22E0831BBF4C9C63F3CF85581EE3175B /* MZFormSheetPresentationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewController.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.h; sourceTree = "<group>"; };
 		248B4468B10E75BB5AE0F15593F02C52 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
 		251F589EDA942FD04B31C902F60051D4 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
 		254F1130D63AACF2BD097A6DE1FF6DFE /* SwiftSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSoup.swift; path = Sources/SwiftSoup.swift; sourceTree = "<group>"; };
-		268533C10633EAF3647527CE33A9AE1D /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSoup.framework; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27202811F354C455E9647A8A8D5E873C /* SwiftMultiSelect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMultiSelect.framework; path = SwiftMultiSelect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F5F4E38A663EF71895F2174D150D3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		276F687A47B16611DA1C0F825343DAEB /* ScrollingNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollingNavigationController.swift; path = Source/ScrollingNavigationController.swift; sourceTree = "<group>"; };
 		2894876A8C7C4959F155DDC61BE3E261 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4C6542CB15A56D555CA7B4F9D7733B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		2A8E92CAF1213B7FBB3B7A5E4FAFF496 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		2C4F487B8CDA1B152F080A6097B0E6F8 /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
+		2C6A2DF45096D207368354B1BA55E6A5 /* Pods-PRESTO-WalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletTests-umbrella.h"; sourceTree = "<group>"; };
 		2D36F83C208A1F861B2434461D6986C3 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
 		2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZAppearance.xcconfig; sourceTree = "<group>"; };
+		30C03961A15EBAF706D5A92E55CFA879 /* Pods-PRESTO-WalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-frameworks.sh"; sourceTree = "<group>"; };
 		36C2E63A226DE10DB37B73CE06E2D945 /* OrderedDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedDictionary.swift; path = Sources/OrderedDictionary.swift; sourceTree = "<group>"; };
 		3705F63CDF9DA719C3E884EF77B6050B /* MZFormSheetPresentationViewControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimator.h; sourceTree = "<group>"; };
-		37BBDFA710B9DACA05EFD6F20721166C /* Pods-PRESTO-WalletTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-frameworks.sh"; sourceTree = "<group>"; };
 		37FC9BCD234FB3D2405DA9BDE2DAA319 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3867F75805E50C1430E30EED0D37DA00 /* MZAppearance-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-umbrella.h"; sourceTree = "<group>"; };
 		3BF5CFFC8294E34B44BD81C7C4D71836 /* SwiftMultiSelect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMultiSelect.swift; path = SwiftMultiSelect/SwiftMultiSelect.swift; sourceTree = "<group>"; };
-		3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_WalletTests.framework; path = "Pods-PRESTO-WalletTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA6F23F566E84DC17DEAB4C69E82A5 /* SwiftMultiSelect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftMultiSelect.modulemap; sourceTree = "<group>"; };
 		3F8B936EDCB89B83B0C50FC7B50E2415 /* MZMethodSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZMethodSwizzler.m; path = MZFormSheetPresentationController/MZMethodSwizzler.m; sourceTree = "<group>"; };
 		41D2C1CAA7567F3AA2068851D7100F77 /* MZTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZTransition.m; path = MZFormSheetPresentationController/MZTransition.m; sourceTree = "<group>"; };
-		434A4CB9ED30E1060BE85C4D839FCA1A /* Pods-PRESTO-WalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-resources.sh"; sourceTree = "<group>"; };
-		45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-Wallet-dummy.m"; sourceTree = "<group>"; };
+		4210D3716F5051B606D16D4E4D35AB7B /* Pods-PRESTO-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		44788BE26315BF741D85561A0F28BBE2 /* Pods-PRESTO-WalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		466EA9A2A61F64CDD3647ABB040F0A27 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
 		499FA2C1BEB4BA25FF89A91B35C2D6F2 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.release.xcconfig"; sourceTree = "<group>"; };
-		4AD643D2D78EC768A884BF28017F51F3 /* Pods-PRESTO-WalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-WalletTests.modulemap"; sourceTree = "<group>"; };
+		49CFE84DBEC0734BD7CC5EE4BFDA8FDB /* Pods-PRESTO-Wallet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-Wallet-acknowledgements.plist"; sourceTree = "<group>"; };
 		4BA52430808E49424A1DF36A19186D54 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4BE33E242F44C170E9B4AC62F276AE57 /* Pods-PRESTO-Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-Wallet-umbrella.h"; sourceTree = "<group>"; };
 		4C6BD1A64F175A0B1EFAE2549718FF94 /* MZFormSheetContentSizingNavigationControllerAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationControllerAnimator.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.m; sourceTree = "<group>"; };
 		4F1210C2C9C171AE5A22FB6E90834843 /* ContactsLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactsLibrary.swift; path = SwiftMultiSelect/ContactsLibrary.swift; sourceTree = "<group>"; };
 		503DB8327EFD37B578A7132DE2F24407 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
@@ -300,19 +289,12 @@
 		50E9A61E9ABAC8312B4FD19EDBEB8795 /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
 		51851A47E2E12A62C64175E2167F3451 /* MZFormSheetPresentationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-prefix.pch"; sourceTree = "<group>"; };
 		51992F79186605E911C11E146B3200A6 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
-		51EDDCEA711D21BB571B999BA0757A11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5544511F6AEFFACD2D9776E40F8B5980 /* Pods-PRESTO-WalletUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-WalletUITests.modulemap"; sourceTree = "<group>"; };
 		556354B2EE80F2D5DC5605A83356459C /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
 		561CB3BD1C0D0C6263CD3A947CD45B85 /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
-		567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletTests-dummy.m"; sourceTree = "<group>"; };
 		570DEC5293F73C368F5DEA16B3538DDE /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
-		572A24038EDC6B8BBA5C49BA973360FF /* Pods-PRESTO-WalletTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		58BE4D3099FE2BD863A4E040BE953A32 /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AMScrollingNavbar.framework; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BA7B5CABF657BD71F5FD8692B7654B /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerAnimatedTransitioning.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
 		5A4C605E1B2A0929737377BE1A174EF0 /* MZAppearance.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MZAppearance.modulemap; sourceTree = "<group>"; };
-		5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DC2726A784867691D2EFBE396C90725 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		5E14405CA4DA109073DA47A2E1AA3A5D /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZAppearance.framework; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2E781CC0A6F63838986F8408F82A2F /* SwiftMultiSelect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMultiSelect-dummy.m"; sourceTree = "<group>"; };
 		5F8D69DC3608FB9C98D586FA7C90EB45 /* MZMethodSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZMethodSwizzler.h; path = MZFormSheetPresentationController/MZMethodSwizzler.h; sourceTree = "<group>"; };
 		606E05F8B6D5974A36F2F63D269E619B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -323,17 +305,13 @@
 		66F3DE2C588EDDF807FD55AE0D156DB6 /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
 		67DEE930D98052335373C2CAA58176A4 /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
 		68147F5F8C6B7B3FA091EDC201017ECD /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetPresentationViewControllerInteractiveAnimator.h; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.h; sourceTree = "<group>"; };
-		687016A8A80A6EFAE2EA3B6BCE2E52FB /* Pods_PRESTO_WalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_WalletUITests.framework; path = "Pods-PRESTO-WalletUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBBD3C5624F268E31EC68E65C42F0E0 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
 		6DF769C23DFF41BEB00DADB5FCF1EE11 /* ScrollingNavbar+Sizes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollingNavbar+Sizes.swift"; path = "Source/ScrollingNavbar+Sizes.swift"; sourceTree = "<group>"; };
-		6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.release.xcconfig"; sourceTree = "<group>"; };
-		6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletTests-umbrella.h"; sourceTree = "<group>"; };
 		707DB26741B146FBE8EFB37832D0FD20 /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
-		7138A30F53F57F752AA2DE3611EB6D3F /* Pods-PRESTO-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-resources.sh"; sourceTree = "<group>"; };
-		7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		72833C44E10F59D1DCE32DE4349C8882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72B23F7B16C87696C0D3742AC03C347D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MZFormSheetPresentationController.xcconfig; sourceTree = "<group>"; };
+		738AF64E35DD43E95E9A9DDE7369A30F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750B27CEA255834C85281DAE3056B4D5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		771A875B78336BE563DFF90ABA6F0A26 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		772F4DACFC90D3893A282993E3F45724 /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
@@ -343,14 +321,12 @@
 		7B4D0093CCDA3ED7CA1449E63C6CC72D /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
 		7CA1DF8676FF7213D7904213AF866669 /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
 		7E05E7743AD41A9BEDBC9ACF53A6FDF1 /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
+		7F43FAFF9E1277B3B352434445C77614 /* Pods-PRESTO-WalletTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletTests-resources.sh"; sourceTree = "<group>"; };
 		7F543CDF964A47E7D1F09E0BBB6AAFA8 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
 		81908A31F15F3914CF82E93EDEFABBA8 /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
-		824F192510C09F51A61D268BF82F0D49 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-WalletUITests-umbrella.h"; sourceTree = "<group>"; };
+		833D967C40DF06A11B2E17B2D567F1BE /* SwiftMultiSelect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMultiSelect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		849BEEA9C997564DB898AF7B5599A5E3 /* MZFormSheetContentSizingNavigationControllerAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationControllerAnimator.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationControllerAnimator.h; sourceTree = "<group>"; };
 		86111E2BA6F011173A96E88E9B611899 /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
-		8699C929DD5C48F3A5409AFF74674127 /* Pods_PRESTO_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PRESTO_Wallet.framework; path = "Pods-PRESTO-Wallet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		86C9E4764AA1769BB3A4A0D7291C95B0 /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MZFormSheetPresentationController.framework; path = MZFormSheetPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A0E7E172650AD9729FECF34C3EE526 /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
 		87E7CA8D80F9C36B8875F875E59D4D03 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
 		8947695B29338C3254E286A3E2FDCF0B /* MZFormSheetPresentationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewController.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewController.m; sourceTree = "<group>"; };
@@ -358,52 +334,52 @@
 		8BFFFF6EABA34C2880A974A5DCACC9B9 /* MZFormSheetContentSizingNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZFormSheetContentSizingNavigationController.h; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.h; sourceTree = "<group>"; };
 		8FDCC19E3E714791440AF7E54C44CE79 /* MZFormSheetPresentationViewControllerSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerSegue.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerSegue.m; sourceTree = "<group>"; };
 		902508A97371791ACA1EAF8686C8FC6F /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
-		902BD474ED41538DCCC0C5F33577860D /* Pods-PRESTO-WalletUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-frameworks.sh"; sourceTree = "<group>"; };
 		924991F6D1AB425353A3B2C4DCC834AC /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
 		9303C8E248DB593F194D1B9513268026 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		951DBD378A135C30267199B4C5BE61A9 /* MZTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MZTransition.h; path = MZFormSheetPresentationController/MZTransition.h; sourceTree = "<group>"; };
 		961C9FA5AEAE6868989B91437B901A27 /* MultiSelectionCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionCollectionView.swift; path = SwiftMultiSelect/MultiSelectionCollectionView.swift; sourceTree = "<group>"; };
 		96453FB6DD6F4B95A918F541099AB8AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9756D5FE68332EF627D734BB2BB6CC00 /* Pods-PRESTO-WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98E9310F7DB94297F2899620729BC515 /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A38E5F61D5C1BDA82CF709E4427D279 /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
-		9BFF65273547A7BA252E44DF58BD63CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D0C8A41BE826EC22A8CBDCF818E0E1D /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D73948AEE021873B5733FBF79B3F864 /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		9E7CF71D99277239A0647D64AEDC131C /* Pods-PRESTO-WalletTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-WalletTests.modulemap"; sourceTree = "<group>"; };
 		A14617628CA53AE43BE621E6793E2A17 /* SwiftMultiSelect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMultiSelect-prefix.pch"; sourceTree = "<group>"; };
 		A1FBC90DBA4A48FA57AA38F653F1FECE /* MZFormSheetPresentationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController-umbrella.h"; sourceTree = "<group>"; };
 		A2EA2F93765277E4F9F8785C01636B97 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		A81C1E8C03535282F4308979625FBC69 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TargetViewController.m"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		A86970808DA9EC07229E62700104A378 /* Pods-PRESTO-Wallet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-resources.sh"; sourceTree = "<group>"; };
 		AA6FBE943C754D629BD057D0235D1329 /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
 		AF14CC1A35F2649FE5FE04C8977564F5 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		AF3151CA28E2BFE5014820AD8B70C9EC /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
 		AFAECED0561EC00F4AAC448A4B6F966F /* MultiSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiSelectionViewController.swift; path = SwiftMultiSelect/MultiSelectionViewController.swift; sourceTree = "<group>"; };
 		B011D19A18565F0D1C26DCBDEDBC82C8 /* AMScrollingNavbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-prefix.pch"; sourceTree = "<group>"; };
-		B18E964224BE9D7D283C4EE020CBEF63 /* Pods-PRESTO-WalletUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B2D2ABC9B89D496CB1F1614DA25AEE1F /* CustomTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTableCell.swift; path = SwiftMultiSelect/CustomTableCell.swift; sourceTree = "<group>"; };
 		B3F87B9CEAE6AA684F1344A194A7BC5D /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
-		B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRESTO-Wallet-umbrella.h"; sourceTree = "<group>"; };
-		B4FB22616987383A7E0C28CDBA7FD0A6 /* Pods-PRESTO-WalletUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-WalletUITests-resources.sh"; sourceTree = "<group>"; };
+		B59F2E7BB37837BB8E8BE3FAA0F6566F /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B834BDB9E49C38E28FC41A0422D234F9 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
 		BAB995C85E4D995A7EA17C2A70F6834C /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
 		BAE6D97EB1C3BB04CFC57F3F9F27FC54 /* MZAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MZAppearance-prefix.pch"; sourceTree = "<group>"; };
 		BB183E1F0AA223FC559C266C1FB61129 /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
 		BBB1B87BDAA5A274C803E2BA92FEB66B /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
 		BF51391FB53C7717582492B5BB377E76 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		BF7A6EBBB76B9AFA94EA3922F0B1A635 /* Pods-PRESTO-WalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-WalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3E22CA3040628E6022FBCEB19D1673A /* Pods-PRESTO-Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-Wallet.modulemap"; sourceTree = "<group>"; };
+		C17CD9E1EEA4803DCEB8FF7359F377D7 /* Pods-PRESTO-Wallet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-Wallet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3113CB1B844F4B452079F850A5FDF59 /* Pods_PRESTO_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRESTO_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CFDB2E0806825F440BF030C666F194 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
-		C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRESTO-Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		C52BDBC3C1F446022E2C605BA090F5FA /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C592DC410A8370ECC714EA58B0CA91BD /* AMScrollingNavbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMScrollingNavbar-umbrella.h"; sourceTree = "<group>"; };
 		C78BB5646A6CC83F538CAB884112EE8A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletUITests-dummy.m"; sourceTree = "<group>"; };
 		C8A43450B2E2F6716C8A1E43456710F6 /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
 		C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMultiSelect.xcconfig; sourceTree = "<group>"; };
 		C9E5FF4651BB24A0FA03E61C9568A02F /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
 		CA6E9F55B7429F3833565764BC2AB0AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3DF2A693549CADB06896F674D1405E /* Pods-PRESTO-WalletTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRESTO-WalletTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDB804986C14BCB6E9A1D8CB0F6160D4 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+Copy.m"; path = "MZAppearance/NSInvocation+Copy.m"; sourceTree = "<group>"; };
-		CE2385E54E80286C2B44E19C6767B2A3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8C2994224A7053D66164D2DAFBA9D8 /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
 		CE9661D1295D0D3FE3086AB7B8FEEE5A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		CF125CAFAD4D21B384C172B52217FB75 /* Pods-PRESTO-WalletTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRESTO-WalletTests-dummy.m"; sourceTree = "<group>"; };
 		CF45E2143D2778879C9E80F089EB2809 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetPresentationViewControllerInteractiveAnimator.m; path = MZFormSheetPresentationController/MZFormSheetPresentationViewControllerInteractiveAnimator.m; sourceTree = "<group>"; };
 		D06F448E58F8F187BF2819CA35A01121 /* MZFormSheetContentSizingNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZFormSheetContentSizingNavigationController.m; path = MZFormSheetPresentationController/MZFormSheetContentSizingNavigationController.m; sourceTree = "<group>"; };
 		D1492321EDADBFF397091169F3A1FDE4 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomCollectionCell.swift; path = SwiftMultiSelect/CustomCollectionCell.swift; sourceTree = "<group>"; };
@@ -414,6 +390,7 @@
 		D6D3E636836DAC862821523B7095A2EE /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
 		D7796861E312B1432996199B5BBE1174 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		D8B4448C5232955C26E41F5F42410D5F /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		DA8AFA6FD3A25AA7AD8A735469A70DC5 /* Pods-PRESTO-Wallet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PRESTO-Wallet.modulemap"; sourceTree = "<group>"; };
 		DB5E2712D5E4FC0331EA873EAF608D55 /* MZFormSheetPresentationController-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MZFormSheetPresentationController-Bridging-Header.h"; path = "MZFormSheetPresentationController/MZFormSheetPresentationController-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCD878A0F2E55DE77710C7A9A5FF01A4 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
 		DF853F08A8AF065E3F8839B7B24C3EBB /* MZAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -421,6 +398,7 @@
 		E0AF487DD92808DDC6D0989F5760F7C8 /* AMScrollingNavbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMScrollingNavbar-dummy.m"; sourceTree = "<group>"; };
 		E0BF49E2C45850FB12745C552FB688B7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		E38E23B764A6A3D247CB8CDBC736BA85 /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		E414805EC7C4D2ED4A9DFC6FD120E0AF /* Pods-PRESTO-Wallet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRESTO-Wallet-frameworks.sh"; sourceTree = "<group>"; };
 		E485E99FA522EE511A233BA238B4A007 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
 		E6DB61C864D95F88175DD0F8BCD96FE7 /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
 		E7242A7856FBDA03147103C7B9AA090E /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
@@ -433,10 +411,11 @@
 		EFFF5861A059F8F55E2548DA12442823 /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
 		F02ECA9AEBEC96A50D467447780669AA /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
 		F1451A5BDB2462075C620B7DC54D767D /* NSInvocation+Copy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+Copy.h"; path = "MZAppearance/NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		F352CEB4D07FD0FA61EFCEC9E59669D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F391A8AE4226D74E4F1FC0FCCFB3E672 /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MZBlurEffectAdapter.m; path = MZFormSheetPresentationController/MZBlurEffectAdapter.m; sourceTree = "<group>"; };
-		F3EB8E67DEBCB6E9E96B404D2B458041 /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRESTO-WalletUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F46435C8375B700C696887E2D3A7F1A6 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TargetViewController.h"; path = "MZFormSheetPresentationController/UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
 		F5714FB91EC393663C9FBDB8F1F62B25 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		FBF8597E65CB92C0624BA616654C486D /* MZFormSheetPresentationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MZFormSheetPresentationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF2FCD257E6C61A6127689A8C18E859 /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -517,14 +496,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9CC78622DB10BF128774EBBB492EACC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEB3EF3CAF53DCB14386544F8B803FF2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -542,14 +513,22 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		19A94FF06A4034DA5E5D5A875835B1E0 /* Targets Support Files */ = {
+		14A9235211BDD3C70116F0C5D08C2FAC /* Pods-PRESTO-WalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				C1B654A3119ADA484654A89B6D1E89A3 /* Pods-PRESTO-Wallet */,
-				2C5184BDA72EADD0D5AA7D646D622469 /* Pods-PRESTO-WalletTests */,
-				961359241035F9517CDDFB0A6B6CA403 /* Pods-PRESTO-WalletUITests */,
+				25F5F4E38A663EF71895F2174D150D3F /* Info.plist */,
+				9E7CF71D99277239A0647D64AEDC131C /* Pods-PRESTO-WalletTests.modulemap */,
+				44788BE26315BF741D85561A0F28BBE2 /* Pods-PRESTO-WalletTests-acknowledgements.markdown */,
+				CD3DF2A693549CADB06896F674D1405E /* Pods-PRESTO-WalletTests-acknowledgements.plist */,
+				CF125CAFAD4D21B384C172B52217FB75 /* Pods-PRESTO-WalletTests-dummy.m */,
+				30C03961A15EBAF706D5A92E55CFA879 /* Pods-PRESTO-WalletTests-frameworks.sh */,
+				7F43FAFF9E1277B3B352434445C77614 /* Pods-PRESTO-WalletTests-resources.sh */,
+				2C6A2DF45096D207368354B1BA55E6A5 /* Pods-PRESTO-WalletTests-umbrella.h */,
+				9756D5FE68332EF627D734BB2BB6CC00 /* Pods-PRESTO-WalletTests.debug.xcconfig */,
+				4210D3716F5051B606D16D4E4D35AB7B /* Pods-PRESTO-WalletTests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-PRESTO-WalletTests";
+			path = "Target Support Files/Pods-PRESTO-WalletTests";
 			sourceTree = "<group>";
 		};
 		1EDB03D60FA9C1E81A61EB600DCB48F9 /* Support Files */ = {
@@ -590,6 +569,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		2710DF58B6588F89F4CAFD8ABA581153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				738AF64E35DD43E95E9A9DDE7369A30F /* Alamofire.framework */,
+				B59F2E7BB37837BB8E8BE3FAA0F6566F /* AMScrollingNavbar.framework */,
+				98E9310F7DB94297F2899620729BC515 /* MZAppearance.framework */,
+				FBF8597E65CB92C0624BA616654C486D /* MZFormSheetPresentationController.framework */,
+				0428D62F600EE507BF6495A8E2234394 /* Pods_PRESTO_Wallet.framework */,
+				C3113CB1B844F4B452079F850A5FDF59 /* Pods_PRESTO_WalletTests.framework */,
+				9D0C8A41BE826EC22A8CBDCF818E0E1D /* SkyFloatingLabelTextField.framework */,
+				833D967C40DF06A11B2E17B2D567F1BE /* SwiftMultiSelect.framework */,
+				C52BDBC3C1F446022E2C605BA090F5FA /* SwiftSoup.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2C0C25B1D15AFFAA11631F7740B9BB80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,24 +597,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftMultiSelect";
-			sourceTree = "<group>";
-		};
-		2C5184BDA72EADD0D5AA7D646D622469 /* Pods-PRESTO-WalletTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BFF65273547A7BA252E44DF58BD63CC /* Info.plist */,
-				4AD643D2D78EC768A884BF28017F51F3 /* Pods-PRESTO-WalletTests.modulemap */,
-				572A24038EDC6B8BBA5C49BA973360FF /* Pods-PRESTO-WalletTests-acknowledgements.markdown */,
-				BF7A6EBBB76B9AFA94EA3922F0B1A635 /* Pods-PRESTO-WalletTests-acknowledgements.plist */,
-				567F96BB920413DED35F51A86566ACD9 /* Pods-PRESTO-WalletTests-dummy.m */,
-				37BBDFA710B9DACA05EFD6F20721166C /* Pods-PRESTO-WalletTests-frameworks.sh */,
-				434A4CB9ED30E1060BE85C4D839FCA1A /* Pods-PRESTO-WalletTests-resources.sh */,
-				6FED5A7D4F5A0E3C653B06224E78FBB4 /* Pods-PRESTO-WalletTests-umbrella.h */,
-				5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */,
-				4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */,
-			);
-			name = "Pods-PRESTO-WalletTests";
-			path = "Target Support Files/Pods-PRESTO-WalletTests";
 			sourceTree = "<group>";
 		};
 		2F8D4BAFCE3DE6E45D09F0FE28FCE6E6 /* Support Files */ = {
@@ -658,7 +635,6 @@
 				79B04B575957E1143EF5D6EA9FAB7AAE /* Validation.swift */,
 				12A38E7D42BE44E936520AD9AB1D223B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -670,7 +646,6 @@
 				D50E83E52F7D94031D13DEE22284A231 /* ScrollingNavigationViewController.swift */,
 				E4F70B198364F234C8454018400C778F /* Support Files */,
 			);
-			name = AMScrollingNavbar;
 			path = AMScrollingNavbar;
 			sourceTree = "<group>";
 		};
@@ -682,7 +657,6 @@
 				E485E99FA522EE511A233BA238B4A007 /* UITextField+fixCaretPosition.swift */,
 				D1EC882D50809CDFE9A17D458BF3150E /* Support Files */,
 			);
-			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
 			sourceTree = "<group>";
 		};
@@ -695,21 +669,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		71F5D65555798AECC9A3642284FA723D /* Products */ = {
+		6712B793799D40A66079ACED37D97185 /* Pods-PRESTO-Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				CE2385E54E80286C2B44E19C6767B2A3 /* Alamofire.framework */,
-				58BE4D3099FE2BD863A4E040BE953A32 /* AMScrollingNavbar.framework */,
-				5E14405CA4DA109073DA47A2E1AA3A5D /* MZAppearance.framework */,
-				86C9E4764AA1769BB3A4A0D7291C95B0 /* MZFormSheetPresentationController.framework */,
-				8699C929DD5C48F3A5409AFF74674127 /* Pods_PRESTO_Wallet.framework */,
-				3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */,
-				687016A8A80A6EFAE2EA3B6BCE2E52FB /* Pods_PRESTO_WalletUITests.framework */,
-				824F192510C09F51A61D268BF82F0D49 /* SkyFloatingLabelTextField.framework */,
-				27202811F354C455E9647A8A8D5E873C /* SwiftMultiSelect.framework */,
-				268533C10633EAF3647527CE33A9AE1D /* SwiftSoup.framework */,
+				F352CEB4D07FD0FA61EFCEC9E59669D7 /* Info.plist */,
+				DA8AFA6FD3A25AA7AD8A735469A70DC5 /* Pods-PRESTO-Wallet.modulemap */,
+				C17CD9E1EEA4803DCEB8FF7359F377D7 /* Pods-PRESTO-Wallet-acknowledgements.markdown */,
+				49CFE84DBEC0734BD7CC5EE4BFDA8FDB /* Pods-PRESTO-Wallet-acknowledgements.plist */,
+				03B41E01181BCE4A66F00D49231AAA9D /* Pods-PRESTO-Wallet-dummy.m */,
+				E414805EC7C4D2ED4A9DFC6FD120E0AF /* Pods-PRESTO-Wallet-frameworks.sh */,
+				A86970808DA9EC07229E62700104A378 /* Pods-PRESTO-Wallet-resources.sh */,
+				4BE33E242F44C170E9B4AC62F276AE57 /* Pods-PRESTO-Wallet-umbrella.h */,
+				19506B1014CF88558C92D92E756F240E /* Pods-PRESTO-Wallet.debug.xcconfig */,
+				0042B24DE357B685694678A619D7B895 /* Pods-PRESTO-Wallet.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-PRESTO-Wallet";
+			path = "Target Support Files/Pods-PRESTO-Wallet";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -718,45 +693,18 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				5EECBFFF946E7B5D216B5CC1F740C055 /* Frameworks */,
 				FFFE545207BA9B0A651B18F06951FAA7 /* Pods */,
-				71F5D65555798AECC9A3642284FA723D /* Products */,
-				19A94FF06A4034DA5E5D5A875835B1E0 /* Targets Support Files */,
+				2710DF58B6588F89F4CAFD8ABA581153 /* Products */,
+				9342B89D1E2869E79766B9AFE03915A3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		961359241035F9517CDDFB0A6B6CA403 /* Pods-PRESTO-WalletUITests */ = {
+		9342B89D1E2869E79766B9AFE03915A3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				51EDDCEA711D21BB571B999BA0757A11 /* Info.plist */,
-				5544511F6AEFFACD2D9776E40F8B5980 /* Pods-PRESTO-WalletUITests.modulemap */,
-				F3EB8E67DEBCB6E9E96B404D2B458041 /* Pods-PRESTO-WalletUITests-acknowledgements.markdown */,
-				B18E964224BE9D7D283C4EE020CBEF63 /* Pods-PRESTO-WalletUITests-acknowledgements.plist */,
-				C881719F409241D58F4595F12371D5E6 /* Pods-PRESTO-WalletUITests-dummy.m */,
-				902BD474ED41538DCCC0C5F33577860D /* Pods-PRESTO-WalletUITests-frameworks.sh */,
-				B4FB22616987383A7E0C28CDBA7FD0A6 /* Pods-PRESTO-WalletUITests-resources.sh */,
-				846040CEF8BC0DFD7778E36E2928AEDB /* Pods-PRESTO-WalletUITests-umbrella.h */,
-				C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */,
-				7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */,
+				6712B793799D40A66079ACED37D97185 /* Pods-PRESTO-Wallet */,
+				14A9235211BDD3C70116F0C5D08C2FAC /* Pods-PRESTO-WalletTests */,
 			);
-			name = "Pods-PRESTO-WalletUITests";
-			path = "Target Support Files/Pods-PRESTO-WalletUITests";
-			sourceTree = "<group>";
-		};
-		C1B654A3119ADA484654A89B6D1E89A3 /* Pods-PRESTO-Wallet */ = {
-			isa = PBXGroup;
-			children = (
-				1CD0B3019DC51336814C1EE7464F32EA /* Info.plist */,
-				C3E22CA3040628E6022FBCEB19D1673A /* Pods-PRESTO-Wallet.modulemap */,
-				1E42EE8869C2573F28BE4154642378D2 /* Pods-PRESTO-Wallet-acknowledgements.markdown */,
-				077B4CF224C8607D82DD643625F9704B /* Pods-PRESTO-Wallet-acknowledgements.plist */,
-				45B27BD630CE0536CED5DB2EECC133BC /* Pods-PRESTO-Wallet-dummy.m */,
-				146F801CD822A71E3DF640D0D4F44CD2 /* Pods-PRESTO-Wallet-frameworks.sh */,
-				7138A30F53F57F752AA2DE3611EB6D3F /* Pods-PRESTO-Wallet-resources.sh */,
-				B47BF14EE927F5E611D45EFC6015E1F6 /* Pods-PRESTO-Wallet-umbrella.h */,
-				C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */,
-				6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */,
-			);
-			name = "Pods-PRESTO-Wallet";
-			path = "Target Support Files/Pods-PRESTO-Wallet";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		C45B64BFC958411588187EBA3E369676 /* MZAppearance */ = {
@@ -768,7 +716,6 @@
 				CDB804986C14BCB6E9A1D8CB0F6160D4 /* NSInvocation+Copy.m */,
 				2F8D4BAFCE3DE6E45D09F0FE28FCE6E6 /* Support Files */,
 			);
-			name = MZAppearance;
 			path = MZAppearance;
 			sourceTree = "<group>";
 		};
@@ -817,7 +764,6 @@
 				A81C1E8C03535282F4308979625FBC69 /* UIViewController+TargetViewController.m */,
 				1EDB03D60FA9C1E81A61EB600DCB48F9 /* Support Files */,
 			);
-			name = MZFormSheetPresentationController;
 			path = MZFormSheetPresentationController;
 			sourceTree = "<group>";
 		};
@@ -834,7 +780,6 @@
 				F46C4847E73982DBAF094E5564EED65D /* Resources */,
 				2C0C25B1D15AFFAA11631F7740B9BB80 /* Support Files */,
 			);
-			name = SwiftMultiSelect;
 			path = SwiftMultiSelect;
 			sourceTree = "<group>";
 		};
@@ -864,7 +809,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -929,7 +873,6 @@
 				6DBBD3C5624F268E31EC68E65C42F0E0 /* XmlTreeBuilder.swift */,
 				219F5476549CAD211DCD519771ED7B01 /* Support Files */,
 			);
-			name = SwiftSoup;
 			path = SwiftSoup;
 			sourceTree = "<group>";
 		};
@@ -987,14 +930,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				341C804B6CCA05F8460B2727A54C14C3 /* Pods-PRESTO-WalletTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DA4052062050035FDE5E9A3D033379D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE2CCF4F4199B38940C3BB860A6453 /* Pods-PRESTO-WalletUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,25 +1007,7 @@
 			);
 			name = "Pods-PRESTO-Wallet";
 			productName = "Pods-PRESTO-Wallet";
-			productReference = 8699C929DD5C48F3A5409AFF74674127 /* Pods_PRESTO_Wallet.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1FC58E5575534095521A9BF4885CA0FF /* Pods-PRESTO-WalletUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 374E6954C1756E6676D871464372572A /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */;
-			buildPhases = (
-				551C145F5DCD876ECEB965008A2FBFAB /* Sources */,
-				D9CC78622DB10BF128774EBBB492EACC /* Frameworks */,
-				6DA4052062050035FDE5E9A3D033379D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				26ED83F27A8A58B6A3ACEDD2948A7231 /* PBXTargetDependency */,
-			);
-			name = "Pods-PRESTO-WalletUITests";
-			productName = "Pods-PRESTO-WalletUITests";
-			productReference = 687016A8A80A6EFAE2EA3B6BCE2E52FB /* Pods_PRESTO_WalletUITests.framework */;
+			productReference = 0428D62F600EE507BF6495A8E2234394 /* Pods_PRESTO_Wallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3CB17C6B6D5F08F6B3350CCEC6B1E0F6 /* MZAppearance */ = {
@@ -1107,7 +1024,7 @@
 			);
 			name = MZAppearance;
 			productName = MZAppearance;
-			productReference = 5E14405CA4DA109073DA47A2E1AA3A5D /* MZAppearance.framework */;
+			productReference = 98E9310F7DB94297F2899620729BC515 /* MZAppearance.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3F3FC32B9B02D67ABB7D2E4AAE2F65C5 /* SkyFloatingLabelTextField */ = {
@@ -1124,7 +1041,7 @@
 			);
 			name = SkyFloatingLabelTextField;
 			productName = SkyFloatingLabelTextField;
-			productReference = 824F192510C09F51A61D268BF82F0D49 /* SkyFloatingLabelTextField.framework */;
+			productReference = 9D0C8A41BE826EC22A8CBDCF818E0E1D /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		70D462634F7BD6635A7C8AC01780C67F /* MZFormSheetPresentationController */ = {
@@ -1142,7 +1059,7 @@
 			);
 			name = MZFormSheetPresentationController;
 			productName = MZFormSheetPresentationController;
-			productReference = 86C9E4764AA1769BB3A4A0D7291C95B0 /* MZFormSheetPresentationController.framework */;
+			productReference = FBF8597E65CB92C0624BA616654C486D /* MZFormSheetPresentationController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -1159,7 +1076,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = CE2385E54E80286C2B44E19C6767B2A3 /* Alamofire.framework */;
+			productReference = 738AF64E35DD43E95E9A9DDE7369A30F /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B7BEF22A2D2E5C2E4174836475BC47B /* AMScrollingNavbar */ = {
@@ -1176,7 +1093,7 @@
 			);
 			name = AMScrollingNavbar;
 			productName = AMScrollingNavbar;
-			productReference = 58BE4D3099FE2BD863A4E040BE953A32 /* AMScrollingNavbar.framework */;
+			productReference = B59F2E7BB37837BB8E8BE3FAA0F6566F /* AMScrollingNavbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A237D30AAFA56516E33145697DCB5FAE /* SwiftMultiSelect */ = {
@@ -1194,7 +1111,7 @@
 			);
 			name = SwiftMultiSelect;
 			productName = SwiftMultiSelect;
-			productReference = 27202811F354C455E9647A8A8D5E873C /* SwiftMultiSelect.framework */;
+			productReference = 833D967C40DF06A11B2E17B2D567F1BE /* SwiftMultiSelect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C6E1A935B9A5250BD135FE15B8ABA12B /* Pods-PRESTO-WalletTests */ = {
@@ -1212,7 +1129,7 @@
 			);
 			name = "Pods-PRESTO-WalletTests";
 			productName = "Pods-PRESTO-WalletTests";
-			productReference = 3CE581B6BC0CA6F96873F60DAB73C1F1 /* Pods_PRESTO_WalletTests.framework */;
+			productReference = C3113CB1B844F4B452079F850A5FDF59 /* Pods_PRESTO_WalletTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ED84D8F63B0AF32EFE5517425546341A /* SwiftSoup */ = {
@@ -1229,7 +1146,7 @@
 			);
 			name = SwiftSoup;
 			productName = SwiftSoup;
-			productReference = 268533C10633EAF3647527CE33A9AE1D /* SwiftSoup.framework */;
+			productReference = C52BDBC3C1F446022E2C605BA090F5FA /* SwiftSoup.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1239,7 +1156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1249,7 +1166,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 71F5D65555798AECC9A3642284FA723D /* Products */;
+			productRefGroup = 2710DF58B6588F89F4CAFD8ABA581153 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1259,7 +1176,6 @@
 				70D462634F7BD6635A7C8AC01780C67F /* MZFormSheetPresentationController */,
 				1C40A7DAC21DF6E8F11E81E5EB9189C3 /* Pods-PRESTO-Wallet */,
 				C6E1A935B9A5250BD135FE15B8ABA12B /* Pods-PRESTO-WalletTests */,
-				1FC58E5575534095521A9BF4885CA0FF /* Pods-PRESTO-WalletUITests */,
 				3F3FC32B9B02D67ABB7D2E4AAE2F65C5 /* SkyFloatingLabelTextField */,
 				A237D30AAFA56516E33145697DCB5FAE /* SwiftMultiSelect */,
 				ED84D8F63B0AF32EFE5517425546341A /* SwiftSoup */,
@@ -1391,14 +1307,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		551C145F5DCD876ECEB965008A2FBFAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD11FE286D5B013AB5E864C31460983E /* Pods-PRESTO-WalletUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		691207B4278198D5E4805C1E2ECFB1C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1479,12 +1387,6 @@
 			target = 3F3FC32B9B02D67ABB7D2E4AAE2F65C5 /* SkyFloatingLabelTextField */;
 			targetProxy = A530D6089B7E8E719E3B9B1375F60130 /* PBXContainerItemProxy */;
 		};
-		26ED83F27A8A58B6A3ACEDD2948A7231 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-PRESTO-Wallet";
-			target = 1C40A7DAC21DF6E8F11E81E5EB9189C3 /* Pods-PRESTO-Wallet */;
-			targetProxy = E6614B68BDB0D60634CFA5612EB6ACA6 /* PBXContainerItemProxy */;
-		};
 		46F447E61056BC743C8B4C098D9379DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMScrollingNavbar;
@@ -1524,15 +1426,117 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01F53CD5D87D9A0135122B277247405B /* Release */ = {
+		00FD6F87CC5CCFC5FB8C3836BCD5860E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E300EEF7BDFCF48E229F3C8CF8D8CD2 /* Pods-PRESTO-Wallet.release.xcconfig */;
+			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11DF8E16B49811B221D3C17828F73A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9756D5FE68332EF627D734BB2BB6CC00 /* Pods-PRESTO-WalletTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E779755CF407D5228956CF699235542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				PRODUCT_MODULE_NAME = MZAppearance;
+				PRODUCT_NAME = MZAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29294E122D570C0BDB92ECC39EC68163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0042B24DE357B685694678A619D7B895 /* Pods-PRESTO-Wallet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1559,15 +1563,116 @@
 			};
 			name = Release;
 		};
-		0EE3B2508CAEDFEDF9E1CC889D0280BD /* Debug */ = {
+		2CA4FA3659534FBD0DB8280C4039B8D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C80C20A01DFC31B455E11F3DE3DE8A6 /* Pods-PRESTO-WalletTests.debug.xcconfig */;
+			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
+				PRODUCT_NAME = MZFormSheetPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36C4CA3C1579E621EA068830192B8375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
+				PRODUCT_MODULE_NAME = SwiftMultiSelect;
+				PRODUCT_NAME = SwiftMultiSelect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D5F134F6BCF408DB0C9926FFAF4C423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
+				PRODUCT_MODULE_NAME = AMScrollingNavbar;
+				PRODUCT_NAME = AMScrollingNavbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		541D2CD240E3979883292349FE966480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4210D3716F5051B606D16D4E4D35AB7B /* Pods-PRESTO-WalletTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1587,12 +1692,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		6690C5B4617034833FDE45658321956C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1624,8 +1730,330 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6B11B4E5B0CF273CB70E450F8ECA6A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
+				PRODUCT_MODULE_NAME = MZAppearance;
+				PRODUCT_NAME = MZAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88FF21DA6AACE4AF56FA8C36CCCD8998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F7B1B8F445B89EBE8DE5E255F77A69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		962F8A473AD078AD639D07E37A299B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19506B1014CF88558C92D92E756F240E /* Pods-PRESTO-Wallet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-Wallet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F08E02167DC057216F08DA3A790B0EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B11C92A51CD33166ACE949F9041208B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3A0648C9C7346F9FA86ECE7DB7C38AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
+				PRODUCT_MODULE_NAME = AMScrollingNavbar;
+				PRODUCT_NAME = AMScrollingNavbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9F2362557991AC6A4BC617B7ED14136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
+				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
+				PRODUCT_NAME = MZFormSheetPresentationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFB07AE6611852E982CB67015DCDD500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1655,272 +2083,7 @@
 			};
 			name = Debug;
 		};
-		2422DD7D13B383F273CBBA999F1E20B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
-				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
-				PRODUCT_NAME = MZFormSheetPresentationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		292D5666A734D7BD2B3785C032BDED04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7279AD5C1D1962F06DE22B90183DBBA0 /* Pods-PRESTO-WalletUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		335A5470A645634798986C774436BE17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C54ED79D757F8F60084DE59433BCE03F /* Pods-PRESTO-Wallet.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-Wallet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-Wallet/Pods-PRESTO-Wallet.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3E90EB302E59095041A231210D691EDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		512AAD3F4DE5BE8142B6567BB0C2F852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A710AF47603A1602F81254ED597AC0F /* Pods-PRESTO-WalletTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletTests/Pods-PRESTO-WalletTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6115B161DCF8B8DF49AC91291E972D61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7370EF0EB19BE8E20ECCF176D6220F25 /* MZFormSheetPresentationController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZFormSheetPresentationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZFormSheetPresentationController/MZFormSheetPresentationController.modulemap";
-				PRODUCT_MODULE_NAME = MZFormSheetPresentationController;
-				PRODUCT_NAME = MZFormSheetPresentationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6225105DAF9FA14FC51672CFAC525280 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSoup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSoup;
-				PRODUCT_NAME = SwiftSoup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6EE01CAB22030BCDF0C2B81DA4CFE5E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C30DDBD20CD56AA01512B5934047AF34 /* Pods-PRESTO-WalletUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PRESTO-WalletUITests/Pods-PRESTO-WalletUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		748BAECF28BB1CA31D79E3D74EFA797E /* Debug */ = {
+		E3304E04AE9EE52252312B1589E12CF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */;
 			buildSettings = {
@@ -1928,6 +2091,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1952,7 +2116,7 @@
 			};
 			name = Debug;
 		};
-		93E9F088CA7C5093189606826591DCB5 /* Debug */ = {
+		EC11F0E77CC57E9427333BF13E34DD1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E832B18437BD3082A7E7C9A59DD2D5E0 /* SwiftSoup.xcconfig */;
 			buildSettings = {
@@ -1960,6 +2124,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1976,322 +2141,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A0ED89879B0112CCD48A0E468ECE761D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E11B7365B5088C377029C9B52D8ECEF /* SkyFloatingLabelTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A18C9CC7E37563F2891E7DC87F2DE6CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A3F592D0944A8153A7644F1BCE619418 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9266B4137DEB151710D692A62AD639D /* SwiftMultiSelect.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftMultiSelect/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftMultiSelect/SwiftMultiSelect.modulemap";
-				PRODUCT_MODULE_NAME = SwiftMultiSelect;
-				PRODUCT_NAME = SwiftMultiSelect;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C6901E8B2C671BC5ACC6EC26BAE5485E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
-				PRODUCT_MODULE_NAME = MZAppearance;
-				PRODUCT_NAME = MZAppearance;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C7DEC60B08FD73C0B351D6CFF3F9E420 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				PRODUCT_MODULE_NAME = AMScrollingNavbar;
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CFD3CCCC78BDBC27CB806B2E0F74B616 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 148060DF08D266682DA2CFB6141DD916 /* AMScrollingNavbar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AMScrollingNavbar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AMScrollingNavbar/AMScrollingNavbar.modulemap";
-				PRODUCT_MODULE_NAME = AMScrollingNavbar;
-				PRODUCT_NAME = AMScrollingNavbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EA0ADC75B20BB62958101306980460E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A658F0DC423B4962E5E9A11D5F18027 /* Alamofire.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		FF3884753AB3334CEF4F0032A70B04B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FD6DB07199252B5B805204643D1BE0B /* MZAppearance.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MZAppearance/MZAppearance-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MZAppearance/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MZAppearance/MZAppearance.modulemap";
-				PRODUCT_MODULE_NAME = MZAppearance;
-				PRODUCT_NAME = MZAppearance;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2306,8 +2156,8 @@
 		15E22F6BCE2C9FC1198908DD7D373B8B /* Build configuration list for PBXNativeTarget "AMScrollingNavbar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C7DEC60B08FD73C0B351D6CFF3F9E420 /* Debug */,
-				CFD3CCCC78BDBC27CB806B2E0F74B616 /* Release */,
+				B3A0648C9C7346F9FA86ECE7DB7C38AE /* Debug */,
+				3D5F134F6BCF408DB0C9926FFAF4C423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2315,8 +2165,8 @@
 		2B6C12F70A34FD0E28B7BB0F99F540A4 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0EE3B2508CAEDFEDF9E1CC889D0280BD /* Debug */,
-				512AAD3F4DE5BE8142B6567BB0C2F852 /* Release */,
+				11DF8E16B49811B221D3C17828F73A64 /* Debug */,
+				541D2CD240E3979883292349FE966480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2324,17 +2174,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		374E6954C1756E6676D871464372572A /* Build configuration list for PBXNativeTarget "Pods-PRESTO-WalletUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6EE01CAB22030BCDF0C2B81DA4CFE5E7 /* Debug */,
-				292D5666A734D7BD2B3785C032BDED04 /* Release */,
+				DFB07AE6611852E982CB67015DCDD500 /* Debug */,
+				6690C5B4617034833FDE45658321956C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2342,8 +2183,8 @@
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA0ADC75B20BB62958101306980460E6 /* Debug */,
-				A18C9CC7E37563F2891E7DC87F2DE6CE /* Release */,
+				B11C92A51CD33166ACE949F9041208B7 /* Debug */,
+				00FD6F87CC5CCFC5FB8C3836BCD5860E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2351,8 +2192,8 @@
 		45DB87639F79C99636701E01109FC9C9 /* Build configuration list for PBXNativeTarget "SwiftMultiSelect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				748BAECF28BB1CA31D79E3D74EFA797E /* Debug */,
-				A3F592D0944A8153A7644F1BCE619418 /* Release */,
+				E3304E04AE9EE52252312B1589E12CF3 /* Debug */,
+				36C4CA3C1579E621EA068830192B8375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2360,8 +2201,8 @@
 		4D00CACFA8025DE4DA2FEB1884A2D3EA /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93E9F088CA7C5093189606826591DCB5 /* Debug */,
-				6225105DAF9FA14FC51672CFAC525280 /* Release */,
+				88FF21DA6AACE4AF56FA8C36CCCD8998 /* Debug */,
+				EC11F0E77CC57E9427333BF13E34DD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2369,8 +2210,8 @@
 		A52956240941F9AA324F3CC4F7C4D783 /* Build configuration list for PBXNativeTarget "MZAppearance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6901E8B2C671BC5ACC6EC26BAE5485E /* Debug */,
-				FF3884753AB3334CEF4F0032A70B04B6 /* Release */,
+				6B11B4E5B0CF273CB70E450F8ECA6A68 /* Debug */,
+				1E779755CF407D5228956CF699235542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2378,8 +2219,8 @@
 		BDB6174EEF11252F33806DCE9AFF8111 /* Build configuration list for PBXNativeTarget "MZFormSheetPresentationController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2422DD7D13B383F273CBBA999F1E20B4 /* Debug */,
-				6115B161DCF8B8DF49AC91291E972D61 /* Release */,
+				2CA4FA3659534FBD0DB8280C4039B8D7 /* Debug */,
+				C9F2362557991AC6A4BC617B7ED14136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2387,8 +2228,8 @@
 		C1584BECF666558BFCBF18716841FDD5 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0ED89879B0112CCD48A0E468ECE761D /* Debug */,
-				3E90EB302E59095041A231210D691EDF /* Release */,
+				9F08E02167DC057216F08DA3A790B0EE /* Debug */,
+				8F7B1B8F445B89EBE8DE5E255F77A69E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2396,8 +2237,8 @@
 		C62A274300C25F99B2A9FD587F359046 /* Build configuration list for PBXNativeTarget "Pods-PRESTO-Wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				335A5470A645634798986C774436BE17 /* Debug */,
-				01F53CD5D87D9A0135122B277247405B /* Release */,
+				962F8A473AD078AD639D07E37A299B01 /* Debug */,
+				29294E122D570C0BDB92ECC39EC68163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

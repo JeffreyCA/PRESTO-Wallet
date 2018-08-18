@@ -52,6 +52,10 @@ class LoginViewController: UIViewController {
     private func login(username: String?, password: String?) {
         loginService?.login(withUsername: username, password: password)
     }
+    
+    private func loadDashboard() {
+        loginService?.loadDashboard()
+    }
 }
 
 // Update views
@@ -190,7 +194,8 @@ extension LoginViewController: LoginServiceDelegate {
 
     func loginSuccessful() {
         dismissLoadingDialog {
-            self.performSegue(withIdentifier: "goToDashboard", sender: nil)
+            self.loadDashboard()
+            // self.performSegue(withIdentifier: "goToDashboard", sender: nil)
         }
     }
 }

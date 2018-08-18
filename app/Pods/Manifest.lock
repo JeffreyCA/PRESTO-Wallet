@@ -5,7 +5,7 @@ PODS:
   - MZFormSheetPresentationController (2.4.2):
     - MZAppearance
   - SkyFloatingLabelTextField (3.5.1)
-  - SwiftLint (0.25.1)
+  - SwiftLint (0.26.0)
   - SwiftMultiSelect (0.2.3)
   - SwiftSoup (1.7.1)
 
@@ -47,10 +47,10 @@ SPEC CHECKSUMS:
   MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
   MZFormSheetPresentationController: c1dc3bce639d2393b3cc416fcb6e050eb5bca062
   SkyFloatingLabelTextField: 4cbeece9c3aae97c6019d8fae511cb5b755874f7
-  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftMultiSelect: f43fea2b0fde0593b5492c6c5bd3a403d8cba403
   SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
 
-PODFILE CHECKSUM: 56f5b0d697586a7728fa07d1ff9a1adcc13cde41
+PODFILE CHECKSUM: d9320d17a6d553111e85f204115e35fc3bab5534
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
