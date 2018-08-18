@@ -9,5 +9,6 @@
 struct APIConstant {
     static let BASE_URL = "https://www.prestocard.ca"
     static let LOGIN_PATH = "/api/sitecore/AFMSAuthentication/SignInWithAccount"
+    static let TRANSACTION_CSV_PATH = "/api/sitecore/Paginator/CardActivityExportCSV"
     static let DASHBOARD_PATH = "/en/dashboard/"
 }

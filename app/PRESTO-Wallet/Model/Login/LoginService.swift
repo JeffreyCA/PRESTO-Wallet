@@ -79,7 +79,7 @@ class LoginServiceHandler: LoginService {
                 }
 
                 let token = try input.attr("value")
-                print("Valid token: " + token)
+                // print("Valid token: " + token)
 
                 self.makeRequest(username: username, password: password, token: token)
             } catch Exception.Error(let type, let message) {
@@ -93,7 +93,7 @@ class LoginServiceHandler: LoginService {
 
     private func logout() {
         Alamofire.request("https://www.prestocard.ca/api/sitecore/AFMSAuthentication/Logout", method: .get).responseString { response in
-            print(response.description)
+            // print(response.description)
         }
     }
 
@@ -113,10 +113,8 @@ class LoginServiceHandler: LoginService {
 
             switch loginResponse {
                 case .LOGIN_SUCCESS:
-                    // Handle login success
                     self.delegate?.loginSuccessful()
                 case .LOGIN_FAILURE(let error):
-                    // Handle login error
                     self.delegate?.handle(error: error)
                 }
         }
@@ -129,17 +127,18 @@ class LoginServiceHandler: LoginService {
             if let html = response.result.value {
                 do {
                     let doc: Document = try SwiftSoup.parse(html)
-                    let els: Elements = try doc.select("form")
-                    let signInWithAccountForm = try els.first()?.select("input")
+                    let forms: Elements = try doc.select("form")
+                    let signInWithAccountForm = try forms.first()?.select("input")
 
                     if let inputElement = signInWithAccountForm {
                         if try inputElement.attr("name") == "__RequestVerificationToken" {
                             token = try inputElement.attr("value")
-                            print("Token: " + token!)
+                            // print("Token: " + token!)
                         }
                     }
                 } catch Exception.Error(let type, let message) {
-                    print(message)
+                    print(type)
+                    print("Message" + message)
                 } catch {
                     print("error")
                 }
@@ -147,12 +146,35 @@ class LoginServiceHandler: LoginService {
         }
     }
 
-    private func loadDashboard() {
+    func getTransactions() -> String {
+        // https://www.prestocard.ca/api/sitecore/Paginator/CardActivityExportCSV
+
+        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+            var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            documentsURL.appendPathComponent("transactions.csv")
+            return (documentsURL, [.removePreviousFile])
+        }
+  
+        Alamofire.download(APIConstant.BASE_URL + APIConstant.TRANSACTION_CSV_PATH, to: destination).response { response in
+            print(response)
+        }.validate().responseData { ( response ) in
+            // print(response.destinationURL!.absoluteURL)
+        }
+
+        return ""
+    }
+    func loadDashboard() {
         Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_PATH, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
             if let html = response.result.value {
                 do {
                     let doc: Document = try SwiftSoup.parse(html)
+                    let balanceElement = try doc.getElementsByClass("dashboard__quantity").first()
+                    if let balance = try balanceElement?.text() {
+                        print("Balance: " + balance)
+                        self.getTransactions()
+                    }
                 } catch Exception.Error(let type, let message) {
+                    print(type)
                     print(message)
                 } catch {
                     print("error")
@@ -164,7 +186,7 @@ class LoginServiceHandler: LoginService {
 
 fileprivate extension LoginServiceHandler {
     private func getLoginResponse(response: DataResponse<Any>) -> LoginResponse {
-        print(response)
+        // print(response)
 
         if let result = response.result.value as? [String: String] {
             if result["Result"] == "success" {
@@ -173,9 +195,9 @@ fileprivate extension LoginServiceHandler {
         }
 
         if let data = response.data {
-            print(response.description)
+            // print(response.description)
             let json = String(data: data, encoding: String.Encoding.utf8)
-            print("Failure Response: \(json)")
+            print("Failure Response: \(String(describing: json))")
         }
         return LoginResponse.LOGIN_FAILURE(response.result.value as? String ?? Constants.DEFAULT_ERROR)
     }
