@@ -84,7 +84,7 @@ extension FilterOptionsTableViewController {
     // Create array of all transit agencies set to enabled
     private func createTransitAgencyArray() -> [FilterTransitAgency] {
         var array = [FilterTransitAgency]()
-        TransitAgency.cases().forEach({
+        TransitAgency.allCases.forEach({
             array.append(FilterTransitAgency(agency: $0, enabled: true))
         })
 

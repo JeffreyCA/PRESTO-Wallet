@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (4.7.2)
-  - AMScrollingNavbar (5.0.2)
+  - Alamofire (4.7.3)
+  - AMScrollingNavbar (5.1.0)
   - MZAppearance (1.1.6)
   - MZFormSheetPresentationController (2.4.2):
     - MZAppearance
-  - SkyFloatingLabelTextField (3.5.1)
-  - SwiftLint (0.26.0)
+  - SkyFloatingLabelTextField (3.5.2)
+  - SwiftLint (0.27.0)
   - SwiftMultiSelect (0.2.3)
-  - SwiftSoup (1.7.1)
+  - SwiftSoup (1.7.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
@@ -42,14 +42,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/JeffreyCA/SwiftMultiSelect.git
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  AMScrollingNavbar: d941641a4b05c329e6050ab19e54105ba3785471
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AMScrollingNavbar: e10b5e259a3d7fea30ed537cd57e6ba4fbb23d65
   MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
   MZFormSheetPresentationController: c1dc3bce639d2393b3cc416fcb6e050eb5bca062
-  SkyFloatingLabelTextField: 4cbeece9c3aae97c6019d8fae511cb5b755874f7
-  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SkyFloatingLabelTextField: f0672b67cd0e86abda946c0dc3b2fe8580767dbb
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftMultiSelect: f43fea2b0fde0593b5492c6c5bd3a403d8cba403
-  SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
+  SwiftSoup: e5f61d37e3d802a4b5db81b4945de3da9bfdf115
 
 PODFILE CHECKSUM: d9320d17a6d553111e85f204115e35fc3bab5534
 
