@@ -79,7 +79,6 @@ class LoginServiceHandler: LoginService {
                 }
 
                 let token = try input.attr("value")
-                // print("Valid token: " + token)
 
                 self.makeRequest(username: username, password: password, token: token)
             } catch Exception.Error(let type, let message) {
@@ -120,49 +119,6 @@ class LoginServiceHandler: LoginService {
         }
     }
 
-    private func getLoginAccountToken() {
-        var token: String?
-
-        Alamofire.request(APIConstant.BASE_URL, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
-            if let html = response.result.value {
-                do {
-                    let doc: Document = try SwiftSoup.parse(html)
-                    let forms: Elements = try doc.select("form")
-                    let signInWithAccountForm = try forms.first()?.select("input")
-
-                    if let inputElement = signInWithAccountForm {
-                        if try inputElement.attr("name") == "__RequestVerificationToken" {
-                            token = try inputElement.attr("value")
-                            // print("Token: " + token!)
-                        }
-                    }
-                } catch Exception.Error(let type, let message) {
-                    print(type)
-                    print("Message" + message)
-                } catch {
-                    print("error")
-                }
-            }
-        }
-    }
-
-    func getTransactions() -> String {
-        // https://www.prestocard.ca/api/sitecore/Paginator/CardActivityExportCSV
-
-        let destination: DownloadRequest.DownloadFileDestination = { _, _ in
-            var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            documentsURL.appendPathComponent("transactions.csv")
-            return (documentsURL, [.removePreviousFile])
-        }
-  
-        Alamofire.download(APIConstant.BASE_URL + APIConstant.TRANSACTION_CSV_PATH, to: destination).response { response in
-            print(response)
-        }.validate().responseData { ( response ) in
-            // print(response.destinationURL!.absoluteURL)
-        }
-
-        return ""
-    }
     func loadDashboard() {
         Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_PATH, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
             if let html = response.result.value {
@@ -171,7 +127,6 @@ class LoginServiceHandler: LoginService {
                     let balanceElement = try doc.getElementsByClass("dashboard__quantity").first()
                     if let balance = try balanceElement?.text() {
                         print("Balance: " + balance)
-                        self.getTransactions()
                     }
                 } catch Exception.Error(let type, let message) {
                     print(type)
@@ -195,7 +150,6 @@ fileprivate extension LoginServiceHandler {
         }
 
         if let data = response.data {
-            // print(response.description)
             let json = String(data: data, encoding: String.Encoding.utf8)
             print("Failure Response: \(String(describing: json))")
         }

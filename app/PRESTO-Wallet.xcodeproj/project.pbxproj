@@ -18,6 +18,7 @@
 		008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E71FF883B8003122C0 /* TransitAgency.swift */; };
 		008552C41FF32AEF00461F92 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008552C31FF32AEF00461F92 /* APIConstant.swift */; };
 		009318821FEEEC0C00FC7D2F /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009318811FEEEC0C00FC7D2F /* LoginTextField.swift */; };
+		009DDDD421546CBD00A5C1B5 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 009DDDD321546CBD00A5C1B5 /* config.json */; };
 		00BBD2A71FF68C7700A14631 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A61FF68C7700A14631 /* TransactionsController.swift */; };
 		00BBD2A91FF68D6700A14631 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */; };
 		00C0212B200C30AB00D068B9 /* FilterTransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */; };
@@ -63,6 +64,7 @@
 		008300E71FF883B8003122C0 /* TransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitAgency.swift; sourceTree = "<group>"; };
 		008552C31FF32AEF00461F92 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		009318811FEEEC0C00FC7D2F /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		009DDDD321546CBD00A5C1B5 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		00BBD2A61FF68C7700A14631 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
 		00BBD2A81FF68D6700A14631 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
 		00C0212A200C30AB00D068B9 /* FilterTransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransitAgency.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				00C28334200CF53500B304AB /* Dashboard */,
 				00C28332200CF4DB00B304AB /* Login */,
 				00D5F8802002BBEA00D4487A /* EnumCollection.swift */,
+				009DDDD321546CBD00A5C1B5 /* config.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			files = (
 				00FC13C01FE36F8B00AA5731 /* LaunchScreen.storyboard in Resources */,
 				00FC13BD1FE36F8B00AA5731 /* Assets.xcassets in Resources */,
+				009DDDD421546CBD00A5C1B5 /* config.json in Resources */,
 				00FC13BB1FE36F8B00AA5731 /* Main.storyboard in Resources */,
 				00E38E9A1FF44037009160EE /* Dashboard.storyboard in Resources */,
 			);

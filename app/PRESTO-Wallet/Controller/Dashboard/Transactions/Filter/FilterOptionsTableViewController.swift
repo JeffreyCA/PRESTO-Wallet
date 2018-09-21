@@ -28,7 +28,7 @@ class FilterOptionsTableViewController: UITableViewController {
 
     private enum Constants {
         static let MINIMUM_FILTER_YEARS_AGO: Int = 2
-        static let DEFAULT_START_MONTHS_AGO: Int = 1
+        static let DEFAULT_START_MONTHS_AGO: Int = 6
         static let DATE_TODAY_HINT: String = " (Today)"
 
         static let ALL_SELECTED: String = "All"

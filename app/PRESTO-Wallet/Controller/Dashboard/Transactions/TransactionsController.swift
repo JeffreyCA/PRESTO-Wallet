@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 import AMScrollingNavbar
 import MZFormSheetPresentationController
 
@@ -34,6 +35,7 @@ class TransactionsController: ScrollingNavigationViewController {
     var transactions: [Transaction] = []
     var visibleTransactions: [Transaction] = []
     var filterOptions: FilterOptions?
+    var indicator = UIActivityIndicatorView()
 
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -45,7 +47,6 @@ class TransactionsController: ScrollingNavigationViewController {
         super.viewWillAppear(animated)
 
         if let navigationController = self.navigationController as? ScrollingNavigationController {
-
             navigationController.followScrollView(tableView, delay: 50.0)
             navigationController.shouldUpdateContentInset = false
             navigationController.scrollingNavbarDelegate = self
@@ -63,8 +64,15 @@ class TransactionsController: ScrollingNavigationViewController {
         visualEffectView.isUserInteractionEnabled = false
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
-        populateStubTransactions()
-        sortTransactions()
+
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        indicator.center = self.view.center
+        self.view.addSubview(indicator)
+
+        indicator.startAnimating()
+        indicator.backgroundColor = UIColor.white
+        populateRealTransactions()
 
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -75,13 +83,13 @@ class TransactionsController: ScrollingNavigationViewController {
         var transactionDate = Date()
 
         for _ in 1...5 {
-            transactions.append(Transaction(agency: .GO, amount: 555.75, balance: 90.00, date: transactionDate, discount: 1.50, location: "Mount Joy GO"))
+            transactions.append(Transaction(agency: .GO, amount: 555.75, balance: 90.00, date: transactionDate, discount: 1.50, location: "Mount Joy GO", type: "", serviceClass: ""))
             transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-            transactions.append(Transaction(agency: .TTC, amount: -22.05, balance: 85.00, date: transactionDate, discount: 1.50, location: "St. Andrew Station"))
+            transactions.append(Transaction(agency: .TTC, amount: -22.05, balance: 85.00, date: transactionDate, discount: 1.50, location: "St. Andrew Station", type: "", serviceClass: ""))
             transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-            transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville"))
+            transactions.append(Transaction(agency: .YRT_VIVA, amount: -3.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Unionville", type: "", serviceClass: ""))
             transactionDate = calendar.date(byAdding: .day, value: -5, to: transactionDate)!
-            transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Top Up"))
+            transactions.append(Transaction(agency: .PRESTO, amount: 0.99, balance: 90.00, date: transactionDate, discount: 1.50, location: "Top Up", type: "", serviceClass: ""))
         }
         visibleTransactions = transactions
     }
@@ -106,6 +114,69 @@ class TransactionsController: ScrollingNavigationViewController {
 
                 return false
             }
+        }
+    }
+}
+
+extension TransactionsController {
+    func jsonToDict(jsonData: String) throws -> [String: Any]? {
+        return try JSONSerialization.jsonObject(with: jsonData.data(using: .utf8)!, options: []) as? [String: Any]
+    }
+
+    func parseResponse(responseString: String) -> [Transaction] {
+        var transactions: [Transaction] = []
+        var firstLine = true
+
+        responseString.enumerateLines { line, _ in
+            let splitLine = line.replacingOccurrences(of: "\"", with: "").components(separatedBy: ",")
+
+            if firstLine {
+                firstLine = false
+                return
+            }
+
+            transactions.append(Transaction(csvData: splitLine))
+        }
+
+        return transactions
+    }
+
+    func populateRealTransactions() {
+        let path = Bundle.main.path(forResource: "config", ofType: "json")
+
+        guard let jsonPath = path else {
+            return
+        }
+
+        do {
+            let jsonData = try String(contentsOfFile: jsonPath, encoding: String.Encoding.utf8)
+            let dictData = try jsonToDict(jsonData: jsonData)
+
+            Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_CARD_ACTIVITY_PATH, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { _ in
+                Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_CARD_ACTIVITY_FILTERED_PATH, method: .post,
+                                  parameters: dictData, encoding: JSONEncoding.default, headers: nil).responseString { _ in
+                                    
+                                    // Set .csv destination
+                                    let destination: DownloadRequest.DownloadFileDestination = { _, _ in
+                                        var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                                        documentsURL.appendPathComponent("transactions.csv")                                        
+                                        return (documentsURL, [.removePreviousFile])
+                                    }
+
+                                    // Download .csv transactions file
+                                    Alamofire.download(APIConstant.BASE_URL + APIConstant.TRANSACTION_CSV_PATH, to: destination).responseString { response in
+                                        self.transactions = self.parseResponse(responseString: response.description)
+                                        self.visibleTransactions = self.transactions
+                                        self.sortTransactions()
+                                        self.tableView.reloadData()
+                                        self.indicator.stopAnimating()
+                                        self.indicator.hidesWhenStopped = true
+                                        }.validate().responseData { ( _ ) in
+                                    }
+                }
+            }
+        } catch {
+            print(error)
         }
     }
 }
@@ -161,7 +232,7 @@ extension TransactionsController: UITableViewDelegate {
             self.tableView.tableFooterView?.isHidden = false
 
             // Load more transactions, then stop spinner animating
-            populateStubTransactions()
+            // populateStubTransactions()
             applyFilter(filterOptions)
             tableView.reloadData()
         }
