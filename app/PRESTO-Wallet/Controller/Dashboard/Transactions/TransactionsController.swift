@@ -35,6 +35,7 @@ class TransactionsController: ScrollingNavigationViewController {
     var transactions: [Transaction] = []
     var visibleTransactions: [Transaction] = []
     var filterOptions: FilterOptions?
+    var indicator = UIActivityIndicatorView()
 
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -64,9 +65,14 @@ class TransactionsController: ScrollingNavigationViewController {
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
 
-        // populateStubTransactions()
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        indicator.center = self.view.center
+        self.view.addSubview(indicator)
+
+        indicator.startAnimating()
+        indicator.backgroundColor = UIColor.white
         populateRealTransactions()
-        // sortTransactions()
 
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -163,6 +169,8 @@ extension TransactionsController {
                                         self.visibleTransactions = self.transactions
                                         self.sortTransactions()
                                         self.tableView.reloadData()
+                                        self.indicator.stopAnimating()
+                                        self.indicator.hidesWhenStopped = true
                                         }.validate().responseData { ( _ ) in
                                     }
                 }
