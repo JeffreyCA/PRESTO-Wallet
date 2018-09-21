@@ -195,7 +195,7 @@ extension LoginViewController: LoginServiceDelegate {
     func loginSuccessful() {
         dismissLoadingDialog {
             self.loadDashboard()
-            // self.performSegue(withIdentifier: "goToDashboard", sender: nil)
+            self.performSegue(withIdentifier: "goToDashboard", sender: nil)
         }
     }
 }
