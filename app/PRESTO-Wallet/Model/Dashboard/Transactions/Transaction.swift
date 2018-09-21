@@ -63,6 +63,14 @@ class Transaction {
         self.amount = Double(csvData[6].replacingOccurrences(of: "$", with: "")) ?? 0
         self.balance = Double(csvData[7].replacingOccurrences(of: "$", with: "")) ?? 0
         self.expanded = false
+
+        if self.type.lowercased().contains("load") {
+            // Show card reloads as PRESTO agency
+            self.agency = .PRESTO
+        } else if self.type.lowercased().contains("fare") {
+            // Show fare payments as negative amount
+            self.amount *= -1
+        }
     }
 
     init(agency: TransitAgency?, amount: Double?, balance: Double?, date: Date?, discount: Double?, location: String?, type: String?, serviceClass: String?) {
