@@ -59,9 +59,9 @@ class Transaction {
         self.location = csvData[2]
         self.type = csvData[3]
         self.serviceClass = csvData[4]
-        self.discount = Double(csvData[5].replacingOccurrences(of: "$", with: "")) ?? 0
-        self.amount = Double(csvData[6].replacingOccurrences(of: "$", with: "")) ?? 0
-        self.balance = Double(csvData[7].replacingOccurrences(of: "$", with: "")) ?? 0
+        self.discount = Double(csvData[5].replacingOccurrences(of: "[$\\(\\)]", with: "", options: .regularExpression, range: nil)) ?? 0
+        self.amount = Double(csvData[6].replacingOccurrences(of: "[$\\(\\)]", with: "", options: .regularExpression, range: nil)) ?? 0
+        self.balance = Double(csvData[7].replacingOccurrences(of: "[$\\(\\)]", with: "", options: .regularExpression, range: nil)) ?? 0
         self.expanded = false
 
         if self.type.lowercased().contains("load") {
