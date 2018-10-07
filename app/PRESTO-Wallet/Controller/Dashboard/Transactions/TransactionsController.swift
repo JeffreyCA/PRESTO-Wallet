@@ -155,11 +155,11 @@ extension TransactionsController {
             Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_CARD_ACTIVITY_PATH, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { _ in
                 Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_CARD_ACTIVITY_FILTERED_PATH, method: .post,
                                   parameters: dictData, encoding: JSONEncoding.default, headers: nil).responseString { _ in
-                                    
+
                                     // Set .csv destination
                                     let destination: DownloadRequest.DownloadFileDestination = { _, _ in
                                         var documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-                                        documentsURL.appendPathComponent("transactions.csv")                                        
+                                        documentsURL.appendPathComponent("transactions.csv")
                                         return (documentsURL, [.removePreviousFile])
                                     }
 

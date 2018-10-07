@@ -91,8 +91,7 @@ class LoginServiceHandler: LoginService {
     }
 
     private func logout() {
-        Alamofire.request("https://www.prestocard.ca/api/sitecore/AFMSAuthentication/Logout", method: .get).responseString { response in
-            // print(response.description)
+        Alamofire.request(APIConstant.BASE_URL + APIConstant.LOGOUT_PATH, method: .get).responseString { _ in
         }
     }
 
@@ -141,7 +140,6 @@ class LoginServiceHandler: LoginService {
 
 fileprivate extension LoginServiceHandler {
     private func getLoginResponse(response: DataResponse<Any>) -> LoginResponse {
-        // print(response)
 
         if let result = response.result.value as? [String: String] {
             if result["Result"] == "success" {

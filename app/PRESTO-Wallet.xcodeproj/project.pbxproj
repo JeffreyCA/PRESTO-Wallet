@@ -13,6 +13,7 @@
 		0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0002F8C41FF2B9AD000B849F /* LoginResponse.swift */; };
 		0016B2B9200C007500B5BC21 /* FilterOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016B2B8200C007500B5BC21 /* FilterOptions.swift */; };
 		002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */; };
+		006386F2216967D500F94917 /* BalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006386F1216967D500F94917 /* BalanceController.swift */; };
 		0069F2EA1FF88C9D00AC3B26 /* DoubleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */; };
 		008300E61FF88377003122C0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E51FF88377003122C0 /* Transaction.swift */; };
 		008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008300E71FF883B8003122C0 /* TransitAgency.swift */; };
@@ -59,6 +60,7 @@
 		0002F8C41FF2B9AD000B849F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		0016B2B8200C007500B5BC21 /* FilterOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptions.swift; sourceTree = "<group>"; };
 		002F3FB01FE6DD200057AF0A /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		006386F1216967D500F94917 /* BalanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceController.swift; sourceTree = "<group>"; };
 		0069F2E91FF88C9D00AC3B26 /* DoubleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExt.swift; sourceTree = "<group>"; };
 		008300E51FF88377003122C0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		008300E71FF883B8003122C0 /* TransitAgency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitAgency.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006386F0216967A700F94917 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				006386F1216967D500F94917 /* BalanceController.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
 		0083A6D01FEE04590018A9FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				00C7BA541FF5572600EAA781 /* DashboardViewController.swift */,
+				006386F0216967A700F94917 /* Balance */,
 				00C28330200CF4A700B304AB /* Transactions */,
 			);
 			path = Dashboard;
@@ -537,6 +548,7 @@
 				0002F8C51FF2B9AD000B849F /* LoginResponse.swift in Sources */,
 				008300E61FF88377003122C0 /* Transaction.swift in Sources */,
 				002F3FB11FE6DD200057AF0A /* CustomPageViewController.swift in Sources */,
+				006386F2216967D500F94917 /* BalanceController.swift in Sources */,
 				00FC13B41FE36F8B00AA5731 /* AppDelegate.swift in Sources */,
 				00FC13E41FE3719C00AA5731 /* LandingViewController.swift in Sources */,
 				008300E81FF883B8003122C0 /* TransitAgency.swift in Sources */,
