@@ -13,9 +13,16 @@ import AMScrollingNavbar
 import MZFormSheetPresentationController
 
 class BalanceController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var cardNumberLabel: UILabel!
+    @IBOutlet weak var fareTypeLabel: UILabel!
+    @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var lastUpdatedLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackground()
+        scrollView.alwaysBounceVertical = true
     }
 
     private func setGradientBackground() {

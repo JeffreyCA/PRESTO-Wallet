@@ -37,6 +37,10 @@ class LandingViewController: UIViewController, CustomPageViewDelegate {
         super.viewDidLoad()
     }
 
+    override open var shouldAutorotate: Bool {
+        return false
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? CustomPageViewController,
             segue.identifier == "pageSegue" {
