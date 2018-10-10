@@ -14,6 +14,8 @@ import MZFormSheetPresentationController
 class TransactionsController: ScrollingNavigationViewController {
     @IBOutlet weak var tableView: UITableView!
 
+    private var loadingView: UIAlertController?
+
     @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
         let navigationController = self.storyboard!.instantiateViewController(withIdentifier: "formSheetController") as? UINavigationController
         let filterOptionsController = navigationController?.viewControllers.first as? FilterOptionsTableViewController
@@ -35,7 +37,6 @@ class TransactionsController: ScrollingNavigationViewController {
     var transactions: [Transaction] = []
     var visibleTransactions: [Transaction] = []
     var filterOptions: FilterOptions?
-    var indicator = UIActivityIndicatorView()
 
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -65,13 +66,7 @@ class TransactionsController: ScrollingNavigationViewController {
         visualEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         visualEffectView.layer.zPosition = -1
 
-        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        indicator.center = self.view.center
-        self.view.addSubview(indicator)
-
-        indicator.startAnimating()
-        indicator.backgroundColor = UIColor.white
+        setupLoadingView()
         populateRealTransactions()
 
         tableView.estimatedRowHeight = 80
@@ -142,6 +137,8 @@ extension TransactionsController {
     }
 
     func populateRealTransactions() {
+        showLoadingDialog()
+
         let path = Bundle.main.path(forResource: "config", ofType: "json")
 
         guard let jsonPath = path else {
@@ -169,8 +166,8 @@ extension TransactionsController {
                                         self.visibleTransactions = self.transactions
                                         self.sortTransactions()
                                         self.tableView.reloadData()
-                                        self.indicator.stopAnimating()
-                                        self.indicator.hidesWhenStopped = true
+
+                                        self.dismissLoadingDialog()
                                         }.validate().responseData { ( _ ) in
                                     }
                 }
@@ -178,6 +175,28 @@ extension TransactionsController {
         } catch {
             print(error)
         }
+    }
+}
+
+fileprivate extension TransactionsController {
+    func dismissLoadingDialog() {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
+    func showLoadingDialog() {
+        self.present(loadingView!, animated: true, completion: nil)
+    }
+    
+    func setupLoadingView() {
+        loadingView = UIAlertController(title: nil, message: "Loading data...", preferredStyle: .alert)
+        loadingView?.view.tintColor = UIColor.black
+        
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating()
+
+        loadingView?.view.addSubview(loadingIndicator)
     }
 }
 

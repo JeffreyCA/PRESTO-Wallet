@@ -12,7 +12,6 @@ import SwiftSoup
 
 protocol LoginService {
     var delegate: LoginServiceDelegate? { get }
-    // func login(withUsername username: String?, password: String?)
 }
 
 // Delegate for the LoginService
@@ -115,25 +114,6 @@ class LoginServiceHandler: LoginService {
                 case .LOGIN_FAILURE(let error):
                     self.delegate?.handle(error: error)
                 }
-        }
-    }
-
-    func loadDashboard() {
-        Alamofire.request(APIConstant.BASE_URL + APIConstant.DASHBOARD_PATH, method: .get, encoding: JSONEncoding.default, headers: nil).responseString { response in
-            if let html = response.result.value {
-                do {
-                    let doc: Document = try SwiftSoup.parse(html)
-                    let balanceElement = try doc.getElementsByClass("dashboard__quantity").first()
-                    if let balance = try balanceElement?.text() {
-                        print("Balance: " + balance)
-                    }
-                } catch Exception.Error(let type, let message) {
-                    print(type)
-                    print(message)
-                } catch {
-                    print("error")
-                }
-            }
         }
     }
 }
